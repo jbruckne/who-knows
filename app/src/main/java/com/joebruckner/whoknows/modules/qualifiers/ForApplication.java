@@ -1,4 +1,4 @@
-package com.joebruckner.whoknows;
+package com.joebruckner.whoknows.modules.qualifiers;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

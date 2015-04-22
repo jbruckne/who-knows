@@ -2,10 +2,12 @@ package com.joebruckner.whoknows.modules;
 
 import android.app.Application;
 import android.content.Context;
-import android.view.LayoutInflater;
+import android.location.LocationManager;
+import android.os.Build;
 
-import com.joebruckner.whoknows.ForApplication;
-import com.joebruckner.whoknows.ui.MainActivity;
+import com.joebruckner.whoknows.WhoKnowsApp;
+import com.joebruckner.whoknows.modules.qualifiers.ApiLevel;
+import com.joebruckner.whoknows.modules.qualifiers.ForApplication;
 
 import javax.inject.Singleton;
 
@@ -13,7 +15,9 @@ import dagger.Module;
 import dagger.Provides;
 
 @Module (
-        injects = MainActivity.class,
+        injects = {
+                WhoKnowsApp.class
+        },
         library = true
 )
 public class AppModule {
@@ -28,8 +32,13 @@ public class AppModule {
         return app;
     }
 
+    @Provides @Singleton @ApiLevel
+    int provideApiLevel() {
+        return Build.VERSION.SDK_INT;
+    }
+
     @Provides @Singleton
-    LayoutInflater provideLayoutInflater() {
-        return (LayoutInflater) app.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+    LocationManager providesLocationManager() {
+        return (LocationManager) app.getSystemService(Context.LOCATION_SERVICE);
     }
 }

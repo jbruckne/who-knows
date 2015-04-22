@@ -2,10 +2,13 @@ package com.joebruckner.whoknows.ui;
 
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.widget.Toast;
 
-import com.joebruckner.whoknows.BaseActivity;
 import com.joebruckner.whoknows.R;
+import com.joebruckner.whoknows.common.BaseActivity;
+import com.joebruckner.whoknows.modules.ActivityModule;
+
+import java.util.Arrays;
+import java.util.List;
 
 
 public class MainActivity extends BaseActivity {
@@ -14,7 +17,7 @@ public class MainActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Toast.makeText(app, "It Works!", Toast.LENGTH_LONG).show();
+
     }
 
     @Override
@@ -25,5 +28,10 @@ public class MainActivity extends BaseActivity {
             default:
                 return super.onOptionsItemSelected(item);
         }
+    }
+
+    @Override
+    protected List<Object> getModules() {
+        return Arrays.<Object>asList(new ActivityModule(this));
     }
 }
