@@ -6,9 +6,9 @@ import android.support.v4.app.Fragment;
 
 public class BaseFragment extends Fragment {
 
-    @Override
-    public void onAttach(Activity activity) {
-        super.onAttach(activity);
-        ((BaseActivity) activity).inject(this);
-    }
+	@Override
+	public void onAttach(Activity activity) {
+		super.onAttach(activity);
+		((BaseActivity) activity).inject(this);
+	}
 }

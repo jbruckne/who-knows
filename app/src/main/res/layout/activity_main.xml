@@ -1,14 +1,22 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<com.sothree.slidinguppanel.SlidingUpPanelLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sothree="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/sliding_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:gravity="bottom"
+    sothree:umanoPanelHeight="60dp"
+    sothree:umanoShadowHeight="4dp">
 
     <fragment
         android:id="@+id/map_fragment"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
         class="com.joebruckner.whoknows.ui.LocalMapFragment"
-        />
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
-</RelativeLayout>
+    <fragment
+        android:id="@+id/list_fragment"
+        class="com.joebruckner.whoknows.ui.NearbyListFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</com.sothree.slidinguppanel.SlidingUpPanelLayout>

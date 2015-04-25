@@ -15,30 +15,27 @@ import dagger.Module;
 import dagger.Provides;
 
 @Module (
-        injects = {
-                WhoKnowsApp.class
-        },
-        library = true
+		injects = {
+				WhoKnowsApp.class
+		},
+		library = true
 )
 public class AppModule {
-    private final Application app;
+	private final Application app;
 
-    public AppModule(Application app) {
-        this.app = app;
-    }
+	public AppModule(Application app) {
+		this.app = app;
+	}
 
-    @Provides @Singleton @ForApplication
-    Context provideApplicationContext() {
-        return app;
-    }
+	@Provides @Singleton @ForApplication Context provideApplicationContext() {
+		return app;
+	}
 
-    @Provides @Singleton @ApiLevel
-    int provideApiLevel() {
-        return Build.VERSION.SDK_INT;
-    }
+	@Provides @Singleton @ApiLevel int provideApiLevel() {
+		return Build.VERSION.SDK_INT;
+	}
 
-    @Provides @Singleton
-    LocationManager providesLocationManager() {
-        return (LocationManager) app.getSystemService(Context.LOCATION_SERVICE);
-    }
+	@Provides @Singleton LocationManager providesLocationManager() {
+		return (LocationManager) app.getSystemService(Context.LOCATION_SERVICE);
+	}
 }

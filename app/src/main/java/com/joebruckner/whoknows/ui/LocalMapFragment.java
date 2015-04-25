@@ -18,45 +18,45 @@ import butterknife.ButterKnife;
 import butterknife.InjectView;
 
 public class LocalMapFragment extends BaseFragment {
-    public static LocalMapFragment newInstance() {
-        return new LocalMapFragment();
-    }
+	@InjectView ( R.id.map_view ) MapView mapView;
+	@Inject MapPresenter presenter;
 
-    @InjectView(R.id.map_view) MapView mapView;
-    @Inject MapPresenter presenter;
+	public LocalMapFragment() {
+	}
 
-    public LocalMapFragment() {
-    }
+	public static LocalMapFragment newInstance() {
+		return new LocalMapFragment();
+	}
 
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-    }
+	@Override
+	public void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+	}
 
-    @Override
-    public void onAttach(Activity activity) {
-        super.onAttach(activity);
-    }
+	@Override
+	public void onAttach(Activity activity) {
+		super.onAttach(activity);
+	}
 
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_local_map, container, false);
-        ButterKnife.inject(this, view);
-        mapView.onCreate(savedInstanceState);
-        presenter.setLocalMap(mapView);
-        return view;
-    }
+	@Override
+	public View onCreateView(LayoutInflater inflater, ViewGroup container,
+	                         Bundle savedInstanceState) {
+		View view = inflater.inflate(R.layout.fragment_local_map, container, false);
+		ButterKnife.inject(this, view);
+		mapView.onCreate(savedInstanceState);
+		presenter.setLocalMap(mapView);
+		return view;
+	}
 
-    @Override
-    public void onResume() {
-        super.onResume();
-        mapView.onResume();
-    }
+	@Override
+	public void onResume() {
+		super.onResume();
+		mapView.onResume();
+	}
 
-    @Override
-    public void onDetach() {
-        super.onDetach();
-        mapView.onDestroy();
-    }
+	@Override
+	public void onDetach() {
+		super.onDetach();
+		mapView.onDestroy();
+	}
 }
