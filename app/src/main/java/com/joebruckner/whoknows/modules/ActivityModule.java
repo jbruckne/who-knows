@@ -3,12 +3,15 @@ package com.joebruckner.whoknows.modules;
 import android.app.Activity;
 import android.content.Context;
 import android.location.LocationManager;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 
 import com.joebruckner.whoknows.modules.qualifiers.ForActivity;
-import com.joebruckner.whoknows.presenters.MapPresenter;
 import com.joebruckner.whoknows.presenters.LocalMapPresenter;
+import com.joebruckner.whoknows.presenters.MapPresenter;
 import com.joebruckner.whoknows.ui.LocalMapFragment;
 import com.joebruckner.whoknows.ui.MainActivity;
+import com.joebruckner.whoknows.ui.NearbyListFragment;
 
 import javax.inject.Singleton;
 
@@ -18,7 +21,8 @@ import dagger.Provides;
 @Module (
 		injects = {
 				MainActivity.class,
-				LocalMapFragment.class
+				LocalMapFragment.class,
+				NearbyListFragment.class
 		},
 		addsTo = AppModule.class,
 		complete = false,
@@ -37,5 +41,9 @@ public class ActivityModule {
 
 	@Provides @Singleton MapPresenter providesMapPresenter(LocationManager locationManager) {
 		return new LocalMapPresenter(locationManager, activity);
+	}
+
+	@Provides RecyclerView.LayoutManager provideslayoutManager() {
+		return new LinearLayoutManager(activity);
 	}
 }

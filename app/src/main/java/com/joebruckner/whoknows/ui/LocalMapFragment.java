@@ -44,7 +44,7 @@ public class LocalMapFragment extends BaseFragment {
 		View view = inflater.inflate(R.layout.fragment_local_map, container, false);
 		ButterKnife.inject(this, view);
 		mapView.onCreate(savedInstanceState);
-		presenter.setLocalMap(mapView);
+		presenter.setMap(mapView);
 		return view;
 	}
 
