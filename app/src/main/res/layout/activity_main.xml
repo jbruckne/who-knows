@@ -1,22 +1,33 @@
-<com.sothree.slidinguppanel.SlidingUpPanelLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:sothree="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/sliding_layout"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:gravity="bottom"
-    sothree:umanoPanelHeight="60dp"
-    sothree:umanoShadowHeight="4dp">
+    android:layout_height="match_parent">
 
-    <fragment
-        android:id="@+id/map_fragment"
-        class="com.joebruckner.whoknows.ui.LocalMapFragment"
+    <com.sothree.slidinguppanel.SlidingUpPanelLayout
+        xmlns:sothree="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/sliding_layout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        sothree:umanoPanelHeight="@dimen/minimized_panel_height"
+        sothree:umanoShadowHeight="4dp">
 
-    <fragment
-        android:id="@+id/list_fragment"
-        class="com.joebruckner.whoknows.ui.NearbyListFragment"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        <fragment
+            android:id="@+id/map_fragment"
+            class="com.joebruckner.whoknows.ui.LocalMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
 
-</com.sothree.slidinguppanel.SlidingUpPanelLayout>
+        <fragment
+            android:id="@+id/list_fragment"
+            class="com.joebruckner.whoknows.ui.BeaconListFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </com.sothree.slidinguppanel.SlidingUpPanelLayout>
+
+
+    <include
+        android:id="@+id/fab"
+        layout="@layout/floating_action_button"/>
+</RelativeLayout>

@@ -8,6 +8,10 @@ import android.os.Build;
 import com.joebruckner.whoknows.WhoKnowsApp;
 import com.joebruckner.whoknows.modules.qualifiers.ApiLevel;
 import com.joebruckner.whoknows.modules.qualifiers.ForApplication;
+import com.joebruckner.whoknows.utilities.TestApi;
+import com.joebruckner.whoknows.utilities.WhoknowsApi;
+import com.squareup.otto.Bus;
+import com.squareup.otto.ThreadEnforcer;
 
 import javax.inject.Singleton;
 
@@ -33,6 +37,14 @@ public class AppModule {
 
 	@Provides @Singleton @ApiLevel int provideApiLevel() {
 		return Build.VERSION.SDK_INT;
+	}
+
+	@Provides @Singleton Bus providesEventBus() {
+		return new Bus(ThreadEnforcer.MAIN);
+	}
+
+	@Provides @Singleton WhoknowsApi provideWhoKnowsApi() {
+		return new TestApi();
 	}
 
 	@Provides @Singleton LocationManager providesLocationManager() {

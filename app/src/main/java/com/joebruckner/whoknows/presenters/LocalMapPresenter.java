@@ -12,17 +12,22 @@ import com.google.android.gms.maps.MapView;
 import com.google.android.gms.maps.MapsInitializer;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.joebruckner.whoknows.models.logic.Beacon;
+import com.squareup.otto.Bus;
 
 public class LocalMapPresenter implements MapPresenter, OnMapReadyCallback, LocationListener {
 	private final LocationManager locationManager;
 	private final Activity activity;
 	public Location location;
 	public GoogleMap map;
+	public Bus bus;
 
-	public LocalMapPresenter(LocationManager locationManager, Activity activity) {
+	public LocalMapPresenter(LocationManager locationManager, Activity activity, Bus bus) {
 		this.locationManager = locationManager;
 		this.activity = activity;
+		this.bus = bus;
 	}
 
 	@Override
@@ -34,10 +39,10 @@ public class LocalMapPresenter implements MapPresenter, OnMapReadyCallback, Loca
 	public void onMapReady(GoogleMap map) {
 		this.map = map;
 		MapsInitializer.initialize(activity);
-		initlocation();
+		initLocation();
 	}
 
-	private void initlocation() {
+	private void initLocation() {
 		boolean networkEnabled = locationManager
 				.isProviderEnabled(LocationManager.NETWORK_PROVIDER);
 		if (networkEnabled) {
@@ -60,8 +65,19 @@ public class LocalMapPresenter implements MapPresenter, OnMapReadyCallback, Loca
 		LatLng local = new LatLng(location.getLatitude(), location.getLongitude());
 		map.moveCamera(CameraUpdateFactory.newLatLngZoom(local, 15));
 		map.addMarker(new MarkerOptions()
-				.title("Current Location")
+				.title("West Lafayette")
 				.position(local));
+		map.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
+			@Override public boolean onMarkerClick(Marker marker) {
+				bus.post(new Beacon(marker.getTitle()));
+				return true;
+			}
+		});
+		map.setOnMapClickListener(new GoogleMap.OnMapClickListener() {
+			@Override public void onMapClick(LatLng latLng) {
+				bus.post(new Beacon("Nearby Beacons"));
+			}
+		});
 	}
 
 	@Override

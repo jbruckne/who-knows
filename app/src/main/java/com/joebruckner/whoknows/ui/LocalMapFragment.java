@@ -22,10 +22,7 @@ public class LocalMapFragment extends BaseFragment {
 	@Inject MapPresenter presenter;
 
 	public LocalMapFragment() {
-	}
-
-	public static LocalMapFragment newInstance() {
-		return new LocalMapFragment();
+		// Required Empty Constructor
 	}
 
 	@Override

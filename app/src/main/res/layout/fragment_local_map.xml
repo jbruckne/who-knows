@@ -4,9 +4,13 @@
     android:layout_height="match_parent"
     tools:context="com.joebruckner.whoknows.ui.LocalMapFragment">
 
-    <com.google.android.gms.maps.MapView
-        android:id="@+id/map_view"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent">
 
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/map_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
 </FrameLayout>
