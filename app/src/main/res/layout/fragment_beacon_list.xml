@@ -9,13 +9,15 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/minimized_panel_height"
         android:gravity="center_vertical"
-        android:layout_marginLeft="@dimen/header_inset"
-        android:layout_marginStart="@dimen/header_inset"
         android:padding="16dp"
+        android:background="?attr/colorPrimary"
+        android:backgroundTint="?attr/colorPrimary"
         android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-        android:text="@string/list_header"/>
+        android:textColor="@color/white"
+        android:text="@string/header"
+        tools:ignore="UnusedAttribute"/>
 
-    <android.support.v7.widget.RecyclerView
+    <com.joebruckner.whoknows.ui.FixedRecyclerView
         android:id="@+id/list_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

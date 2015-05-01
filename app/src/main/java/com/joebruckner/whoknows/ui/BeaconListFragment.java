@@ -34,6 +34,7 @@ public class BeaconListFragment extends BaseFragment implements BeaconListView {
         ButterKnife.inject(this, view);
         listView.setLayoutManager(layoutManager);
         listView.setAdapter(adapter);
+        listView.setOverScrollMode(RecyclerView.OVER_SCROLL_NEVER);
         adapter.setView(this);
         return view;
     }
@@ -41,5 +42,15 @@ public class BeaconListFragment extends BaseFragment implements BeaconListView {
     @Override
     public void setHeader(String text) {
         header.setText(text);
+    }
+
+    @Override
+    public void hideHeader() {
+        header.animate().translationY(-R.dimen.toolbar_height).setDuration(500000).start();
+    }
+
+    @Override
+    public void showHeader() {
+        header.animate().translationY(0).setDuration(500000).start();
     }
 }

@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Who Knows</string>
 
@@ -7,5 +8,8 @@
 
 <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="list_header">Nearby Events</string>
+    <string name="header">Nearby Events</string>
+    <string name="action_filter">Filter</string>
+    <string name="drawer_open">Open Drawer</string>
+    <string name="drawer_close">Drawer Close</string>
 </resources>

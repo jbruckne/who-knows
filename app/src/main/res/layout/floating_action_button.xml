@@ -10,4 +10,4 @@
     android:layout_alignParentBottom="true"
     android:layout_alignParentRight="true"
     android:layout_alignParentEnd="true"
-    fab:fab_colorNormal="#1343FF"/>
+    fab:fab_colorNormal="?attr/colorAccent"/>

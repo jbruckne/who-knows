@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
 
     <dimen name="activity_horizontal_margin">16dp</dimen>
@@ -15,4 +16,7 @@
     <dimen name="list_item">96dp</dimen>
     <dimen name="list_item_inset">22dp</dimen>
     <dimen name="header_inset">16dp</dimen>
+    <dimen name="toolbar_elevation">5dp</dimen>
+    <dimen name="toolbar_height">56dp</dimen>
+    <dimen name="drawer_width">275dp</dimen>
 </resources>
