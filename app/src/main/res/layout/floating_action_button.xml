@@ -10,4 +10,8 @@
     android:layout_alignParentBottom="true"
     android:layout_alignParentRight="true"
     android:layout_alignParentEnd="true"
-    fab:fab_colorNormal="?attr/colorAccent"/>
+    android:src="@drawable/ic_action_add"
+    fab:fab_colorNormal="?attr/colorAccent"
+    fab:fab_colorPressed="@color/orange_a700"
+    fab:fab_colorRipple="@color/orange_a200"
+    />

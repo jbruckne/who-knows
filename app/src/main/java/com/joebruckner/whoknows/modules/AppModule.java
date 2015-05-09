@@ -39,7 +39,7 @@ public class AppModule {
 		return Build.VERSION.SDK_INT;
 	}
 
-	@Provides @Singleton Bus providesEventBus() {
+	@Provides @Singleton Bus provideEventBus() {
 		return new Bus(ThreadEnforcer.MAIN);
 	}
 
@@ -47,7 +47,7 @@ public class AppModule {
 		return new TestApi();
 	}
 
-	@Provides @Singleton LocationManager providesLocationManager() {
+	@Provides @Singleton LocationManager provideLocationManager() {
 		return (LocationManager) app.getSystemService(Context.LOCATION_SERVICE);
 	}
 }

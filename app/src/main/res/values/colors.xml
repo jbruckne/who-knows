@@ -27,7 +27,9 @@
 
     <color name="red_a400">#FF5252</color>
 
+    <color name="orange_a200">#FF6E40</color>
     <color name="orange_a400">#FF5722</color>
+    <color name="orange_a700">#DD2C00</color>
 
     <color name="black">#000000</color>
     <color name="grey_900">#212121</color>
@@ -38,4 +40,5 @@
     <color name="grey_200">#EEEEEE</color>
     <color name="grey_50">#FAFAFA</color>
     <color name="white">#FFFFFF</color>
+    <color name="green_300">#81C784</color>
 </resources>

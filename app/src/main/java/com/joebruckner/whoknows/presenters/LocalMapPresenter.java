@@ -38,6 +38,7 @@ public class LocalMapPresenter implements MapPresenter, OnMapReadyCallback, Loca
 	@Override
 	public void onMapReady(GoogleMap map) {
 		this.map = map;
+		this.map.setMyLocationEnabled(true);
 		MapsInitializer.initialize(activity);
 		initLocation();
 	}
@@ -69,6 +70,8 @@ public class LocalMapPresenter implements MapPresenter, OnMapReadyCallback, Loca
 				.position(local));
 		map.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
 			@Override public boolean onMarkerClick(Marker marker) {
+				LatLng position = marker.getPosition();
+				map.animateCamera(CameraUpdateFactory.newLatLngZoom(position, 15), 500, null);
 				bus.post(new Beacon(marker.getTitle()));
 				return true;
 			}

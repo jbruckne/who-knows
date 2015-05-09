@@ -1,7 +1,7 @@
 package com.joebruckner.whoknows.common;
 
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 
 import com.joebruckner.whoknows.WhoKnowsApp;
 import com.joebruckner.whoknows.modules.ActivityModule;
@@ -11,7 +11,7 @@ import java.util.List;
 
 import dagger.ObjectGraph;
 
-public abstract class BaseActivity extends ActionBarActivity {
+public abstract class BaseActivity extends AppCompatActivity {
 	private ObjectGraph activityGraph;
 
 	@Override
