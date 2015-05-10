@@ -4,7 +4,9 @@ import com.joebruckner.whoknows.models.logic.Beacon;
 
 import java.util.List;
 
-public interface WhoknowsApi {
-	List<Beacon> getBeacons();
+public interface WhoKnowsApi {
+	List<Beacon> getAllBeacons();
+	List<Beacon> getActiveBeacons();
+	List<Beacon> getPostedBeacons();
 	void put(Beacon beacon);
 }

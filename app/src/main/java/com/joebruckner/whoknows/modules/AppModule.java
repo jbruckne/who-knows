@@ -9,7 +9,7 @@ import com.joebruckner.whoknows.WhoKnowsApp;
 import com.joebruckner.whoknows.modules.qualifiers.ApiLevel;
 import com.joebruckner.whoknows.modules.qualifiers.ForApplication;
 import com.joebruckner.whoknows.utilities.TestApi;
-import com.joebruckner.whoknows.utilities.WhoknowsApi;
+import com.joebruckner.whoknows.utilities.WhoKnowsApi;
 import com.squareup.otto.Bus;
 import com.squareup.otto.ThreadEnforcer;
 
@@ -43,7 +43,7 @@ public class AppModule {
 		return new Bus(ThreadEnforcer.MAIN);
 	}
 
-	@Provides @Singleton WhoknowsApi provideWhoKnowsApi() {
+	@Provides @Singleton WhoKnowsApi provideWhoKnowsApi() {
 		return new TestApi();
 	}
 

@@ -1,39 +1,63 @@
 package com.joebruckner.whoknows.ui;
 
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
+import android.support.v7.widget.Toolbar;
+import android.view.View;
+import android.widget.EditText;
 
 import com.joebruckner.whoknows.R;
+import com.joebruckner.whoknows.common.BaseActivity;
+import com.joebruckner.whoknows.models.logic.Beacon;
+import com.joebruckner.whoknows.utilities.WhoKnowsApi;
+import com.melnykov.fab.FloatingActionButton;
+import com.squareup.otto.Bus;
 
-public class NewBeaconActivity extends ActionBarActivity {
+import java.util.Date;
+
+import javax.inject.Inject;
+
+import butterknife.ButterKnife;
+import butterknife.InjectView;
+
+public class NewBeaconActivity extends BaseActivity {
+	@InjectView(R.id.toolbar) Toolbar toolbar;
+	@InjectView(R.id.fab) FloatingActionButton fab;
+	@InjectView(R.id.title) EditText title;
+	@InjectView(R.id.description) EditText description;
+	@Inject WhoKnowsApi api;
+	@Inject Bus bus;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_new_beacon);
+		ButterKnife.inject(this);
+		initToolbar();
+		initFab();
 	}
 
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.menu_new_beacon, menu);
-		return true;
-	}
-
-	@Override
-	public boolean onOptionsItemSelected(MenuItem item) {
-		// Handle action bar item clicks here. The action bar will
-		// automatically handle clicks on the Home/Up button, so long
-		// as you specify a parent activity in AndroidManifest.xml.
-		int id = item.getItemId();
-
-		//noinspection SimplifiableIfStatement
-		if (id == R.id.action_settings) {
-			return true;
+	protected void initToolbar() {
+		setSupportActionBar(toolbar);
+		if (getSupportActionBar() != null) {
+			getSupportActionBar().setTitle("");
+			getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 		}
+	}
 
-		return super.onOptionsItemSelected(item);
+	protected void initFab() {
+		fab.setImageResource(R.drawable.ic_action_done);
+		fab.setOnClickListener(new View.OnClickListener() {
+			@Override public void onClick(View v) {
+				newBeacon();
+			}
+		});
+	}
+
+	private void newBeacon() {
+		Beacon beacon = new Beacon(
+				title.getText().toString(), "Joe", new Date().toString(),
+				"(555) 123-4567", description.toString());
+		api.put(beacon);
+		finish();
 	}
 }
