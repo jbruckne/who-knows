@@ -1,7 +1,9 @@
 package com.joebruckner.whoknows.modules;
 
 import android.app.Activity;
+import android.app.Application;
 import android.content.Context;
+import android.location.LocationManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
@@ -13,6 +15,7 @@ import com.joebruckner.whoknows.ui.JoinedFragment;
 import com.joebruckner.whoknows.ui.NearbyFragment;
 import com.joebruckner.whoknows.ui.NewBeaconActivity;
 import com.joebruckner.whoknows.ui.PostedFragment;
+import com.joebruckner.whoknows.utilities.LocationApi;
 import com.joebruckner.whoknows.utilities.WhoKnowsApi;
 import com.squareup.otto.Bus;
 
@@ -50,6 +53,11 @@ public class ActivityModule {
 
 	@Provides JoinedAdapter providesJoinedAdapter(WhoKnowsApi api, Bus bus) {
 		return new JoinedAdapter(api.getActiveBeacons(), bus);
+	}
+
+	@Provides @Singleton LocationApi providesLocationApi(LocationManager manager, Bus bus,
+	Application app) {
+		return new LocationApi(manager, bus, app);
 	}
 
 	@Provides RecyclerView.LayoutManager providesLayoutManager() {

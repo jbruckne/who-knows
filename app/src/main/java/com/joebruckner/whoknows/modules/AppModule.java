@@ -7,7 +7,6 @@ import android.os.Build;
 
 import com.joebruckner.whoknows.WhoKnowsApp;
 import com.joebruckner.whoknows.modules.qualifiers.ApiLevel;
-import com.joebruckner.whoknows.modules.qualifiers.ForApplication;
 import com.joebruckner.whoknows.utilities.TestApi;
 import com.joebruckner.whoknows.utilities.WhoKnowsApi;
 import com.squareup.otto.Bus;
@@ -31,7 +30,7 @@ public class AppModule {
 		this.app = app;
 	}
 
-	@Provides @Singleton @ForApplication Context provideApplicationContext() {
+	@Provides @Singleton Application provideApplication() {
 		return app;
 	}
 

@@ -1,59 +1,119 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:tools="http://schemas.android.com/tools"
-                xmlns:app="http://schemas.android.com/apk/res-auto"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:gravity="center"
+                android:background="?attr/colorPrimary"
+                android:elevation="5dp"
                 tools:context="com.joebruckner.whoknows.ui.NewBeaconActivity">
 
-    <include
-        android:id="@+id/toolbar"
-        layout="@layout/toolbar" />
-
-    <RelativeLayout
+    <EditText
+        android:id="@+id/title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="end"
-        android:elevation="5dp"
         android:layout_below="@id/toolbar"
-        android:background="?attr/colorPrimary"
-        tools:ignore="UnusedAttribute">
+        android:layout_margin="16dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:backgroundTint="@color/white"
+        android:inputType="textCapSentences"
+        android:minWidth="250dp"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="28sp"
+        android:hint="@string/title"/>
 
-        <com.rengwuxian.materialedittext.MaterialEditText
-            android:id="@+id/title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="16dp"
-            android:focusable="true"
-            android:focusableInTouchMode="true"
-            android:inputType="textCapSentences"
-            android:minWidth="250dp"
-            android:singleLine="true"
-            android:textSize="30sp"
-            android:hint="@string/title"
-            app:met_floatingLabel="highlight"
-            app:met_hideUnderline="false"
-            app:met_primaryColor="@color/white"
-            app:met_textColor="@color/white"/>
+    <EditText
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_margin="16dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:backgroundTint="@color/white"
+        android:inputType="textCapSentences"
+        android:minWidth="250dp"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="28sp"
+        android:hint="@string/description"
+        tools:ignore="UnusedAttribute"/>
 
-        <com.rengwuxian.materialedittext.MaterialEditText
-            android:id="@+id/description"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/title"
-            android:layout_margin="16dp"
-            android:inputType="textCapSentences"
-            android:minWidth="250dp"
-            android:textSize="20sp"
-            android:hint="@string/description"
-            app:met_floatingLabel="highlight"
-            app:met_hideUnderline="false"
-            app:met_primaryColor="@color/white"
-            app:met_textColor="@color/white"/>
+    <EditText
+        android:id="@+id/contact_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/description"
+        android:layout_margin="16dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:backgroundTint="@color/white"
+        android:minWidth="250dp"
+        android:inputType="phone|textEmailAddress"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="28sp"
+        android:hint="@string/contact_info"
+        tools:ignore="UnusedAttribute"/>
 
-    </RelativeLayout>
+    <TextView
+        android:id="@+id/show_location"
+        android:layout_below="@id/contact_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        android:text="@string/show_location"/>
 
-    <include
-        android:id="@+id/fab"
-        layout="@layout/floating_action_button" />
+    <RadioButton
+        android:id="@+id/show_location_radio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/contact_info"
+        android:layout_margin="16dp"
+        android:layout_toRightOf="@id/show_location"
+        android:layout_toEndOf="@id/show_location" />
+
+    <TextView
+        android:id="@+id/post_as_anonymous"
+        android:layout_below="@id/show_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        android:text="@string/post_as_anonymous"/>
+
+    <RadioButton
+        android:id="@+id/post_as_anonymous_radio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/show_location"
+        android:layout_margin="16dp"
+        android:layout_toRightOf="@id/post_as_anonymous"
+        android:layout_toEndOf="@id/post_as_anonymous" />
+
+    <Button
+        android:id="@+id/post"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/post_as_anonymous"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp"
+        android:text="@string/post"/>
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/post"
+        android:layout_toLeftOf="@id/post"
+        android:layout_toStartOf="@id/post"
+        android:text="@string/cancel"/>
 
 </RelativeLayout>
