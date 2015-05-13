@@ -5,9 +5,9 @@
 
     <style name="AppTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Theme Color Palette -->
-        <item name="colorPrimary">@color/green_500</item>
-        <item name="colorPrimaryDark">@color/green_700</item>
-        <item name="colorAccent">@color/orange_a400</item>
+        <item name="colorPrimary">@color/indigo_500</item>
+        <item name="colorPrimaryDark">@color/indigo_700</item>
+        <item name="colorAccent">@color/deep_orange_a400</item>
 
         <!-- Theme Attributes -->
         <item name="android:windowActionBarOverlay">true</item>
@@ -15,7 +15,7 @@
     </style>
 
     <style name="ToolbarTheme" parent="AppTheme">
-        <!-- Theme Color Palette -->
+        <!-- Theme Item Color Palette -->
         <item name="android:textColorPrimary">@color/white</item>
         <item name="android:actionMenuTextColor">@color/white</item>
         <item name="android:textColorSecondary">@color/white</item>
