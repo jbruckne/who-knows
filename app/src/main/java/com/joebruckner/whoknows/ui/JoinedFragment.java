@@ -37,11 +37,15 @@ public class JoinedFragment extends BaseFragment {
 	                         Bundle savedInstanceState) {
 		View view = inflater.inflate(R.layout.fragment_joined, container, false);
 		ButterKnife.inject(this, view);
+		listView.addItemDecoration(new DividerItemDecoration(context, DividerItemDecoration.VERTICAL_LIST));
 		listView.setLayoutManager(new LinearLayoutManager(context));
 		listView.setAdapter(adapter);
 		listView.setOverScrollMode(RecyclerView.OVER_SCROLL_NEVER);
 		return view;
 	}
 
-
+	@Override public void onResume() {
+		super.onResume();
+		adapter.updateItems();
+	}
 }

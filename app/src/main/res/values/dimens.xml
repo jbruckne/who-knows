@@ -14,7 +14,7 @@
     <dimen name="text_body_1">16sp</dimen>
     <dimen name="text_body_2">14sp</dimen>
     <dimen name="list_item">96dp</dimen>
-    <dimen name="list_item_inset">22dp</dimen>
+    <dimen name="list_item_inset">16dp</dimen>
     <dimen name="header_inset">16dp</dimen>
     <dimen name="toolbar_elevation">5dp</dimen>
     <dimen name="toolbar_height">56dp</dimen>

@@ -7,10 +7,12 @@ import com.joebruckner.whoknows.models.logic.Beacon;
 import java.util.ArrayList;
 import java.util.List;
 
-public class TestApi implements WhoKnowsApi {
+public class TestAppApi implements AppApi {
 	List<Beacon> beacons;
+	AccountApi api;
 
-	public TestApi() {
+	public TestAppApi(AccountApi api) {
+		this.api = api;
 		this.beacons = new ArrayList<>();
 	}
 
@@ -27,11 +29,20 @@ public class TestApi implements WhoKnowsApi {
 	}
 
 	@Override public List<Beacon> getPostedBeacons() {
-		return new ArrayList<>();
+		List<Beacon> matched = new ArrayList<>();
+		for (Beacon beacon : beacons) {
+			if (beacon.getName().equals(api.getName()))
+				matched.add(beacon);
+		}
+		return matched;
 	}
 
 	@Override public void put(Beacon beacon) {
 		Log.d("TestApi", "Adding " + beacon.toString());
 		beacons.add(beacon);
+	}
+
+	@Override public Beacon get(long id) {
+		return beacons.isEmpty() ? beacons.get(0) : null;
 	}
 }

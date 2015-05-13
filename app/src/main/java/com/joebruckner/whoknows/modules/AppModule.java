@@ -7,8 +7,12 @@ import android.os.Build;
 
 import com.joebruckner.whoknows.WhoKnowsApp;
 import com.joebruckner.whoknows.modules.qualifiers.ApiLevel;
-import com.joebruckner.whoknows.utilities.TestApi;
-import com.joebruckner.whoknows.utilities.WhoKnowsApi;
+import com.joebruckner.whoknows.utilities.AccountApi;
+import com.joebruckner.whoknows.utilities.AppApi;
+import com.joebruckner.whoknows.utilities.LocationApi;
+import com.joebruckner.whoknows.utilities.TestAccountApi;
+import com.joebruckner.whoknows.utilities.TestAppApi;
+import com.joebruckner.whoknows.utilities.TestLocationApi;
 import com.squareup.otto.Bus;
 import com.squareup.otto.ThreadEnforcer;
 
@@ -42,8 +46,16 @@ public class AppModule {
 		return new Bus(ThreadEnforcer.MAIN);
 	}
 
-	@Provides @Singleton WhoKnowsApi provideWhoKnowsApi() {
-		return new TestApi();
+	@Provides @Singleton AccountApi provideAccountApi() {
+		return new TestAccountApi();
+	}
+
+	@Provides @Singleton AppApi provideWhoKnowsApi(AccountApi api) {
+		return new TestAppApi(api);
+	}
+
+	@Provides @Singleton LocationApi provideLocationApi(LocationManager manager, Bus bus) {
+		return new TestLocationApi(manager, bus, app);
 	}
 
 	@Provides @Singleton LocationManager provideLocationManager() {

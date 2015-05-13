@@ -13,24 +13,24 @@ import com.squareup.otto.Bus;
 
 import java.util.List;
 
-public class JoinedAdapter extends RecyclerView.Adapter<BeaconViewHolder> {
+public class PostedAdapter extends RecyclerView.Adapter<BeaconViewHolder> {
 	List<Beacon> beacons;
 	AppApi api;
 	Bus bus;
 
-	public JoinedAdapter(AppApi api, Bus bus) {
-		this.beacons = api.getActiveBeacons();
+	public PostedAdapter(AppApi api, Bus bus) {
+		this.beacons = api.getPostedBeacons();
 		this.api = api;
 		this.bus = bus;
 		bus.register(this);
 	}
 
 	public void updateItems() {
-		beacons = api.getActiveBeacons();
+		beacons = api.getPostedBeacons();
 		notifyDataSetChanged();
 	}
 
-	@Override public BeaconViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+	@Override public BeaconViewHolder onCreateViewHolder(ViewGroup parent, int type) {
 		View view = LayoutInflater
 				.from(parent.getContext()).inflate(R.layout.item_beacon, parent, false);
 		return new BeaconViewHolder(view);

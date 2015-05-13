@@ -2,6 +2,7 @@ package com.joebruckner.whoknows.ui;
 
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -24,6 +25,8 @@ public class NearbyFragment extends BaseFragment {
 	@Inject @ForActivity Context context;
     @Inject NearbyAdapter adapter;
 
+	final String ID = "ID";
+
 	public static NearbyFragment newInstance() {
 		return new NearbyFragment();
 	}
@@ -37,8 +40,16 @@ public class NearbyFragment extends BaseFragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_nearby, container, false);
         ButterKnife.inject(this, view);
+        listView.addItemDecoration(new DividerItemDecoration(context, DividerItemDecoration.VERTICAL_LIST));
         listView.setLayoutManager(new LinearLayoutManager(context));
         listView.setAdapter(adapter);
+		listView.addOnItemTouchListener(new OnItemClickListener(context) {
+			@Override public void onItemClick(View view, int position) {
+				Intent intent = new Intent(context, BeaconDetailActivity.class);
+				intent.putExtra(ID, adapter.getItem(position).getId());
+				//startActivity(intent);
+			}
+		});
         listView.setOverScrollMode(RecyclerView.OVER_SCROLL_NEVER);
         return view;
     }

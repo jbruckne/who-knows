@@ -12,6 +12,7 @@ import butterknife.InjectView;
 public class BeaconViewHolder extends RecyclerView.ViewHolder {
 	@InjectView (R.id.title) TextView titleView;
 	@InjectView (R.id.name) TextView nameView;
+	@InjectView (R.id.description) TextView descriptionView;
 	@InjectView (R.id.date) TextView dateView;
 
 	public BeaconViewHolder(View itemView) {
@@ -25,6 +26,10 @@ public class BeaconViewHolder extends RecyclerView.ViewHolder {
 
 	public TextView getNameView() {
 		return nameView;
+	}
+
+	public TextView getDescriptionView() {
+		return descriptionView;
 	}
 
 	public TextView getDateView() {

@@ -5,6 +5,7 @@
                 android:gravity="center"
                 android:background="?attr/colorPrimary"
                 android:elevation="5dp"
+                android:padding="16dp"
                 tools:context="com.joebruckner.whoknows.ui.NewBeaconActivity">
 
     <EditText
@@ -12,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/toolbar"
-        android:layout_margin="16dp"
+        android:layout_margin="6dp"
         android:focusable="true"
         android:focusableInTouchMode="true"
         android:backgroundTint="@color/white"
@@ -21,7 +22,7 @@
         android:singleLine="true"
         android:textColor="@color/white"
         android:textColorHint="@color/white"
-        android:textSize="28sp"
+        android:textSize="22sp"
         android:hint="@string/title"/>
 
     <EditText
@@ -29,7 +30,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/title"
-        android:layout_margin="16dp"
+        android:layout_margin="6dp"
         android:focusable="true"
         android:focusableInTouchMode="true"
         android:backgroundTint="@color/white"
@@ -38,7 +39,7 @@
         android:singleLine="true"
         android:textColor="@color/white"
         android:textColorHint="@color/white"
-        android:textSize="28sp"
+        android:textSize="20sp"
         android:hint="@string/description"
         tools:ignore="UnusedAttribute"/>
 
@@ -47,15 +48,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/description"
-        android:layout_margin="16dp"
+        android:layout_margin="6dp"
         android:focusable="true"
         android:focusableInTouchMode="true"
         android:backgroundTint="@color/white"
+        android:singleLine="true"
         android:minWidth="250dp"
-        android:inputType="phone|textEmailAddress"
         android:textColor="@color/white"
         android:textColorHint="@color/white"
-        android:textSize="28sp"
+        android:textSize="20sp"
         android:hint="@string/contact_info"
         tools:ignore="UnusedAttribute"/>
 
@@ -66,17 +67,17 @@
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         android:textColor="@color/white"
-        android:textSize="28sp"
+        android:textSize="20sp"
         android:text="@string/show_location"/>
 
-    <RadioButton
+    <CheckBox
         android:id="@+id/show_location_radio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/contact_info"
         android:layout_margin="16dp"
-        android:layout_toRightOf="@id/show_location"
-        android:layout_toEndOf="@id/show_location" />
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"/>
 
     <TextView
         android:id="@+id/post_as_anonymous"
@@ -85,17 +86,17 @@
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         android:textColor="@color/white"
-        android:textSize="28sp"
+        android:textSize="20sp"
         android:text="@string/post_as_anonymous"/>
 
-    <RadioButton
+    <CheckBox
         android:id="@+id/post_as_anonymous_radio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/show_location"
         android:layout_margin="16dp"
-        android:layout_toRightOf="@id/post_as_anonymous"
-        android:layout_toEndOf="@id/post_as_anonymous" />
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
     <Button
         android:id="@+id/post"
@@ -104,7 +105,6 @@
         android:layout_below="@id/post_as_anonymous"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:layout_margin="16dp"
         android:text="@string/post"/>
 
     <Button

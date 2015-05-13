@@ -1,27 +1,35 @@
 package com.joebruckner.whoknows.models.logic;
 
-import android.location.Location;
+import com.google.android.gms.maps.model.LatLng;
+
+import java.util.UUID;
 
 public class Beacon {
+	long id;
 	String title;
 	String name;
 	String date;
 	String contactInfo;
 	String description;
-	Location location;
+	LatLng location;
 
 	public Beacon(String title) {
 		this(title, "Anonymous", "10/11/12", "(123) 456-7890", "None", null);
 	}
 
 	public Beacon(String title, String name, String date, String contactInfo, String description,
-	 Location location) {
+	 LatLng location) {
+		this.id = Math.abs(UUID.randomUUID().getLeastSignificantBits());
 		this.title = title;
 		this.name = name;
 		this.date = date;
 		this.contactInfo = contactInfo;
 		this.description = description;
 		this.location = location;
+	}
+
+	public long getId() {
+		return id;
 	}
 
 	public String getTitle() {
@@ -44,7 +52,7 @@ public class Beacon {
 		return description;
 	}
 
-	public Location getLocation() {
+	public LatLng getLocation() {
 		return location;
 	}
 }
