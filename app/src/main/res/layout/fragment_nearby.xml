@@ -4,7 +4,7 @@
              android:layout_height="match_parent"
              tools:context="com.joebruckner.whoknows.ui.NearbyFragment">
 
-    <com.joebruckner.whoknows.ui.FixedRecyclerView
+    <com.joebruckner.whoknows.ui.Widgets.FixedRecyclerView
         android:id="@+id/list_view"
         android:clickable="false"
         android:layout_width="match_parent"

@@ -26,7 +26,7 @@
             android:name=".ui.NewBeaconActivity"
             android:label="@string/title_activity_new_beacon"
             android:parentActivityName=".ui.HomeActivity"
-            android:windowSoftInputMode="stateVisible|adjustPan" >
+            android:windowSoftInputMode="stateVisible|adjustResize" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.joebruckner.whoknows.ui.HomeActivity" />

@@ -2,6 +2,7 @@ package com.joebruckner.whoknows.ui;
 
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -13,6 +14,8 @@ import com.joebruckner.whoknows.R;
 import com.joebruckner.whoknows.common.BaseFragment;
 import com.joebruckner.whoknows.modules.qualifiers.ForActivity;
 import com.joebruckner.whoknows.presenters.JoinedAdapter;
+import com.joebruckner.whoknows.ui.Widgets.DividerItemDecoration;
+import com.joebruckner.whoknows.ui.Widgets.OnItemClickListener;
 
 import javax.inject.Inject;
 
@@ -40,6 +43,13 @@ public class JoinedFragment extends BaseFragment {
 		listView.addItemDecoration(new DividerItemDecoration(context, DividerItemDecoration.VERTICAL_LIST));
 		listView.setLayoutManager(new LinearLayoutManager(context));
 		listView.setAdapter(adapter);
+		listView.addOnItemTouchListener(new OnItemClickListener(context) {
+			@Override public void onItemClick(View view, int position) {
+				Intent intent = new Intent(context, BeaconDetailActivity.class);
+				intent.putExtra("Beacon", adapter.getItem(position));
+				startActivity(intent);
+			}
+		});
 		listView.setOverScrollMode(RecyclerView.OVER_SCROLL_NEVER);
 		return view;
 	}

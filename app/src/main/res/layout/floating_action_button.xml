@@ -1,15 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.melnykov.fab.FloatingActionButton
+<android.support.design.widget.FloatingActionButton
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:fab="http://schemas.android.com/apk/res-auto"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_margin="16dp"
-    android:layout_alignParentBottom="true"
-    android:layout_alignParentRight="true"
-    android:layout_alignParentEnd="true"
-    android:src="@drawable/ic_action_add"
-    fab:fab_colorNormal="?attr/colorAccent"
-    fab:fab_colorPressed="?attr/colorControlActivated"
-    fab:fab_colorRipple="?attr/colorControlHighlight"
-    />
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="16dp"
+    android:layout_height="16dp"
+    android:layout_gravity="bottom|end"
+    app:fabSize="normal"
+    app:borderWidth="0dp"/>

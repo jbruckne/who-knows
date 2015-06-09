@@ -8,12 +8,14 @@ import com.joebruckner.whoknows.R;
 
 import butterknife.ButterKnife;
 import butterknife.InjectView;
+import butterknife.Optional;
 
 public class BeaconViewHolder extends RecyclerView.ViewHolder {
-	@InjectView (R.id.title) TextView titleView;
-	@InjectView (R.id.name) TextView nameView;
-	@InjectView (R.id.description) TextView descriptionView;
-	@InjectView (R.id.date) TextView dateView;
+	@Optional @InjectView (R.id.title) TextView titleView;
+	@Optional @InjectView (R.id.name) TextView nameView;
+	@Optional @InjectView (R.id.description) TextView descriptionView;
+	@Optional @InjectView (R.id.date) TextView dateView;
+	@Optional @InjectView (R.id.contact_info) TextView contactInfoView;
 
 	public BeaconViewHolder(View itemView) {
 		super(itemView);
@@ -34,5 +36,9 @@ public class BeaconViewHolder extends RecyclerView.ViewHolder {
 
 	public TextView getDateView() {
 		return dateView;
+	}
+
+	public TextView getContactInfo() {
+		return contactInfoView;
 	}
 }

@@ -19,9 +19,11 @@
     <string name="title">Title</string>
     <string name="description">Description</string>
     <string name="show_location">Show Location</string>
-    <string name="post_as_anonymous">Post Anonymously</string>
+    <string name="hide_name">Hide Name</string>
     <string name="post">Post</string>
     <string name="cancel">Cancel</string>
     <string name="contact_info">Contact Info</string>
     <string name="title_activity_beacon_detail">BeaconDetailActivity</string>
+    <string name="action_post">Post</string>
+    <string name="join">Join</string>
 </resources>

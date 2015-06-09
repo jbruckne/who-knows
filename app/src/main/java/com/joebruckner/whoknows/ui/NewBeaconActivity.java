@@ -2,8 +2,10 @@ package com.joebruckner.whoknows.ui;
 
 import android.location.Location;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
+import android.support.v7.app.ActionBar;
+import android.support.v7.widget.Toolbar;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.widget.CheckBox;
 import android.widget.EditText;
 
@@ -17,9 +19,7 @@ import com.joebruckner.whoknows.utilities.LocationApi;
 import com.squareup.otto.Bus;
 import com.squareup.otto.Subscribe;
 
-import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.Locale;
 
 import javax.inject.Inject;
 
@@ -27,13 +27,12 @@ import butterknife.ButterKnife;
 import butterknife.InjectView;
 
 public class NewBeaconActivity extends BaseActivity {
+	@InjectView(R.id.toolbar) Toolbar toolbar;
 	@InjectView(R.id.title) EditText editTitle;
 	@InjectView(R.id.description) EditText editDescription;
 	@InjectView(R.id.contact_info) EditText editContactInfo;
-	@InjectView(R.id.show_location_radio) CheckBox showLocation;
-	@InjectView(R.id.post_as_anonymous_radio) CheckBox postAnonymous;
-	@InjectView(R.id.post) Button post;
-	@InjectView(R.id.cancel) Button cancel;
+	@InjectView(R.id.location) CheckBox showLocation;
+	@InjectView(R.id.name) CheckBox postAnonymous;
 	@Inject LocationApi locationApi;
 	@Inject AccountApi accountApi;
 	@Inject AppApi appApi;
@@ -42,7 +41,7 @@ public class NewBeaconActivity extends BaseActivity {
 	String title;
 	String description;
 	String contactInfo;
-	String date;
+	Date date;
 	String name;
 	LatLng location = null;
 
@@ -52,17 +51,32 @@ public class NewBeaconActivity extends BaseActivity {
 		setContentView(R.layout.activity_new_beacon);
 		ButterKnife.inject(this);
 		bus.register(this);
-		post.setOnClickListener(new View.OnClickListener() {
-			@Override public void onClick(View v) {
+		toolbar.setTitle("New Beacon");
+		setSupportActionBar(toolbar);
+		ActionBar actionBar = getSupportActionBar();
+		if (actionBar != null) {
+			actionBar.setHomeButtonEnabled(true);
+			actionBar.setDisplayHomeAsUpEnabled(true);
+			actionBar.setDefaultDisplayHomeAsUpEnabled(true);
+		}
+	}
+
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		getMenuInflater().inflate(R.menu.menu_new_beacon, menu);
+		return true;
+	}
+
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		switch(item.getItemId()) {
+			case R.id.action_post:
 				if (showLocation.isChecked()) locationApi.getLocation();
 				else newBeacon();
-			}
-		});
-		cancel.setOnClickListener(new View.OnClickListener() {
-			@Override public void onClick(View v) {
-				finish();
-			}
-		});
+				return true;
+			default:
+				return super.onOptionsItemSelected(item);
+		}
 	}
 
 	@Subscribe public void getLocation(Location location) {
@@ -74,8 +88,7 @@ public class NewBeaconActivity extends BaseActivity {
 		title = editTitle.getText().toString();
 		description = editDescription.getText().toString();
 		contactInfo = editContactInfo.getText().toString();
-		SimpleDateFormat format = new SimpleDateFormat("MMM dd, yyyy", Locale.US);
-		date = format.format(new Date());
+		date = new Date();
 		name = postAnonymous.isChecked() ? "Anon" : accountApi.getName();
 		appApi.put(new Beacon(title, name, date, contactInfo, description, location));
 		finish();

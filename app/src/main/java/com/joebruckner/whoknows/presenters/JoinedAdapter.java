@@ -11,7 +11,9 @@ import com.joebruckner.whoknows.models.view.BeaconViewHolder;
 import com.joebruckner.whoknows.utilities.AppApi;
 import com.squareup.otto.Bus;
 
+import java.text.SimpleDateFormat;
 import java.util.List;
+import java.util.Locale;
 
 public class JoinedAdapter extends RecyclerView.Adapter<BeaconViewHolder> {
 	List<Beacon> beacons;
@@ -30,6 +32,10 @@ public class JoinedAdapter extends RecyclerView.Adapter<BeaconViewHolder> {
 		notifyDataSetChanged();
 	}
 
+	public Beacon getItem(int position) {
+		return beacons.get(position);
+	}
+
 	@Override public BeaconViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
 		View view = LayoutInflater
 				.from(parent.getContext()).inflate(R.layout.item_beacon, parent, false);
@@ -41,7 +47,8 @@ public class JoinedAdapter extends RecyclerView.Adapter<BeaconViewHolder> {
 		holder.getTitleView().setText(beacon.getTitle());
 		holder.getNameView().setText(beacon.getName());
 		holder.getDescriptionView().setText(beacon.getDescription());
-		holder.getDateView().setText(beacon.getDate());
+		SimpleDateFormat format = new SimpleDateFormat("MMM dd, yyyy", Locale.US);
+		holder.getDateView().setText(format.format(beacon.getDate()));
 	}
 
 	@Override public int getItemCount() {
