@@ -23,16 +23,16 @@
             android:value="@string/MAP_KEY" />
 
         <activity
-            android:name=".ui.NewBeaconActivity"
+            android:name=".ui.Beacon.NewBeaconActivity"
             android:label="@string/title_activity_new_beacon"
-            android:parentActivityName=".ui.HomeActivity"
+            android:parentActivityName=".ui.Home.HomeActivity"
             android:windowSoftInputMode="stateVisible|adjustResize" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.joebruckner.whoknows.ui.HomeActivity" />
+                android:value=".ui.Home.HomeActivity" />
         </activity>
         <activity
-            android:name=".ui.HomeActivity"
+            android:name=".ui.Home.HomeActivity"
             android:label="@string/title_activity_home" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -41,12 +41,12 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ui.BeaconDetailActivity"
+            android:name=".ui.Beacon.BeaconDetailActivity"
             android:label="@string/title_activity_beacon_detail"
-            android:parentActivityName=".ui.HomeActivity" >
+            android:parentActivityName=".ui.Home.HomeActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.joebruckner.whoknows.ui.HomeActivity" />
+                android:value=".ui.Home.HomeActivity" />
         </activity>
     </application>
 

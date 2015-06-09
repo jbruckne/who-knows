@@ -1,4 +1,4 @@
-package com.joebruckner.whoknows.ui;
+package com.joebruckner.whoknows.ui.Beacon;
 
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;
@@ -9,8 +9,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.joebruckner.whoknows.R;
-import com.joebruckner.whoknows.models.logic.Beacon;
-import com.joebruckner.whoknows.models.view.BeaconViewHolder;
+import com.joebruckner.whoknows.models.Beacon;
+import com.joebruckner.whoknows.ui.Beacon.BeaconViewHolder;
 
 import java.text.SimpleDateFormat;
 import java.util.Locale;

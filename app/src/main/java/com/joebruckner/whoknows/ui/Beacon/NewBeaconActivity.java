@@ -1,4 +1,4 @@
-package com.joebruckner.whoknows.ui;
+package com.joebruckner.whoknows.ui.Beacon;
 
 import android.location.Location;
 import android.os.Bundle;
@@ -12,7 +12,7 @@ import android.widget.EditText;
 import com.google.android.gms.maps.model.LatLng;
 import com.joebruckner.whoknows.R;
 import com.joebruckner.whoknows.common.BaseActivity;
-import com.joebruckner.whoknows.models.logic.Beacon;
+import com.joebruckner.whoknows.models.Beacon;
 import com.joebruckner.whoknows.utilities.AccountApi;
 import com.joebruckner.whoknows.utilities.AppApi;
 import com.joebruckner.whoknows.utilities.LocationApi;

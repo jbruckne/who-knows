@@ -1,4 +1,4 @@
-package com.joebruckner.whoknows.ui;
+package com.joebruckner.whoknows.ui.Home;
 
 
 import android.content.Context;
@@ -14,6 +14,7 @@ import com.joebruckner.whoknows.R;
 import com.joebruckner.whoknows.common.BaseFragment;
 import com.joebruckner.whoknows.modules.qualifiers.ForActivity;
 import com.joebruckner.whoknows.presenters.NearbyAdapter;
+import com.joebruckner.whoknows.ui.Beacon.BeaconDetailActivity;
 import com.joebruckner.whoknows.ui.Widgets.DividerItemDecoration;
 import com.joebruckner.whoknows.ui.Widgets.OnItemClickListener;
 

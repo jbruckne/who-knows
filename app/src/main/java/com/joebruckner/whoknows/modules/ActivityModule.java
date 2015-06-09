@@ -9,11 +9,11 @@ import com.joebruckner.whoknows.modules.qualifiers.ForActivity;
 import com.joebruckner.whoknows.presenters.JoinedAdapter;
 import com.joebruckner.whoknows.presenters.NearbyAdapter;
 import com.joebruckner.whoknows.presenters.PostedAdapter;
-import com.joebruckner.whoknows.ui.HomeActivity;
-import com.joebruckner.whoknows.ui.JoinedFragment;
-import com.joebruckner.whoknows.ui.NearbyFragment;
-import com.joebruckner.whoknows.ui.NewBeaconActivity;
-import com.joebruckner.whoknows.ui.PostedFragment;
+import com.joebruckner.whoknows.ui.Home.HomeActivity;
+import com.joebruckner.whoknows.ui.Home.JoinedFragment;
+import com.joebruckner.whoknows.ui.Home.NearbyFragment;
+import com.joebruckner.whoknows.ui.Beacon.NewBeaconActivity;
+import com.joebruckner.whoknows.ui.Home.PostedFragment;
 import com.joebruckner.whoknows.utilities.AppApi;
 import com.squareup.otto.Bus;
 

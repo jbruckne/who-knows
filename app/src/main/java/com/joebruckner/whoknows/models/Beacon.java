@@ -1,4 +1,4 @@
-package com.joebruckner.whoknows.models.logic;
+package com.joebruckner.whoknows.models;
 
 import android.os.Parcel;
 import android.os.Parcelable;

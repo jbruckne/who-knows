@@ -4,9 +4,9 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
-import com.joebruckner.whoknows.ui.JoinedFragment;
-import com.joebruckner.whoknows.ui.NearbyFragment;
-import com.joebruckner.whoknows.ui.PostedFragment;
+import com.joebruckner.whoknows.ui.Home.JoinedFragment;
+import com.joebruckner.whoknows.ui.Home.NearbyFragment;
+import com.joebruckner.whoknows.ui.Home.PostedFragment;
 
 public class ViewPagerAdapter extends FragmentPagerAdapter {
 

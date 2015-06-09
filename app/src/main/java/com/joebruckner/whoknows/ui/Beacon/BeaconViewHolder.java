@@ -1,4 +1,4 @@
-package com.joebruckner.whoknows.models.view;
+package com.joebruckner.whoknows.ui.Beacon;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.View;

@@ -1,4 +1,4 @@
-package com.joebruckner.whoknows.ui;
+package com.joebruckner.whoknows.ui.Home;
 
 import android.content.Context;
 import android.content.Intent;
@@ -16,6 +16,7 @@ import com.joebruckner.whoknows.R;
 import com.joebruckner.whoknows.common.BaseActivity;
 import com.joebruckner.whoknows.modules.qualifiers.ForActivity;
 import com.joebruckner.whoknows.presenters.ViewPagerAdapter;
+import com.joebruckner.whoknows.ui.Beacon.NewBeaconActivity;
 
 import javax.inject.Inject;
 

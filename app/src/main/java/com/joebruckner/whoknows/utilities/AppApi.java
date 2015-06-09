@@ -1,6 +1,6 @@
 package com.joebruckner.whoknows.utilities;
 
-import com.joebruckner.whoknows.models.logic.Beacon;
+import com.joebruckner.whoknows.models.Beacon;
 
 import java.util.List;
 

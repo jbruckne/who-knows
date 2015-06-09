@@ -6,8 +6,8 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.joebruckner.whoknows.R;
-import com.joebruckner.whoknows.models.logic.Beacon;
-import com.joebruckner.whoknows.models.view.BeaconViewHolder;
+import com.joebruckner.whoknows.models.Beacon;
+import com.joebruckner.whoknows.ui.Beacon.BeaconViewHolder;
 import com.joebruckner.whoknows.utilities.AppApi;
 import com.squareup.otto.Bus;
 
