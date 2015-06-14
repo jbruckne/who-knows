@@ -16,7 +16,7 @@ public class TestAppApi implements AppApi {
 		this.beacons = new ArrayList<>();
 	}
 
-	@Override public List<Beacon> getAllBeacons() {
+	@Override public List<Beacon> getNearbyBeacons() {
 		if (beacons.isEmpty()) for (int i = 0; i < 15; i++)
 			beacons.add(new Beacon("Beacon " + i));
 		return beacons;

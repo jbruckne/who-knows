@@ -6,14 +6,10 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
 import com.joebruckner.whoknows.modules.qualifiers.ForActivity;
-import com.joebruckner.whoknows.presenters.JoinedAdapter;
-import com.joebruckner.whoknows.presenters.NearbyAdapter;
-import com.joebruckner.whoknows.presenters.PostedAdapter;
+import com.joebruckner.whoknows.presenters.BeaconListAdapter;
 import com.joebruckner.whoknows.ui.Home.HomeActivity;
-import com.joebruckner.whoknows.ui.Home.JoinedFragment;
-import com.joebruckner.whoknows.ui.Home.NearbyFragment;
+import com.joebruckner.whoknows.ui.Home.BeaconListFragment;
 import com.joebruckner.whoknows.ui.Beacon.NewBeaconActivity;
-import com.joebruckner.whoknows.ui.Home.PostedFragment;
 import com.joebruckner.whoknows.utilities.AppApi;
 import com.squareup.otto.Bus;
 
@@ -26,9 +22,7 @@ import dagger.Provides;
 		injects = {
 				HomeActivity.class,
 				NewBeaconActivity.class,
-				NearbyFragment.class,
-				JoinedFragment.class,
-				PostedFragment.class
+				BeaconListFragment.class,
 		},
 		addsTo = AppModule.class,
 		complete = false,
@@ -45,16 +39,8 @@ public class ActivityModule {
 		return activity;
 	}
 
-	@Provides NearbyAdapter providesNearbyAdapter(AppApi api, Bus bus) {
-		return new NearbyAdapter(api, bus);
-	}
-
-	@Provides JoinedAdapter providesJoinedAdapter(AppApi api, Bus bus) {
-		return new JoinedAdapter(api, bus);
-	}
-
-	@Provides PostedAdapter providesPostedAdapter(AppApi api, Bus bus) {
-		return new PostedAdapter(api, bus);
+	@Provides BeaconListAdapter providesJoinedAdapter(AppApi api, Bus bus) {
+		return new BeaconListAdapter(api, bus);
 	}
 
 	@Provides RecyclerView.LayoutManager providesLayoutManager() {

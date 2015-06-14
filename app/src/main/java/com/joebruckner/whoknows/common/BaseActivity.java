@@ -17,9 +17,7 @@ public abstract class BaseActivity extends AppCompatActivity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		WhoKnowsApp app = (WhoKnowsApp) getApplication();
-		activityGraph = app.getActivityGraph().plus(getModules().toArray());
-		activityGraph.inject(this);
+		setActivityGraph();
 	}
 
 	@Override
@@ -28,11 +26,18 @@ public abstract class BaseActivity extends AppCompatActivity {
 		super.onDestroy();
 	}
 
+	protected void setActivityGraph() {
+		WhoKnowsApp app = (WhoKnowsApp) getApplication();
+		activityGraph = app.getActivityGraph().plus(getModules().toArray());
+		activityGraph.inject(this);
+	}
+
 	protected List<Object> getModules() {
 		return Arrays.<Object>asList(new ActivityModule(this));
 	}
 
 	public void inject(Object object) {
+		if (activityGraph == null) setActivityGraph();
 		activityGraph.inject(object);
 	}
 }

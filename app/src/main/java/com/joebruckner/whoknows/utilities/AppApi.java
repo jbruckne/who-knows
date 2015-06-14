@@ -5,7 +5,7 @@ import com.joebruckner.whoknows.models.Beacon;
 import java.util.List;
 
 public interface AppApi {
-	List<Beacon> getAllBeacons();
+	List<Beacon> getNearbyBeacons();
 	List<Beacon> getActiveBeacons();
 	List<Beacon> getPostedBeacons();
 	void put(Beacon beacon);

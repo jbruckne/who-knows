@@ -1,0 +1,80 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context="com.joebruckner.whoknows.ui.Beacon.OverviewFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="24dp"
+        tools:ignore="RtlHardcoded,RtlSymmetry">
+
+        <!-- Placeholder for user pic -->
+        <View
+            android:id="@+id/pic"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_margin="4dp"
+            android:background="?attr/colorAccent" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/pic"
+            android:layout_toEndOf="@id/pic"
+            android:padding="2dp"
+            android:textSize="18sp"
+            tools:text="Name"/>
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name"
+            android:layout_toRightOf="@id/pic"
+            android:layout_toEndOf="@id/pic"
+            android:padding="4dp"
+            android:textSize="16sp"
+            tools:text="Date" />
+
+        <TextView
+            android:id="@+id/contact_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/date"
+            android:layout_toRightOf="@id/pic"
+            android:layout_toEndOf="@id/pic"
+            android:padding="4dp"
+            android:textSize="16sp"
+            tools:text="Contact Info"/>
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pic"
+            android:padding="24dp"
+            android:textSize="18sp"
+            tools:text="@string/example_paragraph"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_below="@id/description"
+            android:background="@color/black"
+            android:layout_height="1px" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/description"
+            android:padding="16dp"
+            android:textSize="16sp"
+            android:clickable="true"
+            android:text="@string/view_attendees"/>
+
+        </RelativeLayout>
+
+</FrameLayout>

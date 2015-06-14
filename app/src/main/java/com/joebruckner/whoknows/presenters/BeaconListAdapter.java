@@ -11,24 +11,36 @@ import com.joebruckner.whoknows.ui.Beacon.BeaconViewHolder;
 import com.joebruckner.whoknows.utilities.AppApi;
 import com.squareup.otto.Bus;
 
-import java.text.SimpleDateFormat;
 import java.util.List;
-import java.util.Locale;
 
-public class NearbyAdapter extends RecyclerView.Adapter<BeaconViewHolder> {
+public class BeaconListAdapter extends RecyclerView.Adapter<BeaconViewHolder> {
 	List<Beacon> beacons;
 	AppApi api;
 	Bus bus;
+	int filter = 0;
 
-	public NearbyAdapter(AppApi api, Bus bus) {
-		this.beacons = api.getAllBeacons();
+	public BeaconListAdapter(AppApi api, Bus bus) {
 		this.api = api;
 		this.bus = bus;
+		setItems();
 		bus.register(this);
 	}
 
-	public void updateItems() {
-		beacons = api.getAllBeacons();
+	public void setFilter(int filter) {
+		this.filter = filter;
+	}
+
+	public void setItems() {
+		switch (filter) {
+			case 1:
+				beacons = api.getActiveBeacons();
+				break;
+			case 2:
+				beacons = api.getPostedBeacons();
+				break;
+			default:
+				beacons = api.getNearbyBeacons();
+		}
 		notifyDataSetChanged();
 	}
 
@@ -36,7 +48,7 @@ public class NearbyAdapter extends RecyclerView.Adapter<BeaconViewHolder> {
 		return beacons.get(position);
 	}
 
-	@Override public BeaconViewHolder onCreateViewHolder(ViewGroup parent, int type) {
+	@Override public BeaconViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
 		View view = LayoutInflater
 				.from(parent.getContext()).inflate(R.layout.item_beacon, parent, false);
 		return new BeaconViewHolder(view);
@@ -47,8 +59,7 @@ public class NearbyAdapter extends RecyclerView.Adapter<BeaconViewHolder> {
 		holder.getTitleView().setText(beacon.getTitle());
 		holder.getNameView().setText(beacon.getName());
 		holder.getDescriptionView().setText(beacon.getDescription());
-		SimpleDateFormat format = new SimpleDateFormat("MMM dd, yyyy", Locale.US);
-		holder.getDateView().setText(format.format(beacon.getDate()));
+		holder.getDateView().setText(BeaconViewHolder.formatDate(beacon.getDate()));
 	}
 
 	@Override public int getItemCount() {

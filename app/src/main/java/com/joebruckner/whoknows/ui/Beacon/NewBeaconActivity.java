@@ -32,7 +32,6 @@ public class NewBeaconActivity extends BaseActivity {
 	@InjectView(R.id.description) EditText editDescription;
 	@InjectView(R.id.contact_info) EditText editContactInfo;
 	@InjectView(R.id.location) CheckBox showLocation;
-	@InjectView(R.id.name) CheckBox postAnonymous;
 	@Inject LocationApi locationApi;
 	@Inject AccountApi accountApi;
 	@Inject AppApi appApi;
@@ -89,7 +88,7 @@ public class NewBeaconActivity extends BaseActivity {
 		description = editDescription.getText().toString();
 		contactInfo = editContactInfo.getText().toString();
 		date = new Date();
-		name = postAnonymous.isChecked() ? "Anon" : accountApi.getName();
+		name = accountApi.getName();
 		appApi.put(new Beacon(title, name, date, contactInfo, description, location));
 		finish();
 	}

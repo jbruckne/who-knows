@@ -1,45 +1,46 @@
 package com.joebruckner.whoknows.ui.Beacon;
 
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.ActionBar;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.FrameLayout;
 
 import com.joebruckner.whoknows.R;
 import com.joebruckner.whoknows.models.Beacon;
-import com.joebruckner.whoknows.ui.Beacon.BeaconViewHolder;
-
-import java.text.SimpleDateFormat;
-import java.util.Locale;
 
 import butterknife.ButterKnife;
 import butterknife.InjectView;
 
-public class BeaconDetailActivity extends ActionBarActivity {
+public class BeaconDetailActivity extends AppCompatActivity {
 	@InjectView(R.id.toolbar) Toolbar toolbar;
+	@InjectView(R.id.frame) FrameLayout frame;
+	@InjectView(R.id.fab) FloatingActionButton fab;
 
 	Beacon beacon;
-	BeaconViewHolder holder;
+
+	public static String BEACON_EXTRA = "Beacon";
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_beacon_detail);
 		ButterKnife.inject(this);
-		initToolbar();
 
 		beacon = getIntent().getParcelableExtra("Beacon");
 		Log.d("Detail", beacon.getTitle());
 
-		initDetails();
+		setupToolbar();
+		if (savedInstanceState == null) setupFrame();
+		setupFab();
 	}
 
-	private void initToolbar() {
-		toolbar.setTitle("");
-		toolbar.setAlpha(0f);
+	private void setupToolbar() {
+		toolbar.setTitle(beacon.getTitle());
 		setSupportActionBar(toolbar);
 		ActionBar actionBar = getSupportActionBar();
 		if (actionBar != null) {
@@ -49,14 +50,14 @@ public class BeaconDetailActivity extends ActionBarActivity {
 		}
 	}
 
-	private void initDetails() {
-		holder = new BeaconViewHolder(getWindow().getDecorView().getRootView());
-		holder.getTitleView().setText(beacon.getTitle());
-		holder.getNameView().setText(beacon.getName());
-		SimpleDateFormat format = new SimpleDateFormat("MMM dd, yyyy", Locale.US);
-		holder.getDateView().setText(format.format(beacon.getDate()));
-		holder.getContactInfo().setText(beacon.getContactInfo());
-		holder.getDescriptionView().setText(beacon.getDescription());
+	private void setupFrame() {
+		OverviewFragment overviewFragment = OverviewFragment.newInstant(beacon);
+		getSupportFragmentManager()
+				.beginTransaction().add(R.id.frame, overviewFragment).commit();
+	}
+
+	private void setupFab() {
+
 	}
 
 	@Override

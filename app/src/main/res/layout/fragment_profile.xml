@@ -2,11 +2,12 @@
              xmlns:tools="http://schemas.android.com/tools"
              android:layout_width="match_parent"
              android:layout_height="match_parent"
-             tools:context="com.joebruckner.whoknows.ui.Home.NearbyFragment">
+             tools:context="com.joebruckner.whoknows.ui.Home.ProfileFragment">
 
-    <com.joebruckner.whoknows.ui.Widgets.FixedRecyclerView
-        android:id="@+id/list_view"
-        android:clickable="false"
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"
+        android:text="@string/hello_blank_fragment"/>
+
 </FrameLayout>

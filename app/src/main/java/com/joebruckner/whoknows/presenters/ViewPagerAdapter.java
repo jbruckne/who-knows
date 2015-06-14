@@ -4,13 +4,14 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
-import com.joebruckner.whoknows.ui.Home.JoinedFragment;
-import com.joebruckner.whoknows.ui.Home.NearbyFragment;
-import com.joebruckner.whoknows.ui.Home.PostedFragment;
+import com.joebruckner.whoknows.ui.Home.BeaconListFragment;
+import com.joebruckner.whoknows.ui.Home.ChatFragment;
+import com.joebruckner.whoknows.ui.Home.MapViewFragment;
+import com.joebruckner.whoknows.ui.Home.ProfileFragment;
 
 public class ViewPagerAdapter extends FragmentPagerAdapter {
 
-	int numPages = 3;
+	int numPages = 4;
 
 	public ViewPagerAdapter(FragmentManager manager) {
 		super(manager);
@@ -19,11 +20,13 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
 	@Override public Fragment getItem(int position) {
 		switch(position) {
 			case 0:
-				return NearbyFragment.newInstance();
+				return BeaconListFragment.newInstance(0);
 			case 1:
-				return JoinedFragment.newInstance();
+				return MapViewFragment.newInstance();
 			case 2:
-				return PostedFragment.newInstance();
+				return ChatFragment.newInstance();
+			case 3:
+				return ProfileFragment.newInstance();
 			default:
 				return null;
 		}
@@ -34,9 +37,11 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
 			case 0:
 				return "Nearby";
 			case 1:
-				return "Joined";
+				return "Map";
 			case 2:
-				return "Posted";
+				return "Chat";
+			case 3:
+				return "Profile";
 			default:
 				return null;
 		}

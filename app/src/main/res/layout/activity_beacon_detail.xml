@@ -1,90 +1,43 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                xmlns:tools="http://schemas.android.com/tools"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                tools:context="com.joebruckner.whoknows.ui.Beacon.BeaconDetailActivity">
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinator"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.joebruckner.whoknows.ui.Beacon.BeaconDetailActivity">
 
-    <include
-        android:id="@+id/toolbar"
-        layout="@layout/toolbar" />
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
 
-    <View
-        android:id="@+id/map"
-        android:background="?attr/colorAccent"
-        android:layout_width="match_parent"
-        android:layout_height="200dp" />
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/toolbar_height"
+            android:elevation="5dp"
+            android:background="?attr/colorPrimary"
+            android:theme="@style/ToolbarTheme"
+            app:popupTheme="@style/AppTheme"/>
 
-    <RelativeLayout
+    </android.support.design.widget.AppBarLayout>
+
+    <FrameLayout
+        android:id="@+id/frame"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/map"
-        android:elevation="5dp"
-        tools:ignore="UnusedAttribute,RtlHardcoded,RtlSymmetry">
+        android:layout_marginTop="@dimen/toolbar_height"/>
 
-        <TextView
-            android:id="@+id/title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="12dp"
-            android:singleLine="true"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            tools:text="Title"
-            />
-
-        <TextView
-            android:id="@+id/name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/title"
-            android:paddingLeft="24dp"
-            android:paddingBottom="8dp"
-            android:textSize="18sp"
-            tools:text="Name"/>
-
-        <TextView
-            android:id="@+id/date"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/name"
-            android:paddingLeft="24dp"
-            android:paddingBottom="8dp"
-            android:textSize="18sp"
-            tools:text="Date"
-            />
-
-        <TextView
-            android:id="@+id/contact_info"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/date"
-            android:paddingLeft="24dp"
-            android:paddingBottom="16dp"
-            android:textSize="18sp"
-            tools:text="Contact Info"/>
-
-        <View
-            android:id="@+id/separator"
-            android:layout_width="match_parent"
-            android:layout_height="1px"
-            android:layout_below="@id/contact_info"
-            android:background="@color/grey_800"
-            />
-
-        <TextView
-            android:id="@+id/description"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/contact_info"
-            android:padding="24dp"
-            android:textSize="18sp"
-            tools:text="Description"
-            />
-
-    </RelativeLayout>
-
-    <include
+    <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"
-        layout="@layout/floating_action_button" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fab_margin"
+        android:clickable="true"
+        app:layout_anchor="@id/coordinator"
+        app:layout_anchorGravity="bottom|right|end"
+        app:fabSize="normal"
+        app:borderWidth="0dp"/>
 
-</RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

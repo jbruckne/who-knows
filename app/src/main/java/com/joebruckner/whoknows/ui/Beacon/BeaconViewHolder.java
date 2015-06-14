@@ -6,6 +6,10 @@ import android.widget.TextView;
 
 import com.joebruckner.whoknows.R;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Locale;
+
 import butterknife.ButterKnife;
 import butterknife.InjectView;
 import butterknife.Optional;
@@ -16,6 +20,8 @@ public class BeaconViewHolder extends RecyclerView.ViewHolder {
 	@Optional @InjectView (R.id.description) TextView descriptionView;
 	@Optional @InjectView (R.id.date) TextView dateView;
 	@Optional @InjectView (R.id.contact_info) TextView contactInfoView;
+
+	public static SimpleDateFormat format = new SimpleDateFormat("MMM dd, yyyy", Locale.US);
 
 	public BeaconViewHolder(View itemView) {
 		super(itemView);
@@ -40,5 +46,9 @@ public class BeaconViewHolder extends RecyclerView.ViewHolder {
 
 	public TextView getContactInfo() {
 		return contactInfoView;
+	}
+
+	public static String formatDate(Date date) {
+		return format.format(date);
 	}
 }
