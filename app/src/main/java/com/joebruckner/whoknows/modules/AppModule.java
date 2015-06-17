@@ -3,10 +3,8 @@ package com.joebruckner.whoknows.modules;
 import android.app.Application;
 import android.content.Context;
 import android.location.LocationManager;
-import android.os.Build;
 
 import com.joebruckner.whoknows.WhoKnowsApp;
-import com.joebruckner.whoknows.modules.qualifiers.ApiLevel;
 import com.joebruckner.whoknows.utilities.AccountApi;
 import com.joebruckner.whoknows.utilities.AppApi;
 import com.joebruckner.whoknows.utilities.LocationApi;
@@ -34,31 +32,27 @@ public class AppModule {
 		this.app = app;
 	}
 
-	@Provides @Singleton Application provideApplication() {
+	@Provides @Singleton Application providesApplication() {
 		return app;
 	}
 
-	@Provides @Singleton @ApiLevel int provideApiLevel() {
-		return Build.VERSION.SDK_INT;
-	}
-
-	@Provides @Singleton Bus provideEventBus() {
+	@Provides @Singleton Bus providesEventBus() {
 		return new Bus(ThreadEnforcer.MAIN);
 	}
 
-	@Provides @Singleton AccountApi provideAccountApi() {
+	@Provides @Singleton AccountApi providesAccountApi() {
 		return new TestAccountApi();
 	}
 
-	@Provides @Singleton AppApi provideWhoKnowsApi(AccountApi api) {
+	@Provides @Singleton AppApi providesWhoKnowsApi(AccountApi api) {
 		return new TestAppApi(api);
 	}
 
-	@Provides @Singleton LocationApi provideLocationApi(LocationManager manager, Bus bus) {
+	@Provides @Singleton LocationApi providesLocationApi(LocationManager manager, Bus bus) {
 		return new TestLocationApi(manager, bus, app);
 	}
 
-	@Provides @Singleton LocationManager provideLocationManager() {
+	@Provides @Singleton LocationManager providesLocationManager() {
 		return (LocationManager) app.getSystemService(Context.LOCATION_SERVICE);
 	}
 }

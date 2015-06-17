@@ -8,39 +8,14 @@ import android.view.ViewGroup;
 import com.joebruckner.whoknows.R;
 import com.joebruckner.whoknows.models.Beacon;
 import com.joebruckner.whoknows.ui.Beacon.BeaconViewHolder;
-import com.joebruckner.whoknows.utilities.AppApi;
-import com.squareup.otto.Bus;
 
 import java.util.List;
 
 public class BeaconListAdapter extends RecyclerView.Adapter<BeaconViewHolder> {
 	List<Beacon> beacons;
-	AppApi api;
-	Bus bus;
-	int filter = 0;
 
-	public BeaconListAdapter(AppApi api, Bus bus) {
-		this.api = api;
-		this.bus = bus;
-		setItems();
-		bus.register(this);
-	}
-
-	public void setFilter(int filter) {
-		this.filter = filter;
-	}
-
-	public void setItems() {
-		switch (filter) {
-			case 1:
-				beacons = api.getActiveBeacons();
-				break;
-			case 2:
-				beacons = api.getPostedBeacons();
-				break;
-			default:
-				beacons = api.getNearbyBeacons();
-		}
+	public void setItems(List<Beacon> beacons) {
+		this.beacons = beacons;
 		notifyDataSetChanged();
 	}
 
@@ -65,4 +40,5 @@ public class BeaconListAdapter extends RecyclerView.Adapter<BeaconViewHolder> {
 	@Override public int getItemCount() {
 		return beacons.size();
 	}
+
 }

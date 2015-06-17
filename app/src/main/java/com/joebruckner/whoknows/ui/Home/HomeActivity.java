@@ -1,6 +1,6 @@
 package com.joebruckner.whoknows.ui.Home;
 
-import android.content.Context;
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -14,7 +14,6 @@ import android.view.View;
 
 import com.joebruckner.whoknows.R;
 import com.joebruckner.whoknows.common.BaseActivity;
-import com.joebruckner.whoknows.modules.qualifiers.ForActivity;
 import com.joebruckner.whoknows.presenters.ViewPagerAdapter;
 import com.joebruckner.whoknows.ui.Beacon.NewBeaconActivity;
 
@@ -28,7 +27,7 @@ public class HomeActivity extends BaseActivity {
 	@InjectView(R.id.tab_layout) TabLayout tabLayout;
 	@InjectView(R.id.fab) FloatingActionButton fab;
 	@InjectView(R.id.pager) ViewPager pager;
-	@Inject @ForActivity Context context;
+	@Inject Activity activity;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -73,7 +72,7 @@ public class HomeActivity extends BaseActivity {
 	protected void setupFab() {
 		fab.setOnClickListener(new View.OnClickListener() {
 			@Override public void onClick(View v) {
-				startActivity(new Intent(context, NewBeaconActivity.class));
+				startActivity(new Intent(activity, NewBeaconActivity.class));
 			}
 		});
 	}

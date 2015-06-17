@@ -1,15 +1,14 @@
 package com.joebruckner.whoknows.modules;
 
 import android.app.Activity;
-import android.content.Context;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
-import com.joebruckner.whoknows.modules.qualifiers.ForActivity;
 import com.joebruckner.whoknows.presenters.BeaconListAdapter;
-import com.joebruckner.whoknows.ui.Home.HomeActivity;
-import com.joebruckner.whoknows.ui.Home.BeaconListFragment;
+import com.joebruckner.whoknows.presenters.BeaconListPresenter;
 import com.joebruckner.whoknows.ui.Beacon.NewBeaconActivity;
+import com.joebruckner.whoknows.ui.Home.BeaconListFragment;
+import com.joebruckner.whoknows.ui.Home.HomeActivity;
 import com.joebruckner.whoknows.utilities.AppApi;
 import com.squareup.otto.Bus;
 
@@ -35,12 +34,16 @@ public class ActivityModule {
 		this.activity = activity;
 	}
 
-	@Provides @Singleton @ForActivity Context provideActivity() {
+	@Provides @Singleton Activity providesActivity() {
 		return activity;
 	}
 
-	@Provides BeaconListAdapter providesJoinedAdapter(AppApi api, Bus bus) {
-		return new BeaconListAdapter(api, bus);
+	@Provides BeaconListPresenter providesBeaconListPresenter(AppApi api, Bus bus) {
+		return new BeaconListPresenter(api, bus);
+	}
+
+	@Provides BeaconListAdapter providesBeaconListAdapter() {
+		return new BeaconListAdapter();
 	}
 
 	@Provides RecyclerView.LayoutManager providesLayoutManager() {

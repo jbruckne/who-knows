@@ -22,7 +22,7 @@ public class TestAppApi implements AppApi {
 		return beacons;
 	}
 
-	@Override public List<Beacon> getActiveBeacons() {
+	@Override public List<Beacon> getJoinedBeacons() {
 		if (beacons.isEmpty()) for (int i = 0; i < 15; i++)
 			beacons.add(new Beacon("Beacon " + i));
 		return beacons;
