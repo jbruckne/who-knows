@@ -80,7 +80,9 @@ public class BeaconListFragment extends BaseFragment implements BaseView<List<Be
 		listView.addOnItemTouchListener(new OnItemClickListener(activity) {
 			@Override public void onItemClick(View view, int position) {
 				Intent intent = new Intent(activity, BeaconDetailActivity.class);
-				intent.putExtra(BeaconDetailActivity.BEACON_EXTRA, adapter.getItem(position));
+				Beacon beacon = adapter.getItem(position);
+				intent.putExtra(BeaconDetailActivity.BEACON_ID, beacon.getId());
+				intent.putExtra(BeaconDetailActivity.BEACON_TITLE, beacon.getTitle());
 				startActivity(intent);
 			}
 		});

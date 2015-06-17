@@ -4,9 +4,12 @@ import android.app.Activity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
+import com.joebruckner.whoknows.presenters.BeaconDetailPresenter;
 import com.joebruckner.whoknows.presenters.BeaconListAdapter;
 import com.joebruckner.whoknows.presenters.BeaconListPresenter;
+import com.joebruckner.whoknows.ui.Beacon.BeaconDetailActivity;
 import com.joebruckner.whoknows.ui.Beacon.NewBeaconActivity;
+import com.joebruckner.whoknows.ui.Beacon.OverviewFragment;
 import com.joebruckner.whoknows.ui.Home.BeaconListFragment;
 import com.joebruckner.whoknows.ui.Home.HomeActivity;
 import com.joebruckner.whoknows.utilities.AppApi;
@@ -21,7 +24,9 @@ import dagger.Provides;
 		injects = {
 				HomeActivity.class,
 				NewBeaconActivity.class,
+				BeaconDetailActivity.class,
 				BeaconListFragment.class,
+				OverviewFragment.class
 		},
 		addsTo = AppModule.class,
 		complete = false,
@@ -44,6 +49,10 @@ public class ActivityModule {
 
 	@Provides BeaconListAdapter providesBeaconListAdapter() {
 		return new BeaconListAdapter();
+	}
+
+	@Provides BeaconDetailPresenter providesBeaconDetailPresenter(AppApi api, Bus bus) {
+		return new BeaconDetailPresenter(api, bus);
 	}
 
 	@Provides RecyclerView.LayoutManager providesLayoutManager() {

@@ -3,27 +3,25 @@ package com.joebruckner.whoknows.ui.Beacon;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.ActionBar;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.widget.FrameLayout;
 
 import com.joebruckner.whoknows.R;
+import com.joebruckner.whoknows.common.BaseActivity;
 import com.joebruckner.whoknows.models.Beacon;
 
 import butterknife.ButterKnife;
 import butterknife.InjectView;
 
-public class BeaconDetailActivity extends AppCompatActivity {
+public class BeaconDetailActivity extends BaseActivity {
 	@InjectView(R.id.toolbar) Toolbar toolbar;
 	@InjectView(R.id.frame) FrameLayout frame;
 	@InjectView(R.id.fab) FloatingActionButton fab;
 
 	Beacon beacon;
 
-	public static String BEACON_EXTRA = "Beacon";
+	public static String BEACON_ID = "ID";
+	public static String BEACON_TITLE = "TITLE";
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -31,16 +29,13 @@ public class BeaconDetailActivity extends AppCompatActivity {
 		setContentView(R.layout.activity_beacon_detail);
 		ButterKnife.inject(this);
 
-		beacon = getIntent().getParcelableExtra("Beacon");
-		Log.d("Detail", beacon.getTitle());
-
 		setupToolbar();
 		if (savedInstanceState == null) setupFrame();
 		setupFab();
 	}
 
 	private void setupToolbar() {
-		toolbar.setTitle(beacon.getTitle());
+		toolbar.setTitle(getIntent().getStringExtra(BEACON_TITLE));
 		setSupportActionBar(toolbar);
 		ActionBar actionBar = getSupportActionBar();
 		if (actionBar != null) {
@@ -51,25 +46,12 @@ public class BeaconDetailActivity extends AppCompatActivity {
 	}
 
 	private void setupFrame() {
-		OverviewFragment overviewFragment = OverviewFragment.newInstant(beacon);
+		OverviewFragment overviewFragment = OverviewFragment.newInstant();
 		getSupportFragmentManager()
 				.beginTransaction().add(R.id.frame, overviewFragment).commit();
 	}
 
 	private void setupFab() {
-
-	}
-
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		getMenuInflater().inflate(R.menu.menu_beacon_detail, menu);
-		return true;
-	}
-
-	@Override
-	public boolean onOptionsItemSelected(MenuItem item) {
-		switch(item.getItemId()) {
-			default: return super.onOptionsItemSelected(item);
-		}
+		// TODO
 	}
 }

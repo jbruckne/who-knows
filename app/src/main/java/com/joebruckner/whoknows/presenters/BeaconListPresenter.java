@@ -8,8 +8,7 @@ import com.squareup.otto.Bus;
 import java.util.ArrayList;
 import java.util.List;
 
-public class BeaconListPresenter implements BasePresenter<List<Beacon>> {
-	BaseView<List<Beacon>> view;
+public class BeaconListPresenter extends BasePresenter<List<Beacon>> {
 	AppApi api;
 	Bus bus;
 
@@ -17,14 +16,6 @@ public class BeaconListPresenter implements BasePresenter<List<Beacon>> {
 		this.api = api;
 		this.bus = bus;
 		bus.register(this);
-	}
-
-	@Override public void attachView(BaseView<List<Beacon>> view) {
-		this.view = view;
-	}
-
-	@Override public void detachView() {
-		this.view = null;
 	}
 
 	public void loadData(int filter) {

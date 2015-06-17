@@ -1,6 +1,12 @@
 package com.joebruckner.whoknows.presenters;
 
-public interface BasePresenter<T> {
-	void attachView(BaseView<T> view);
-	void detachView();
+public abstract class BasePresenter<T> {
+	BaseView<T> view;
+
+	public void attachView(BaseView<T> view) {
+		this.view = view;
+	}
+	public void detachView() {
+		this.view = null;
+	}
 }

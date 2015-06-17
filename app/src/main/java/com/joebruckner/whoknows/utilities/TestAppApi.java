@@ -43,6 +43,8 @@ public class TestAppApi implements AppApi {
 	}
 
 	@Override public Beacon get(long id) {
-		return beacons.isEmpty() ? beacons.get(0) : null;
+		for (Beacon beacon : beacons)
+			if (beacon.getId() == id) return beacon;
+		return null;
 	}
 }
