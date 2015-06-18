@@ -6,5 +6,6 @@
     <item
         android:id="@+id/action_post"
         android:title="@string/action_post"
+        android:icon="@drawable/ic_action_done"
         app:showAsAction="ifRoom"/>
 </menu>

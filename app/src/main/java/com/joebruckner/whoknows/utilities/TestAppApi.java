@@ -47,4 +47,11 @@ public class TestAppApi implements AppApi {
 			if (beacon.getId() == id) return beacon;
 		return null;
 	}
+
+	@Override public List<String> getAttendees(long id) {
+		List<String> attendees = new ArrayList<>();
+		for (Beacon beacon : beacons)
+			if (!attendees.contains(beacon.getName())) attendees.add(beacon.getName());
+		return attendees;
+	}
 }

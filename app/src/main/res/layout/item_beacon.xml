@@ -11,13 +11,16 @@
     tools:ignore="RtlSymmetry">
 
     <!-- Placeholder for user pic -->
-    <View
+    <ImageView
         android:id="@+id/pic"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
         android:layout_centerVertical="true"
-        android:background="?attr/colorAccent"
-        />
+        android:src="@drawable/ic_user_pic"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:tint="?attr/colorPrimaryDark"
+        android:contentDescription="@string/dummy_user"/>
 
     <RelativeLayout
         android:layout_width="wrap_content"

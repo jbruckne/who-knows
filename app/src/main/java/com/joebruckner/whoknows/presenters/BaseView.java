@@ -1,6 +1,6 @@
 package com.joebruckner.whoknows.presenters;
 
-public interface BaseView<T extends Object> {
+public interface BaseView<T> {
 	void showLoading();
 	void showContent();
 	void showError();

@@ -10,4 +10,5 @@ public interface AppApi {
 	List<Beacon> getPostedBeacons();
 	void put(Beacon beacon);
 	Beacon get(long id);
+	List<String> getAttendees(long id);
 }

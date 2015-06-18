@@ -4,8 +4,11 @@ import android.app.Activity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
-import com.joebruckner.whoknows.presenters.BeaconDetailPresenter;
-import com.joebruckner.whoknows.presenters.BeaconListAdapter;
+import com.joebruckner.whoknows.presenters.AttendeesListPresenter;
+import com.joebruckner.whoknows.presenters.BeaconOverviewPresenter;
+import com.joebruckner.whoknows.ui.Beacon.AttendeesListAdapter;
+import com.joebruckner.whoknows.ui.Beacon.AttendeesListFragment;
+import com.joebruckner.whoknows.ui.Home.BeaconListAdapter;
 import com.joebruckner.whoknows.presenters.BeaconListPresenter;
 import com.joebruckner.whoknows.ui.Beacon.BeaconDetailActivity;
 import com.joebruckner.whoknows.ui.Beacon.NewBeaconActivity;
@@ -26,7 +29,8 @@ import dagger.Provides;
 				NewBeaconActivity.class,
 				BeaconDetailActivity.class,
 				BeaconListFragment.class,
-				OverviewFragment.class
+				OverviewFragment.class,
+				AttendeesListFragment.class
 		},
 		addsTo = AppModule.class,
 		complete = false,
@@ -51,8 +55,16 @@ public class ActivityModule {
 		return new BeaconListAdapter();
 	}
 
-	@Provides BeaconDetailPresenter providesBeaconDetailPresenter(AppApi api, Bus bus) {
-		return new BeaconDetailPresenter(api, bus);
+	@Provides BeaconOverviewPresenter providesOverviewPresenter(AppApi api, Bus bus) {
+		return new BeaconOverviewPresenter(api, bus);
+	}
+
+	@Provides AttendeesListPresenter providesAttendeesListPresenter(AppApi api, Bus bus) {
+		return new AttendeesListPresenter(api, bus);
+	}
+
+	@Provides AttendeesListAdapter providesAttendeesListAdapter() {
+		return new AttendeesListAdapter();
 	}
 
 	@Provides RecyclerView.LayoutManager providesLayoutManager() {

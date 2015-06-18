@@ -27,5 +27,6 @@
     <string name="action_post">Post</string>
     <string name="join">Join</string>
     <string name="example_paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sodales enim ut justo imperdiet, ac luctus ante auctor. Maecenas nec enim quis tellus interdum egestas. Ut vel lacus eu est facilisis facilisis. Proin mattis, nisl blandit posuere ornare, odio neque varius risus, at malesuada odio risus ac massa.</string>
-    <string name="view_attendees">View Attendees</string>
+    <string name="who_is_going">See who is going</string>
+    <string name="dummy_user">dummy user</string>
 </resources>

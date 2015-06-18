@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:orientation="vertical"
+                android:clickable="true"
+                android:background="?attr/selectableItemBackground"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/list_item"
+                android:paddingLeft="@dimen/list_item_inset"
+                android:paddingStart="@dimen/list_item_inset"
+                tools:ignore="RtlSymmetry">
+
+    <!-- Placeholder for user pic -->
+    <ImageView
+        android:id="@+id/pic"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_user_pic"
+        android:tint="?attr/colorPrimaryDark"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/dummy_user"/>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textSize="22sp"
+        tools:text="Joe Bruckner"/>
+</RelativeLayout>

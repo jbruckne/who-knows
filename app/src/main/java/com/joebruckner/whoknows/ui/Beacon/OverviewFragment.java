@@ -10,13 +10,14 @@ import android.view.ViewGroup;
 import com.joebruckner.whoknows.R;
 import com.joebruckner.whoknows.common.BaseFragment;
 import com.joebruckner.whoknows.models.Beacon;
+import com.joebruckner.whoknows.presenters.BasePresenter;
 import com.joebruckner.whoknows.presenters.BaseView;
-import com.joebruckner.whoknows.presenters.BeaconDetailPresenter;
+import com.joebruckner.whoknows.presenters.BeaconOverviewPresenter;
 
 import javax.inject.Inject;
 
 public class OverviewFragment extends BaseFragment implements BaseView<Beacon> {
-	@Inject BeaconDetailPresenter presenter;
+	@Inject BeaconOverviewPresenter presenter;
 	@Inject Activity activity;
 
 	BeaconViewHolder holder;
@@ -39,9 +40,11 @@ public class OverviewFragment extends BaseFragment implements BaseView<Beacon> {
 
 	@Override public void onResume() {
 		super.onResume();
-		this.id = activity.getIntent().getLongExtra(BeaconDetailActivity.BEACON_ID, 0);
+		id = activity.getIntent().getLongExtra(BeaconDetailActivity.BEACON_ID, 0);
+		Bundle args = new Bundle();
+		args.putLong(BasePresenter.ID, id);
 		presenter.attachView(this);
-		presenter.loadData(id);
+		presenter.loadData(args);
 	}
 
 	@Override public void showLoading() {

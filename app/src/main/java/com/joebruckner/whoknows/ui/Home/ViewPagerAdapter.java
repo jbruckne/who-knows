@@ -1,13 +1,8 @@
-package com.joebruckner.whoknows.presenters;
+package com.joebruckner.whoknows.ui.Home;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
-
-import com.joebruckner.whoknows.ui.Home.BeaconListFragment;
-import com.joebruckner.whoknows.ui.Home.ChatFragment;
-import com.joebruckner.whoknows.ui.Home.MapViewFragment;
-import com.joebruckner.whoknows.ui.Home.ProfileFragment;
 
 public class ViewPagerAdapter extends FragmentPagerAdapter {
 

@@ -8,17 +8,15 @@ import android.widget.FrameLayout;
 
 import com.joebruckner.whoknows.R;
 import com.joebruckner.whoknows.common.BaseActivity;
-import com.joebruckner.whoknows.models.Beacon;
 
 import butterknife.ButterKnife;
 import butterknife.InjectView;
+import butterknife.OnClick;
 
 public class BeaconDetailActivity extends BaseActivity {
 	@InjectView(R.id.toolbar) Toolbar toolbar;
 	@InjectView(R.id.frame) FrameLayout frame;
 	@InjectView(R.id.fab) FloatingActionButton fab;
-
-	Beacon beacon;
 
 	public static String BEACON_ID = "ID";
 	public static String BEACON_TITLE = "TITLE";
@@ -48,10 +46,22 @@ public class BeaconDetailActivity extends BaseActivity {
 	private void setupFrame() {
 		OverviewFragment overviewFragment = OverviewFragment.newInstant();
 		getSupportFragmentManager()
-				.beginTransaction().add(R.id.frame, overviewFragment).commit();
+				.beginTransaction()
+				.add(R.id.frame, overviewFragment)
+				.commit();
 	}
 
 	private void setupFab() {
 		// TODO
+	}
+
+	@OnClick(R.id.view_attendees)
+	public void onClick() {
+		AttendeesListFragment fragment = AttendeesListFragment.newInstance();
+		getSupportFragmentManager()
+				.beginTransaction()
+				.replace(R.id.frame, fragment)
+				.addToBackStack(null)
+				.commit();
 	}
 }

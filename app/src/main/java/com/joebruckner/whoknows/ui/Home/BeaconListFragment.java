@@ -13,8 +13,8 @@ import android.view.ViewGroup;
 import com.joebruckner.whoknows.R;
 import com.joebruckner.whoknows.common.BaseFragment;
 import com.joebruckner.whoknows.models.Beacon;
+import com.joebruckner.whoknows.presenters.BasePresenter;
 import com.joebruckner.whoknows.presenters.BaseView;
-import com.joebruckner.whoknows.presenters.BeaconListAdapter;
 import com.joebruckner.whoknows.presenters.BeaconListPresenter;
 import com.joebruckner.whoknows.ui.Beacon.BeaconDetailActivity;
 import com.joebruckner.whoknows.ui.Widgets.DividerItemDecoration;
@@ -56,17 +56,18 @@ public class BeaconListFragment extends BaseFragment implements BaseView<List<Be
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 	                         Bundle savedInstanceState) {
-		type = getArguments().getInt(LIST_TYPE);
 		View view = inflater.inflate(R.layout.fragment_beacon_list, container, false);
 		ButterKnife.inject(this, view);
-		presenter.attachView(this);
-		presenter.loadData(type);
 		return view;
 	}
 
 	@Override public void onResume() {
 		super.onResume();
-		presenter.loadData(type);
+		type = getArguments().getInt(LIST_TYPE);
+		Bundle args = new Bundle();
+		args.putInt(BasePresenter.TYPE, type);
+		presenter.attachView(this);
+		presenter.loadData(args);
 	}
 
 	@Override public void showLoading() {

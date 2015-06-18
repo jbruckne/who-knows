@@ -1,5 +1,7 @@
 package com.joebruckner.whoknows.presenters;
 
+import android.os.Bundle;
+
 import com.joebruckner.whoknows.models.Beacon;
 import com.joebruckner.whoknows.ui.Home.BeaconListFragment;
 import com.joebruckner.whoknows.utilities.AppApi;
@@ -18,7 +20,8 @@ public class BeaconListPresenter extends BasePresenter<List<Beacon>> {
 		bus.register(this);
 	}
 
-	public void loadData(int filter) {
+	public void loadData(Bundle args) {
+		int filter = args.getInt(TYPE);
 		List<Beacon> beacons;
 		switch (filter) {
 			case BeaconListFragment.NEARBY:
