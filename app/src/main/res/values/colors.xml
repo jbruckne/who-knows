@@ -40,8 +40,10 @@
     <color name="deep_orange_a700">#DD2C00</color>
 
     <color name="lime_green_a200">#B2FF59</color>
-    <color name="lime_green_a400">#76FF03</color>
+    <color name="lime_green_a400">#8BC34A</color>
     <color name="lime_green_a700">#64DD17</color>
+
+    <color name="deep_purple_a400">#7C4DFF</color>
 
     <color name="black">#000000</color>
     <color name="grey_900">#212121</color>

@@ -19,7 +19,7 @@
         android:src="@drawable/ic_user_pic"
         android:scaleType="fitCenter"
         android:adjustViewBounds="true"
-        android:tint="?attr/colorPrimaryDark"
+        android:tint="?attr/colorAccent"
         android:contentDescription="@string/dummy_user"/>
 
     <RelativeLayout

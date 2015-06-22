@@ -30,6 +30,7 @@
             android:elevation="5dp"
             android:scrollbars="horizontal"
             android:background="?attr/colorPrimary"
+            app:tabIndicatorColor="@color/white"
             app:tabTextColor="#AAFFFFFF"
             app:tabSelectedTextColor="@color/white"/>
 

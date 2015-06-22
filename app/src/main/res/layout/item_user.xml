@@ -17,7 +17,7 @@
         android:layout_height="60dp"
         android:layout_centerVertical="true"
         android:src="@drawable/ic_user_pic"
-        android:tint="?attr/colorPrimaryDark"
+        android:tint="?attr/colorAccent"
         android:scaleType="fitCenter"
         android:adjustViewBounds="true"
         android:contentDescription="@string/dummy_user"/>
