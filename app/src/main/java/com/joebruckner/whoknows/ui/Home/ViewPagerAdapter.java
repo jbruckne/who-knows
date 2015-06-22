@@ -1,5 +1,6 @@
 package com.joebruckner.whoknows.ui.Home;
 
+import android.app.Activity;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
@@ -7,9 +8,11 @@ import android.support.v4.app.FragmentPagerAdapter;
 public class ViewPagerAdapter extends FragmentPagerAdapter {
 
 	int numPages = 4;
+	Activity activity;
 
-	public ViewPagerAdapter(FragmentManager manager) {
+	public ViewPagerAdapter(FragmentManager manager, Activity activity) {
 		super(manager);
+		this.activity = activity;
 	}
 
 	@Override public Fragment getItem(int position) {

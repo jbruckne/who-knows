@@ -5,7 +5,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.TabLayout;
-import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
@@ -43,7 +42,7 @@ public class HomeActivity extends BaseActivity {
 	}
 
 	protected void setupTabs() {
-		final PagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
+		final ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager(), this);
 		pager.setAdapter(adapter);
 
 		for (int i = 0; i < adapter.getCount(); i++) {
