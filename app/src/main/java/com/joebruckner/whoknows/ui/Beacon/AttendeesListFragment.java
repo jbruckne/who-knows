@@ -46,7 +46,7 @@ public class AttendeesListFragment extends BaseFragment implements BaseView<List
 
 	@Override public void onResume() {
 		super.onResume();
-		long id = activity.getIntent().getLongExtra(BeaconDetailActivity.BEACON_ID, 0);
+		String id = activity.getIntent().getStringExtra(BeaconDetailActivity.BEACON_ID);
 		presenter.attachView(this);
 		presenter.loadData(id);
 	}

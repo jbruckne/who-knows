@@ -12,14 +12,10 @@ import android.widget.EditText;
 import com.google.android.gms.maps.model.LatLng;
 import com.joebruckner.whoknows.R;
 import com.joebruckner.whoknows.common.BaseActivity;
-import com.joebruckner.whoknows.models.Beacon;
-import com.joebruckner.whoknows.utilities.AccountApi;
 import com.joebruckner.whoknows.utilities.AppApi;
 import com.joebruckner.whoknows.utilities.LocationApi;
 import com.squareup.otto.Bus;
 import com.squareup.otto.Subscribe;
-
-import java.util.Date;
 
 import javax.inject.Inject;
 
@@ -33,15 +29,12 @@ public class NewBeaconActivity extends BaseActivity {
 	@InjectView(R.id.contact_info) EditText editContactInfo;
 	@InjectView(R.id.location) CheckBox showLocation;
 	@Inject LocationApi locationApi;
-	@Inject AccountApi accountApi;
 	@Inject AppApi appApi;
 	@Inject Bus bus;
 
 	String title;
 	String description;
 	String contactInfo;
-	Date date;
-	String name;
 	LatLng location = null;
 
 	@Override
@@ -87,9 +80,7 @@ public class NewBeaconActivity extends BaseActivity {
 		title = editTitle.getText().toString();
 		description = editDescription.getText().toString();
 		contactInfo = editContactInfo.getText().toString();
-		date = new Date();
-		name = accountApi.getName();
-		appApi.put(new Beacon(title, name, date, contactInfo, description, location));
+		appApi.put(title, description, contactInfo);
 		finish();
 	}
 }

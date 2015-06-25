@@ -14,7 +14,7 @@ import butterknife.ButterKnife;
 import butterknife.InjectView;
 import butterknife.Optional;
 
-public class BeaconViewHolder extends RecyclerView.ViewHolder {
+public class PostViewHolder extends RecyclerView.ViewHolder {
 	@Optional @InjectView (R.id.title) TextView titleView;
 	@Optional @InjectView (R.id.name) TextView nameView;
 	@Optional @InjectView (R.id.description) TextView descriptionView;
@@ -23,7 +23,7 @@ public class BeaconViewHolder extends RecyclerView.ViewHolder {
 
 	public static SimpleDateFormat format = new SimpleDateFormat("MMM dd, yyyy", Locale.US);
 
-	public BeaconViewHolder(View itemView) {
+	public PostViewHolder(View itemView) {
 		super(itemView);
 		ButterKnife.inject(this, itemView);
 	}

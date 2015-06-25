@@ -15,7 +15,7 @@ public class AttendeesListPresenter extends BasePresenter<List<String>> {
 		bus.register(this);
 	}
 
-	public void loadData(long id) {
+	public void loadData(String id) {
 		view.setData(api.getAttendees(id));
 		view.showContent();
 	}

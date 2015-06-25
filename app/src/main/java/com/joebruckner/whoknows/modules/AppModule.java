@@ -7,6 +7,7 @@ import android.location.LocationManager;
 import com.joebruckner.whoknows.WhoKnowsApp;
 import com.joebruckner.whoknows.utilities.AccountApi;
 import com.joebruckner.whoknows.utilities.AppApi;
+import com.joebruckner.whoknows.utilities.FirebaseApi;
 import com.joebruckner.whoknows.utilities.LocationApi;
 import com.joebruckner.whoknows.utilities.TestAccountApi;
 import com.joebruckner.whoknows.utilities.TestAppApi;
@@ -44,8 +45,8 @@ public class AppModule {
 		return new TestAccountApi();
 	}
 
-	@Provides @Singleton AppApi providesWhoKnowsApi(AccountApi api) {
-		return new TestAppApi(api);
+	@Provides @Singleton AppApi providesWhoKnowsApi(Application app, AccountApi api) {
+		return new FirebaseApi(app, api);
 	}
 
 	@Provides @Singleton LocationApi providesLocationApi(LocationManager manager, Bus bus) {

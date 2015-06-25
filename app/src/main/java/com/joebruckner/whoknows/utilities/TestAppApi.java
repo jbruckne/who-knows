@@ -1,57 +1,55 @@
 package com.joebruckner.whoknows.utilities;
 
-import android.util.Log;
-
-import com.joebruckner.whoknows.models.Beacon;
+import com.joebruckner.whoknows.models.Post;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class TestAppApi implements AppApi {
-	List<Beacon> beacons;
+	List<Post> posts;
 	AccountApi api;
 
 	public TestAppApi(AccountApi api) {
 		this.api = api;
-		this.beacons = new ArrayList<>();
+		this.posts = new ArrayList<>();
 	}
 
-	@Override public List<Beacon> getNearbyBeacons() {
-		if (beacons.isEmpty()) for (int i = 0; i < 15; i++)
-			beacons.add(new Beacon("Beacon " + i));
-		return beacons;
+	@Override public List<Post> getNearbyPosts() {
+		if (posts.isEmpty()) for (int i = 0; i < 15; i++)
+			posts.add(new Post());
+		return posts;
 	}
 
-	@Override public List<Beacon> getJoinedBeacons() {
-		if (beacons.isEmpty()) for (int i = 0; i < 15; i++)
-			beacons.add(new Beacon("Beacon " + i));
-		return beacons;
+	@Override public List<Post> getJoinedPosts() {
+		if (posts.isEmpty()) for (int i = 0; i < 15; i++)
+			posts.add(new Post());
+		return posts;
 	}
 
-	@Override public List<Beacon> getPostedBeacons() {
-		List<Beacon> matched = new ArrayList<>();
-		for (Beacon beacon : beacons) {
-			if (beacon.getName().equals(api.getName()))
-				matched.add(beacon);
+	@Override public List<Post> getPostedPosts() {
+		List<Post> matched = new ArrayList<>();
+		for (Post post : posts) {
+			if (post.getName().equals(api.getName()))
+				matched.add(post);
 		}
 		return matched;
 	}
 
-	@Override public void put(Beacon beacon) {
-		Log.d("TestApi", "Adding " + beacon.toString());
-		beacons.add(beacon);
+	@Override public void put(String title, String description, String contactInfo) {
+		Post post = new Post();
+		posts.add(post);
 	}
 
-	@Override public Beacon get(long id) {
-		for (Beacon beacon : beacons)
-			if (beacon.getId() == id) return beacon;
+	@Override public Post get(String id) {
+		for (Post post : posts)
+			if (post.getId().equals(id)) return post;
 		return null;
 	}
 
-	@Override public List<String> getAttendees(long id) {
+	@Override public List<String> getAttendees(String id) {
 		List<String> attendees = new ArrayList<>();
-		for (Beacon beacon : beacons)
-			if (!attendees.contains(beacon.getName())) attendees.add(beacon.getName());
+		for (Post post : posts)
+			if (!attendees.contains(post.getName())) attendees.add(post.getName());
 		return attendees;
 	}
 }

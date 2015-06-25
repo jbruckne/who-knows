@@ -9,20 +9,22 @@ import android.view.ViewGroup;
 
 import com.joebruckner.whoknows.R;
 import com.joebruckner.whoknows.common.BaseFragment;
-import com.joebruckner.whoknows.models.Beacon;
+import com.joebruckner.whoknows.models.Post;
 import com.joebruckner.whoknows.presenters.BasePresenter;
 import com.joebruckner.whoknows.presenters.BaseView;
 import com.joebruckner.whoknows.presenters.BeaconOverviewPresenter;
 
+import java.util.Date;
+
 import javax.inject.Inject;
 
-public class OverviewFragment extends BaseFragment implements BaseView<Beacon> {
+public class OverviewFragment extends BaseFragment implements BaseView<Post> {
 	@Inject BeaconOverviewPresenter presenter;
 	@Inject Activity activity;
 
-	BeaconViewHolder holder;
-	Beacon beacon;
-	long id;
+	PostViewHolder holder;
+	Post post;
+	String id;
 
 	public static OverviewFragment newInstant() {
 		return new OverviewFragment();
@@ -40,9 +42,9 @@ public class OverviewFragment extends BaseFragment implements BaseView<Beacon> {
 
 	@Override public void onResume() {
 		super.onResume();
-		id = activity.getIntent().getLongExtra(BeaconDetailActivity.BEACON_ID, 0);
+		id = activity.getIntent().getStringExtra(BeaconDetailActivity.BEACON_ID);
 		Bundle args = new Bundle();
-		args.putLong(BasePresenter.ID, id);
+		args.putString(BasePresenter.ID, id);
 		presenter.attachView(this);
 		presenter.loadData(args);
 	}
@@ -52,18 +54,20 @@ public class OverviewFragment extends BaseFragment implements BaseView<Beacon> {
 	}
 
 	@Override public void showContent() {
-		holder = new BeaconViewHolder(getView());
-		holder.getNameView().setText(beacon.getName());
-		holder.getDateView().setText(BeaconViewHolder.formatDate(beacon.getDate()));
-		holder.getContactInfo().setText(beacon.getContactInfo());
-		holder.getDescriptionView().setText(beacon.getDescription());
+		holder = new PostViewHolder(getView());
+		holder.getNameView().setText(post.getName());
+		Date date = new Date();
+		date.setTime(post.getDate());
+		holder.getDateView().setText(PostViewHolder.formatDate(date));
+		holder.getContactInfo().setText(post.getContactInfo());
+		holder.getDescriptionView().setText(post.getDescription());
 	}
 
 	@Override public void showError() {
 		// TODO
 	}
 
-	@Override public void setData(Beacon data) {
-		this.beacon = data;
+	@Override public void setData(Post data) {
+		this.post = data;
 	}
 }

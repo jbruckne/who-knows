@@ -12,7 +12,7 @@ import android.view.ViewGroup;
 
 import com.joebruckner.whoknows.R;
 import com.joebruckner.whoknows.common.BaseFragment;
-import com.joebruckner.whoknows.models.Beacon;
+import com.joebruckner.whoknows.models.Post;
 import com.joebruckner.whoknows.presenters.BasePresenter;
 import com.joebruckner.whoknows.presenters.BaseView;
 import com.joebruckner.whoknows.presenters.BeaconListPresenter;
@@ -27,7 +27,7 @@ import javax.inject.Inject;
 import butterknife.ButterKnife;
 import butterknife.InjectView;
 
-public class BeaconListFragment extends BaseFragment implements BaseView<List<Beacon>> {
+public class BeaconListFragment extends BaseFragment implements BaseView<List<Post>> {
 	@InjectView(R.id.list_view) RecyclerView listView;
 	@Inject Activity activity;
 	@Inject BeaconListPresenter presenter;
@@ -81,9 +81,9 @@ public class BeaconListFragment extends BaseFragment implements BaseView<List<Be
 		listView.addOnItemTouchListener(new OnItemClickListener(activity) {
 			@Override public void onItemClick(View view, int position) {
 				Intent intent = new Intent(activity, BeaconDetailActivity.class);
-				Beacon beacon = adapter.getItem(position);
-				intent.putExtra(BeaconDetailActivity.BEACON_ID, beacon.getId());
-				intent.putExtra(BeaconDetailActivity.BEACON_TITLE, beacon.getTitle());
+				Post post = adapter.getItem(position);
+				intent.putExtra(BeaconDetailActivity.BEACON_ID, post.getId());
+				intent.putExtra(BeaconDetailActivity.BEACON_TITLE, post.getTitle());
 				startActivity(intent);
 			}
 		});
@@ -93,7 +93,7 @@ public class BeaconListFragment extends BaseFragment implements BaseView<List<Be
 		// TODO
 	}
 
-	@Override public void setData(List<Beacon> data) {
+	@Override public void setData(List<Post> data) {
 		adapter.setItems(data);
 	}
 }

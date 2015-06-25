@@ -1,14 +1,14 @@
 package com.joebruckner.whoknows.utilities;
 
-import com.joebruckner.whoknows.models.Beacon;
+import com.joebruckner.whoknows.models.Post;
 
 import java.util.List;
 
 public interface AppApi {
-	List<Beacon> getNearbyBeacons();
-	List<Beacon> getJoinedBeacons();
-	List<Beacon> getPostedBeacons();
-	void put(Beacon beacon);
-	Beacon get(long id);
-	List<String> getAttendees(long id);
+	List<Post> getNearbyPosts();
+	List<Post> getJoinedPosts();
+	List<Post> getPostedPosts();
+	void put(String title, String description, String contactInfo);
+	Post get(String id);
+	List<String> getAttendees(String id);
 }

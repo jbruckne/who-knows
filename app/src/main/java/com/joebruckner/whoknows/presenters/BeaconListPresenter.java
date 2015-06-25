@@ -2,7 +2,7 @@ package com.joebruckner.whoknows.presenters;
 
 import android.os.Bundle;
 
-import com.joebruckner.whoknows.models.Beacon;
+import com.joebruckner.whoknows.models.Post;
 import com.joebruckner.whoknows.ui.Home.BeaconListFragment;
 import com.joebruckner.whoknows.utilities.AppApi;
 import com.squareup.otto.Bus;
@@ -10,7 +10,7 @@ import com.squareup.otto.Bus;
 import java.util.ArrayList;
 import java.util.List;
 
-public class BeaconListPresenter extends BasePresenter<List<Beacon>> {
+public class BeaconListPresenter extends BasePresenter<List<Post>> {
 	AppApi api;
 	Bus bus;
 
@@ -22,21 +22,21 @@ public class BeaconListPresenter extends BasePresenter<List<Beacon>> {
 
 	public void loadData(Bundle args) {
 		int filter = args.getInt(TYPE);
-		List<Beacon> beacons;
+		List<Post> posts;
 		switch (filter) {
 			case BeaconListFragment.NEARBY:
-				beacons = api.getNearbyBeacons();
+				posts = api.getNearbyPosts();
 				break;
 			case BeaconListFragment.JOINED:
-				beacons = api.getJoinedBeacons();
+				posts = api.getJoinedPosts();
 				break;
 			case BeaconListFragment.POSTED:
-				beacons = api.getPostedBeacons();
+				posts = api.getPostedPosts();
 				break;
 			default:
-				beacons = new ArrayList<>();
+				posts = new ArrayList<>();
 		}
-		view.setData(beacons);
+		view.setData(posts);
 		view.showContent();
 	}
 
