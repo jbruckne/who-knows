@@ -5,6 +5,7 @@
     <color name="green_500">#4CAF50</color>
     <color name="green_600">#43A047</color>
     <color name="green_700">#388E3C</color>
+    <color name="green_a400">#66BB6A</color>
 
     <color name="light_green_500">#8BC34A</color>
     <color name="light_green_700">#689F38</color>
@@ -25,6 +26,8 @@
     <color name="cyan_500">#00BCD4</color>
     <color name="cyan_700">#0097A7</color>
 
+    <color name="amber_500">#FFC107</color>
+    <color name="amber_700">#FFC107</color>
     <color name="amber_a100">#FFE57F</color>
     <color name="amber_a200">#FFD740</color>
     <color name="amber_a400">#FFC400</color>

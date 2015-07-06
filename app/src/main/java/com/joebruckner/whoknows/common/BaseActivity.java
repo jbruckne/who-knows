@@ -4,9 +4,8 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
 import com.joebruckner.whoknows.WhoKnowsApp;
-import com.joebruckner.whoknows.modules.ActivityModule;
 
-import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 import dagger.ObjectGraph;
@@ -33,7 +32,7 @@ public abstract class BaseActivity extends AppCompatActivity {
 	}
 
 	protected List<Object> getModules() {
-		return Arrays.<Object>asList(new ActivityModule(this));
+		return Collections.emptyList();
 	}
 
 	public void inject(Object object) {

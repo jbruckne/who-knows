@@ -5,13 +5,12 @@ import android.content.Context;
 import android.location.LocationManager;
 
 import com.joebruckner.whoknows.WhoKnowsApp;
-import com.joebruckner.whoknows.utilities.AccountApi;
-import com.joebruckner.whoknows.utilities.AppApi;
-import com.joebruckner.whoknows.utilities.FirebaseApi;
-import com.joebruckner.whoknows.utilities.LocationApi;
-import com.joebruckner.whoknows.utilities.TestAccountApi;
-import com.joebruckner.whoknows.utilities.TestAppApi;
-import com.joebruckner.whoknows.utilities.TestLocationApi;
+import com.joebruckner.whoknows.network.AccountApi;
+import com.joebruckner.whoknows.network.AppApi;
+import com.joebruckner.whoknows.network.FirebaseApi;
+import com.joebruckner.whoknows.network.LocationApi;
+import com.joebruckner.whoknows.network.TestAccountApi;
+import com.joebruckner.whoknows.network.TestLocationApi;
 import com.squareup.otto.Bus;
 import com.squareup.otto.ThreadEnforcer;
 
@@ -45,8 +44,8 @@ public class AppModule {
 		return new TestAccountApi();
 	}
 
-	@Provides @Singleton AppApi providesWhoKnowsApi(Application app, AccountApi api) {
-		return new FirebaseApi(app, api);
+	@Provides @Singleton AppApi providesWhoKnowsApi(Application app, AccountApi api, Bus bus) {
+		return new FirebaseApi(app, api, bus);
 	}
 
 	@Provides @Singleton LocationApi providesLocationApi(LocationManager manager, Bus bus) {

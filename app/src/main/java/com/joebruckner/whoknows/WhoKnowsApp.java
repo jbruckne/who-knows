@@ -2,6 +2,7 @@ package com.joebruckner.whoknows;
 
 import android.app.Application;
 
+import com.firebase.client.Firebase;
 import com.joebruckner.whoknows.modules.AppModule;
 
 import java.util.Arrays;
@@ -15,6 +16,7 @@ public class WhoKnowsApp extends Application {
 	@Override
 	public void onCreate() {
 		super.onCreate();
+		Firebase.setAndroidContext(this);
 		objectGraph = ObjectGraph.create(getModules().toArray());
 		inject(this);
 	}

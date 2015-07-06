@@ -7,31 +7,38 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
+import com.firebase.client.Firebase;
+import com.firebase.client.FirebaseError;
 import com.joebruckner.whoknows.R;
 import com.joebruckner.whoknows.common.BaseActivity;
-import com.joebruckner.whoknows.ui.Beacon.NewBeaconActivity;
+import com.joebruckner.whoknows.modules.HomeModule;
+import com.joebruckner.whoknows.ui.NewPost.NewPostActivity;
+
+import java.util.Arrays;
+import java.util.List;
 
 import javax.inject.Inject;
 
+import butterknife.Bind;
 import butterknife.ButterKnife;
-import butterknife.InjectView;
 
 public class HomeActivity extends BaseActivity {
-	@InjectView(R.id.toolbar) Toolbar toolbar;
-	@InjectView(R.id.tab_layout) TabLayout tabLayout;
-	@InjectView(R.id.fab) FloatingActionButton fab;
-	@InjectView(R.id.pager) ViewPager pager;
+	@Bind(R.id.toolbar) Toolbar toolbar;
+	@Bind(R.id.tab_layout) TabLayout tabLayout;
+	@Bind(R.id.fab) FloatingActionButton fab;
+	@Bind(R.id.pager) ViewPager pager;
 	@Inject Activity activity;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_home);
-		ButterKnife.inject(this);
+		ButterKnife.bind(this);
 		setupToolbar();
 		setupTabs();
 		setupFab();
@@ -70,7 +77,7 @@ public class HomeActivity extends BaseActivity {
 	protected void setupFab() {
 		fab.setOnClickListener(new View.OnClickListener() {
 			@Override public void onClick(View v) {
-				startActivity(new Intent(activity, NewBeaconActivity.class));
+				startActivity(new Intent(activity, NewPostActivity.class));
 			}
 		});
 	}
@@ -86,8 +93,27 @@ public class HomeActivity extends BaseActivity {
 		switch(item.getItemId()) {
 			case R.id.action_settings:
 				return true;
+			case R.id.action_test:
+				test();
 			default:
 				return super.onOptionsItemSelected(item);
 		}
+	}
+
+	@Override protected List<Object> getModules() {
+		return Arrays.<Object>asList(new HomeModule(this));
+	}
+
+	private void test() {
+		final Firebase ref = new Firebase("https://sizzling-torch-124.firebaseio.com");
+		ref.createUser("joembruckner@gmail.com", "doodle", new Firebase.ResultHandler() {
+			@Override public void onSuccess() {
+				Log.d("Auth", "Success");
+			}
+
+			@Override public void onError(FirebaseError firebaseError) {
+				Log.d("Auth", firebaseError.toString());
+			}
+		});
 	}
 }

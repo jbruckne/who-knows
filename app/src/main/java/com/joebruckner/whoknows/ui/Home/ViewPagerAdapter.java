@@ -7,8 +7,9 @@ import android.support.v4.app.FragmentPagerAdapter;
 
 public class ViewPagerAdapter extends FragmentPagerAdapter {
 
-	int numPages = 4;
+	int numPages = 3;
 	Activity activity;
+
 
 	public ViewPagerAdapter(FragmentManager manager, Activity activity) {
 		super(manager);
@@ -18,15 +19,13 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
 	@Override public Fragment getItem(int position) {
 		switch(position) {
 			case 0:
-				return BeaconListFragment.newInstance(0);
+				return PostListFragment.newInstance(0);
 			case 1:
-				return MapViewFragment.newInstance();
+				return PostListFragment.newInstance(0);
 			case 2:
-				return ChatFragment.newInstance();
-			case 3:
-				return ProfileFragment.newInstance();
+				return AccountFragment.newInstance();
 			default:
-				return null;
+				return new Fragment();
 		}
 	}
 
@@ -35,13 +34,11 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
 			case 0:
 				return "Nearby";
 			case 1:
-				return "Map";
+				return "Joined";
 			case 2:
-				return "Chat";
-			case 3:
-				return "Profile";
+				return "Account";
 			default:
-				return null;
+				return "";
 		}
 	}
 
