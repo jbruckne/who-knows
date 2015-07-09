@@ -32,6 +32,8 @@ public class PostSummaryPresenterImpl implements PostSummaryPresenter {
 	}
 
 	@Subscribe public void getPost(Post post) {
+		if (view == null) return;
 		view.setData(post);
+		view.showContent();
 	}
 }

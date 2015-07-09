@@ -30,4 +30,5 @@
     <string name="who_is_going">See who is going</string>
     <string name="dummy_user">dummy user</string>
     <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_register">RegisterActivity</string>
 </resources>

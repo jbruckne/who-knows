@@ -1,4 +1,4 @@
-package com.joebruckner.whoknows.network;
+package com.joebruckner.whoknows.network.Impl;
 
 import android.content.Context;
 import android.util.Log;
@@ -10,13 +10,15 @@ import com.firebase.client.FirebaseError;
 import com.firebase.client.GenericTypeIndicator;
 import com.firebase.client.ValueEventListener;
 import com.joebruckner.whoknows.models.Post;
+import com.joebruckner.whoknows.network.AccountApi;
+import com.joebruckner.whoknows.network.AppApi;
 import com.squareup.otto.Bus;
 
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.Map;
 
-public class FirebaseApi implements AppApi {
+public class FirebaseAppApi implements AppApi {
 	Firebase baseRef;
 	Context context;
 	AccountApi api;
@@ -28,7 +30,7 @@ public class FirebaseApi implements AppApi {
 	private static final String NAME = "name";
 	private static final String DATE = "date";
 
-	public FirebaseApi(Context context, AccountApi api, Bus bus) {
+	public FirebaseAppApi(Context context, AccountApi api, Bus bus) {
 		this.baseRef = new Firebase("https://sizzling-torch-124.firebaseio.com");
 		this.context = context;
 		this.api = api;
@@ -62,7 +64,7 @@ public class FirebaseApi implements AppApi {
 
 	@Override public void put(String title, String description, String contactInfo) {
 		Firebase newPostRef = baseRef.child("posts").push();
-		Post post = new Post(newPostRef.getKey(), title, api.getName(), new Date().getTime
+		Post post = new Post(newPostRef.getKey(), title, api.getUser().getName(), new Date().getTime
 				(), contactInfo, description, 0, 0);
 		newPostRef.setValue(post);
 		Toast.makeText(context, newPostRef.getKey(), Toast.LENGTH_SHORT).show();

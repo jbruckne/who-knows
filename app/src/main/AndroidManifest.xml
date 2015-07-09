@@ -49,8 +49,16 @@
                 android:value=".ui.Home.HomeActivity" />
         </activity>
         <activity
-            android:name=".ui.StartUp.AuthActivity"
+            android:name=".ui.StartUp.LoginActivity"
             android:label="@string/title_activity_login" >
+        </activity>
+        <activity
+            android:name=".ui.StartUp.RegisterActivity"
+            android:label="@string/title_activity_register"
+            android:parentActivityName=".ui.StartUp.LoginActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.joebruckner.whoknows.ui.StartUp.LoginActivity" />
         </activity>
     </application>
 

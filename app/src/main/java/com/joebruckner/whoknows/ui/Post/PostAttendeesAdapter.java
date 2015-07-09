@@ -8,10 +8,11 @@ import android.view.ViewGroup;
 import com.joebruckner.whoknows.R;
 import com.joebruckner.whoknows.models.PostViewHolder;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class PostAttendeesAdapter extends RecyclerView.Adapter<PostViewHolder> {
-	List<String> attendees;
+	List<String> attendees = new ArrayList<>();
 
 	public void setItems(List<String> attendees) {
 		this.attendees = attendees;

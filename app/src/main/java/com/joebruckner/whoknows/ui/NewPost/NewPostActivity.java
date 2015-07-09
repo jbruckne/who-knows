@@ -12,15 +12,19 @@ import android.widget.EditText;
 import com.google.android.gms.maps.model.LatLng;
 import com.joebruckner.whoknows.R;
 import com.joebruckner.whoknows.common.BaseActivity;
+import com.joebruckner.whoknows.modules.HomeModule;
 import com.joebruckner.whoknows.network.AppApi;
 import com.joebruckner.whoknows.network.LocationApi;
 import com.squareup.otto.Bus;
 import com.squareup.otto.Subscribe;
 
+import java.util.Arrays;
+import java.util.List;
+
 import javax.inject.Inject;
 
-import butterknife.ButterKnife;
 import butterknife.Bind;
+import butterknife.ButterKnife;
 
 public class NewPostActivity extends BaseActivity {
 	@Bind(R.id.toolbar) Toolbar toolbar;
@@ -82,5 +86,9 @@ public class NewPostActivity extends BaseActivity {
 		contactInfo = editContactInfo.getText().toString();
 		appApi.put(title, description, contactInfo);
 		finish();
+	}
+
+	@Override protected List<Object> getModules() {
+		return Arrays.<Object>asList(new HomeModule(this));
 	}
 }

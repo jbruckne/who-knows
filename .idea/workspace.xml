@@ -102,11 +102,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="themes.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/values/themes.xml">
+      <file leaf-file-name="FirebaseAppApi.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/network/Impl/FirebaseAppApi.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2795031">
-              <caret line="9" column="57" selection-start-line="9" selection-start-column="57" selection-end-line="9" selection-end-column="57" />
+            <state vertical-scroll-proportion="1.0595238">
+              <caret line="79" column="0" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -1400,7 +1400,7 @@
     <option name="modificationStamps">
       <map>
         <entry key="$USER_HOME$/AndroidStudioProjects/Viral" value="4227559098000" />
-        <entry key="$PROJECT_DIR$" value="4299171437000" />
+        <entry key="$PROJECT_DIR$" value="4299180983000" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -1816,39 +1816,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/utilities/FirebaseDBManager.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/models/Beacon.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/models/Post.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/modules/AppModule.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/ui/Home/BeaconListAdapter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/utilities/AppApi.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/presenters/BeaconOverviewPresenter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/presenters/AttendeesListPresenter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/utilities/TestAppApi.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_auth.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/utilities/GoogleOAuthenticator.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/utilities/FirebaseApi.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/menu/menu_home.xml" />
-        <option value="$PROJECT_DIR$/app/build.gradle" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/ui/Home/BeaconListFragment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/ui/Beacon/OverviewFragment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/ui/Beacon/PostViewHolder.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/ui/Beacon/NewBeaconActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/ui/Beacon/AttendeesListFragment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/ui/Beacon/BeaconDetailActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/presenters/BeaconListPresenter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/presenters/PostsPresenter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/models/PostViewHolder.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/ui/NewPost/NewBeaconActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/ui/Post/PostSummaryView.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/presenters/Impl/PostAttendeesPresenter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/presenters/Impl/PostListPresenter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/presenters/Impl/PostSummaryPresenter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/presenters/PostSummaryPresenter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/presenters/Impl/PostSummaryPresenterImpl.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/ui/Post/PostSummaryFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/presenters/Impl/PostListPresenterImpl.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/ui/Post/PostAttendeesView.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/ui/Post/PostAttendeesFragment.java" />
@@ -1862,11 +1834,39 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/modules/HomeModule.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/ui/StartUp/AuthActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/common/BaseActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/ui/Home/HomeActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/ui/Post/PostDetailActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/ui/Home/ViewPagerAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/themes.xml" />
+        <option value="$PROJECT_DIR$/app/build.gradle" />
+        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_register.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/models/Profile.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/network/Test/TestAccountApi.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/presenters/AuthPresenter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/ui/StartUp/LoginView.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/presenters/Impl/LoginPresenter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/presenters/LoginPresenter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/presenters/Impl/LoginPresenterImpl.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/network/Impl/FirebaseAppApi.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/modules/StartUpModule.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/presenters/RegisterPresenter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/network/AccountApi.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/events/RegisteredEvent.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/events/Event.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/modules/AppModule.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/presenters/Impl/PostSummaryPresenterImpl.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/ui/Post/PostSummaryFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/ui/Post/PostAttendeesAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/ui/NewPost/NewPostActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/ui/StartUp/AuthView.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/ui/StartUp/LoginActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/events/LoggedInEvent.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/network/Impl/FirebaseAccountApi.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/presenters/Impl/RegisterPresenterImpl.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/ui/Home/HomeActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/ui/StartUp/RegisterActivity.java" />
       </list>
     </option>
   </component>
@@ -2010,6 +2010,24 @@
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layout" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Who-Knows" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
             </PATH_ELEMENT>
@@ -2030,32 +2048,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="whoknows" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Who-Knows" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="whoknows" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ui" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Widgets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -2102,7 +2094,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Post" />
+              <option name="myItemId" value="StartUp" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -2246,6 +2238,58 @@
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="network" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Who-Knows" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="whoknows" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="network" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Impl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Who-Knows" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="whoknows" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="modules" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -2269,6 +2313,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Who-Knows" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="whoknows" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="events" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -2343,6 +2409,7 @@
       <recent name="com.joebruckner.whoknows" />
     </key>
     <key name="android.template.parentActivityClass">
+      <recent name="com.joebruckner.whoknows.ui.StartUp.LoginActivity" />
       <recent name="" />
       <recent name="com.joebruckner.whoknows.ui.HomeActivity" />
       <recent name="com.joebruckner.whoknows.ui.MainActivity" />
@@ -2600,7 +2667,7 @@
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25679544" sideWeight="0.50462353" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32893" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32893" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32893" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32893" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297568" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -2663,993 +2730,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="10" />
+      <option name="time" value="12" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_post.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2747253">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.28688523">
-          <caret line="14" column="41" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
-          <folding>
-            <marker date="1436143156000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1436143156000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1436143156000" expanded="false" signature="-1:-1" placeholder="&quot;Who Knows&quot;" />
-            <marker date="1436143156000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1436143156000" expanded="false" signature="-1:-1" placeholder="&quot;7571000&quot;" />
-            <marker date="1436143156000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1436143156000" expanded="false" signature="-1:-1" placeholder="&quot;AIzaSyCF85mkwzpfaXv0NLZMlEfYwI6FwBTyqRM&quot;" />
-            <marker date="1436143156000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1436143156000" expanded="false" signature="-1:-1" placeholder="&quot;NewBeaconActivity&quot;" />
-            <marker date="1436143156000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1436143156000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1436143156000" expanded="false" signature="-1:-1" placeholder="&quot;Who Knows&quot;" />
-            <marker date="1436143156000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1436143156000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1436143156000" expanded="false" signature="-1:-1" placeholder="&quot;BeaconDetailActivity&quot;" />
-            <marker date="1436143156000" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1431484453000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1431484453000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1431484453000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1431484453000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1431484453000" expanded="true" signature="-1:-1" placeholder="{" />
-            <marker date="1431484453000" expanded="true" signature="-1:-1" placeholder="}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_auth.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.234375">
-          <caret line="11" column="43" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
-          <folding>
-            <marker date="1435630109000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1435630109000" expanded="false" signature="-1:-1" placeholder="&quot;16dp&quot;" />
-            <marker date="1435630109000" expanded="false" signature="-1:-1" placeholder="&quot;16dp&quot;" />
-            <marker date="1435630109000" expanded="false" signature="-1:-1" placeholder="&quot;16dp&quot;" />
-            <marker date="1435630109000" expanded="false" signature="-1:-1" placeholder="&quot;16dp&quot;" />
-            <marker date="1435630109000" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/menu_home.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.310559">
-          <caret line="10" column="37" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
-          <folding>
-            <marker date="1435967520000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1435967520000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1435967520000" expanded="false" signature="-1:-1" placeholder="&quot;Settings&quot;" />
-            <marker date="1435967520000" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/build/generated/source/r/debug/com/joebruckner/whoknows/R.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34567901">
-          <caret line="2055" column="61" selection-start-line="2055" selection-start-column="61" selection-end-line="2055" selection-end-column="61" />
-          <folding>
-            <marker date="1436144383000" expanded="false" signature="-1:-1" placeholder="/.../" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1436144383000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2366864">
-          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
-          <folding>
-            <marker date="1436137916000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436137916000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436137916000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436137916000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436137916000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436137916000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436137916000" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/ui/Widgets/OnItemClickListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1183432">
-          <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
-          <folding>
-            <marker date="1433817341000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1433817341000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1433817341000" expanded="false" signature="-1:-1" placeholder="(SimpleOnGestureListener) onSingleTapUp(e) → {" />
-            <marker date="1433817341000" expanded="false" signature="-1:-1" placeholder="}" />
-            <marker date="1433817341000" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/ui/Widgets/FixedRecyclerView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1183432">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding>
-            <marker date="1433284893000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1433284893000" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1433284893000" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1433284893000" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1433284893000" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1433284893000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1433284893000" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/ui/Widgets/DividerItemDecoration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1183432">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding>
-            <marker date="1433284893000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1433284893000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1433284893000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1433284893000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1433284893000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1433284893000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1433284893000" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/ui/StartUp/AuthActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32544377">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding>
-            <marker date="1436143426000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1436143426000" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/ui/Post/PostSummaryView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2366864">
-          <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/ui/Post/PostSummaryFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.504931">
-          <caret line="43" column="35" selection-start-line="43" selection-start-column="35" selection-end-line="43" selection-end-column="35" />
-          <folding>
-            <marker date="1436143156000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1436143156000" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1436143156000" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1436143156000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436143156000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436143156000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436143156000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436143156000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436143156000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436143156000" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/ui/Post/PostAttendeesView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2366864">
-          <caret line="8" column="46" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/ui/Post/PostAttendeesFragment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.57593685">
@@ -3670,66 +2755,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/ui/Post/PostAttendeesAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.71005917">
-          <caret line="34" column="31" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
-          <folding>
-            <marker date="1436140624000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1436140624000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436140624000" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1436140624000" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1436140624000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436140624000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436140624000" expanded="true" signature="-1:-1" placeholder=" { " />
-            <marker date="1436140624000" expanded="true" signature="-1:-1" placeholder=" }" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/ui/NewPost/NewPostActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.08086785">
-          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-          <folding>
-            <marker date="1436143156000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1436143156000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436143156000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436143156000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436143156000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436143156000" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/ui/Home/PostListView.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.20710059">
           <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
           <folding>
             <marker date="1436143156000" expanded="false" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/ui/Home/PostListFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.72386587">
-          <caret line="85" column="15" selection-start-line="85" selection-start-column="15" selection-end-line="85" selection-end-column="15" />
-          <folding>
-            <marker date="1436143156000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1436143156000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436143156000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436143156000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436143156000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436143156000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436143156000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436143156000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436143156000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436143156000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436143156000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436143156000" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1436143156000" expanded="false" signature="-1:-1" placeholder=" }" />
           </folding>
         </state>
       </provider>
@@ -3789,41 +2820,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/presenters/Impl/PostSummaryPresenterImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1183432">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding>
-            <marker date="1436140624000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1436140624000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436140624000" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1436140624000" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1436140624000" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1436140624000" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1436140624000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436140624000" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1436140624000" expanded="false" signature="-1:-1" placeholder=" }" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/presenters/Impl/PostListPresenterImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3984221">
-          <caret line="30" column="20" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
-          <folding>
-            <marker date="1436143156000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1436143156000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436143156000" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1436143156000" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1436143156000" expanded="true" signature="-1:-1" placeholder=" { " />
-            <marker date="1436143156000" expanded="true" signature="-1:-1" placeholder=" }" />
-            <marker date="1436143156000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436143156000" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/presenters/Impl/PostAttendeesPresenterImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5325444">
@@ -3841,27 +2837,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/network/TestLocationApi.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/network/Test/TestLocationApi.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.1183432">
           <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
           <folding>
-            <marker date="1436140624000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1436140624000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436140624000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436140624000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436140624000" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/network/TestAccountApi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0591716">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding>
-            <marker date="1436140624000" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1436140624000" expanded="false" signature="-1:-1" placeholder=" }" />
+            <marker date="1436154068000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1436154068000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436154068000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436154068000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436154068000" expanded="true" signature="-1:-1" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -3874,103 +2859,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/network/FirebaseApi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.31755424">
-          <caret line="30" column="66" selection-start-line="30" selection-start-column="66" selection-end-line="30" selection-end-column="66" />
-          <folding>
-            <marker date="1436140624000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1436140624000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436140624000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436140624000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436140624000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436140624000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436140624000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436140624000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436140624000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436140624000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436140624000" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/network/AppApi.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.2366864">
           <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/network/AccountApi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0591716">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/modules/PostModule.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.70414203">
-          <caret line="49" column="58" selection-start-line="49" selection-start-column="58" selection-end-line="49" selection-end-column="58" />
-          <folding>
-            <marker date="1436143156000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1436143156000" expanded="true" signature="-1:-1" placeholder="@{...}" />
-            <marker date="1436143156000" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1436143156000" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1436143156000" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1436143156000" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1436143156000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436143156000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436143156000" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/modules/AppModule.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.19921105">
-          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
-          <folding>
-            <marker date="1436140624000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1436140624000" expanded="true" signature="-1:-1" placeholder="@{...}" />
-            <marker date="1436140624000" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1436140624000" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1436140624000" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1436140624000" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1436140624000" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1436140624000" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1436140624000" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1436140624000" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1436140624000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436140624000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436140624000" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/models/PostViewHolder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.08086785">
-          <caret line="16" column="40" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
-          <folding>
-            <marker date="1436140624000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1436140624000" expanded="true" signature="-1:-1" placeholder="/ALL/" />
-            <marker date="1436140624000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436140624000" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1436140624000" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1436140624000" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1436140624000" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1436140624000" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1436140624000" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1436140624000" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1436140624000" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1436140624000" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1436140624000" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1436140624000" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1436140624000" expanded="false" signature="-1:-1" placeholder=" }" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -4027,88 +2920,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/WhoKnowsApp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5325444">
-          <caret line="28" column="29" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
-          <folding>
-            <marker date="1435966778000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1435966778000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1435966778000" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1435966778000" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1435966778000" expanded="true" signature="-1:-1" placeholder=" { " />
-            <marker date="1435966778000" expanded="true" signature="-1:-1" placeholder=" }" />
-            <marker date="1435966778000" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1435966778000" expanded="false" signature="-1:-1" placeholder=" }" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/modules/HomeModule.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.82840234">
-          <caret line="50" column="49" selection-start-line="50" selection-start-column="49" selection-end-line="50" selection-end-column="49" />
-          <folding>
-            <marker date="1436143156000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1436143156000" expanded="true" signature="-1:-1" placeholder="@{...}" />
-            <marker date="1436143156000" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1436143156000" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1436143156000" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1436143156000" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1436143156000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436143156000" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1436143156000" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1436143156000" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/common/BaseActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6745562">
-          <caret line="34" column="39" selection-start-line="34" selection-start-column="39" selection-end-line="34" selection-end-column="39" />
-          <folding>
-            <marker date="1436143837000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1436143837000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436143837000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436143837000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436143837000" expanded="true" signature="-1:-1" placeholder=" { " />
-            <marker date="1436143837000" expanded="true" signature="-1:-1" placeholder=" }" />
-            <marker date="1436143837000" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/ui/Home/HomeActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.56213015">
-          <caret line="104" column="5" selection-start-line="104" selection-start-column="5" selection-end-line="104" selection-end-column="5" />
-          <folding>
-            <marker date="1436143837000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1436143837000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436143837000" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1436143837000" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1436143837000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436143837000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436143837000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436143837000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436143837000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436143837000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436143837000" expanded="false" signature="-1:-1" placeholder="(v) → {" />
-            <marker date="1436143837000" expanded="false" signature="-1:-1" placeholder="}" />
-            <marker date="1436143837000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436143837000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436143837000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436143837000" expanded="true" signature="-1:-1" placeholder="&lt;~&gt;" />
-            <marker date="1436143837000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436143837000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436143837000" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1436143837000" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1436143837000" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/ui/Post/PostDetailActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.87376726">
@@ -4153,8 +2964,578 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/themes.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2795031">
-          <caret line="9" column="57" selection-start-line="9" selection-start-column="57" selection-end-line="9" selection-end-column="57" />
+        <state vertical-scroll-proportion="0.45081967">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding>
+            <marker date="1436144379000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1436144379000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1436144379000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.2544379">
+          <caret line="45" column="55" selection-start-line="45" selection-start-column="55" selection-end-line="45" selection-end-column="55" />
+          <folding>
+            <marker date="1436147462000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436147462000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436147462000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436147462000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436147462000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436147462000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436147462000" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.4099379">
+          <caret line="9" column="78" selection-start-line="9" selection-start-column="78" selection-end-line="9" selection-end-column="78" />
+          <folding>
+            <marker date="1436147528000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1436147528000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1436147528000" expanded="false" signature="-1:-1" placeholder="&quot;Who Knows&quot;" />
+            <marker date="1436147528000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1436147528000" expanded="false" signature="-1:-1" placeholder="&quot;7571000&quot;" />
+            <marker date="1436147528000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1436147528000" expanded="false" signature="-1:-1" placeholder="&quot;AIzaSyCF85mkwzpfaXv0NLZMlEfYwI6FwBTyqRM&quot;" />
+            <marker date="1436147528000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1436147528000" expanded="false" signature="-1:-1" placeholder="&quot;NewBeaconActivity&quot;" />
+            <marker date="1436147528000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1436147528000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1436147528000" expanded="false" signature="-1:-1" placeholder="&quot;Who Knows&quot;" />
+            <marker date="1436147528000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1436147528000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1436147528000" expanded="false" signature="-1:-1" placeholder="&quot;BeaconDetailActivity&quot;" />
+            <marker date="1436147528000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1436147528000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1436147528000" expanded="false" signature="-1:-1" placeholder="&quot;LoginActivity&quot;" />
+            <marker date="1436147528000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1436147528000" expanded="false" signature="-1:-1" placeholder="&quot;RegisterActivity&quot;" />
+            <marker date="1436147528000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1436147372000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4900568">
+          <caret line="24" column="48" selection-start-line="24" selection-start-column="48" selection-end-line="24" selection-end-column="48" />
+          <folding>
+            <marker date="1436154068000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1436154068000" expanded="false" signature="-1:-1" placeholder="&quot;16dp&quot;" />
+            <marker date="1436154068000" expanded="false" signature="-1:-1" placeholder="&quot;16dp&quot;" />
+            <marker date="1436154068000" expanded="false" signature="-1:-1" placeholder="&quot;16dp&quot;" />
+            <marker date="1436154068000" expanded="false" signature="-1:-1" placeholder="&quot;16dp&quot;" />
+            <marker date="1436154068000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1436154068000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1436154068000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1436154068000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/models/Profile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.17857143">
+          <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
+          <folding>
+            <marker date="1436154068000" expanded="true" signature="-1:-1" placeholder=" { " />
+            <marker date="1436154068000" expanded="true" signature="-1:-1" placeholder=" }" />
+            <marker date="1436154068000" expanded="true" signature="-1:-1" placeholder=" { " />
+            <marker date="1436154068000" expanded="true" signature="-1:-1" placeholder=" }" />
+            <marker date="1436154068000" expanded="true" signature="-1:-1" placeholder=" { " />
+            <marker date="1436154068000" expanded="true" signature="-1:-1" placeholder=" }" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/presenters/Impl/LoginPresenterImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.09920635">
+          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="25" selection-end-column="5" />
+          <folding>
+            <marker date="1436324603000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1436324603000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436324603000" expanded="false" signature="-1:-1" placeholder=" { " />
+            <marker date="1436324603000" expanded="false" signature="-1:-1" placeholder=" }" />
+            <marker date="1436324603000" expanded="false" signature="-1:-1" placeholder=" { " />
+            <marker date="1436324603000" expanded="false" signature="-1:-1" placeholder=" }" />
+            <marker date="1436324603000" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/WhoKnowsApp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.35714287">
+          <caret line="28" column="29" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
+          <folding>
+            <marker date="1435966778000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1435966778000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1435966778000" expanded="false" signature="-1:-1" placeholder=" { " />
+            <marker date="1435966778000" expanded="false" signature="-1:-1" placeholder=" }" />
+            <marker date="1435966778000" expanded="true" signature="-1:-1" placeholder=" { " />
+            <marker date="1435966778000" expanded="true" signature="-1:-1" placeholder=" }" />
+            <marker date="1435966778000" expanded="false" signature="-1:-1" placeholder=" { " />
+            <marker date="1435966778000" expanded="false" signature="-1:-1" placeholder=" }" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/modules/PostModule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.57539684">
+          <caret line="49" column="58" selection-start-line="49" selection-start-column="58" selection-end-line="49" selection-end-column="58" />
+          <folding>
+            <marker date="1436143156000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1436143156000" expanded="true" signature="-1:-1" placeholder="@{...}" />
+            <marker date="1436143156000" expanded="false" signature="-1:-1" placeholder=" { " />
+            <marker date="1436143156000" expanded="false" signature="-1:-1" placeholder=" }" />
+            <marker date="1436143156000" expanded="false" signature="-1:-1" placeholder=" { " />
+            <marker date="1436143156000" expanded="false" signature="-1:-1" placeholder=" }" />
+            <marker date="1436143156000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436143156000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436143156000" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/network/Test/TestAccountApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6213018">
+          <caret line="26" column="4" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
+          <folding>
+            <marker date="1436155835000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1436155835000" expanded="false" signature="-1:-1" placeholder=" { " />
+            <marker date="1436155835000" expanded="false" signature="-1:-1" placeholder=" }" />
+            <marker date="1436155835000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436155835000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436155835000" expanded="true" signature="-1:-1" placeholder=" { " />
+            <marker date="1436155835000" expanded="true" signature="-1:-1" placeholder=" }" />
+            <marker date="1436155835000" expanded="false" signature="-1:-1" placeholder=" { " />
+            <marker date="1436155835000" expanded="false" signature="-1:-1" placeholder=" }" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/modules/HomeModule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7337278">
+          <caret line="50" column="49" selection-start-line="50" selection-start-column="49" selection-end-line="50" selection-end-column="49" />
+          <folding>
+            <marker date="1436143156000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1436143156000" expanded="true" signature="-1:-1" placeholder="@{...}" />
+            <marker date="1436143156000" expanded="false" signature="-1:-1" placeholder=" { " />
+            <marker date="1436143156000" expanded="false" signature="-1:-1" placeholder=" }" />
+            <marker date="1436143156000" expanded="false" signature="-1:-1" placeholder=" { " />
+            <marker date="1436143156000" expanded="false" signature="-1:-1" placeholder=" }" />
+            <marker date="1436143156000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436143156000" expanded="false" signature="-1:-1" placeholder=" { " />
+            <marker date="1436143156000" expanded="false" signature="-1:-1" placeholder=" }" />
+            <marker date="1436143156000" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/modules/StartUpModule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6804734">
+          <caret line="43" column="23" selection-start-line="43" selection-start-column="23" selection-end-line="43" selection-end-column="23" />
+          <folding>
+            <marker date="1436324603000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1436324603000" expanded="true" signature="-1:-1" placeholder="@{...}" />
+            <marker date="1436324603000" expanded="false" signature="-1:-1" placeholder=" { " />
+            <marker date="1436324603000" expanded="false" signature="-1:-1" placeholder=" }" />
+            <marker date="1436324603000" expanded="false" signature="-1:-1" placeholder=" { " />
+            <marker date="1436324603000" expanded="false" signature="-1:-1" placeholder=" }" />
+            <marker date="1436324603000" expanded="false" signature="-1:-1" placeholder=" { " />
+            <marker date="1436324603000" expanded="false" signature="-1:-1" placeholder=" }" />
+            <marker date="1436324603000" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_register.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.17582418">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding>
+            <marker date="1436154068000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1436154068000" expanded="false" signature="-1:-1" placeholder="&quot;16dp&quot;" />
+            <marker date="1436154068000" expanded="false" signature="-1:-1" placeholder="&quot;16dp&quot;" />
+            <marker date="1436154068000" expanded="false" signature="-1:-1" placeholder="&quot;16dp&quot;" />
+            <marker date="1436154068000" expanded="false" signature="-1:-1" placeholder="&quot;16dp&quot;" />
+            <marker date="1436154068000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1436154068000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1436154068000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1436154068000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/presenters/LoginPresenter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.20710059">
+          <caret line="7" column="46" selection-start-line="7" selection-start-column="46" selection-end-line="7" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/presenters/RegisterPresenter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.20710059">
+          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/network/AccountApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.32544377">
+          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/events/Event.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3846154">
+          <caret line="13" column="11" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
+          <folding>
+            <marker date="1436407444000" expanded="true" signature="-1:-1" placeholder=" { " />
+            <marker date="1436407444000" expanded="true" signature="-1:-1" placeholder=" }" />
+            <marker date="1436407444000" expanded="false" signature="-1:-1" placeholder=" { " />
+            <marker date="1436407444000" expanded="false" signature="-1:-1" placeholder=" }" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/modules/AppModule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.52662724">
+          <caret line="48" column="48" selection-start-line="48" selection-start-column="48" selection-end-line="48" selection-end-column="48" />
+          <folding>
+            <marker date="1436407491000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1436407491000" expanded="true" signature="-1:-1" placeholder="@{...}" />
+            <marker date="1436407491000" expanded="false" signature="-1:-1" placeholder=" { " />
+            <marker date="1436407491000" expanded="false" signature="-1:-1" placeholder=" }" />
+            <marker date="1436407491000" expanded="false" signature="-1:-1" placeholder=" { " />
+            <marker date="1436407491000" expanded="false" signature="-1:-1" placeholder=" }" />
+            <marker date="1436407491000" expanded="false" signature="-1:-1" placeholder=" { " />
+            <marker date="1436407491000" expanded="false" signature="-1:-1" placeholder=" }" />
+            <marker date="1436407491000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436407491000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436407491000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436407491000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436407491000" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/models/PostViewHolder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.34911242">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding>
+            <marker date="1436140624000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1436140624000" expanded="false" signature="-1:-1" placeholder="/ALL/" />
+            <marker date="1436140624000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436140624000" expanded="false" signature="-1:-1" placeholder=" { " />
+            <marker date="1436140624000" expanded="false" signature="-1:-1" placeholder=" }" />
+            <marker date="1436140624000" expanded="false" signature="-1:-1" placeholder=" { " />
+            <marker date="1436140624000" expanded="false" signature="-1:-1" placeholder=" }" />
+            <marker date="1436140624000" expanded="false" signature="-1:-1" placeholder=" { " />
+            <marker date="1436140624000" expanded="false" signature="-1:-1" placeholder=" }" />
+            <marker date="1436140624000" expanded="false" signature="-1:-1" placeholder=" { " />
+            <marker date="1436140624000" expanded="false" signature="-1:-1" placeholder=" }" />
+            <marker date="1436140624000" expanded="false" signature="-1:-1" placeholder=" { " />
+            <marker date="1436140624000" expanded="false" signature="-1:-1" placeholder=" }" />
+            <marker date="1436140624000" expanded="false" signature="-1:-1" placeholder=" { " />
+            <marker date="1436140624000" expanded="false" signature="-1:-1" placeholder=" }" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/presenters/Impl/PostSummaryPresenterImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7337278">
+          <caret line="34" column="33" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
+          <folding>
+            <marker date="1436408233000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1436408233000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436408233000" expanded="false" signature="-1:-1" placeholder=" { " />
+            <marker date="1436408233000" expanded="false" signature="-1:-1" placeholder=" }" />
+            <marker date="1436408233000" expanded="false" signature="-1:-1" placeholder=" { " />
+            <marker date="1436408233000" expanded="false" signature="-1:-1" placeholder=" }" />
+            <marker date="1436408233000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436408233000" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/ui/Post/PostSummaryFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8579882">
+          <caret line="71" column="31" selection-start-line="71" selection-start-column="31" selection-end-line="71" selection-end-column="31" />
+          <folding>
+            <marker date="1436408233000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1436408233000" expanded="false" signature="-1:-1" placeholder=" { " />
+            <marker date="1436408233000" expanded="false" signature="-1:-1" placeholder=" }" />
+            <marker date="1436408233000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436408233000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436408233000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436408233000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436408233000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436408233000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436408233000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436408233000" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/ui/Post/PostAttendeesAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.14201184">
+          <caret line="14" column="46" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
+          <folding>
+            <marker date="1436408337000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1436408337000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436408337000" expanded="false" signature="-1:-1" placeholder=" { " />
+            <marker date="1436408337000" expanded="false" signature="-1:-1" placeholder=" }" />
+            <marker date="1436408337000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436408337000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436408337000" expanded="true" signature="-1:-1" placeholder=" { " />
+            <marker date="1436408337000" expanded="true" signature="-1:-1" placeholder=" }" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/common/BaseActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.52662724">
+          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding>
+            <marker date="1436143837000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1436143837000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436143837000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436143837000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436143837000" expanded="false" signature="-1:-1" placeholder=" { " />
+            <marker date="1436143837000" expanded="false" signature="-1:-1" placeholder=" }" />
+            <marker date="1436143837000" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/ui/NewPost/NewPostActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.43786982">
+          <caret line="81" column="0" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
+          <folding>
+            <marker date="1436408842000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1436408842000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436408842000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436408842000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436408842000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436408842000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436408842000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436408842000" expanded="true" signature="-1:-1" placeholder="&lt;~&gt;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/ui/StartUp/AuthView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.17751479">
+          <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/ui/StartUp/LoginActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.61538464">
+          <caret line="45" column="8" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="8" />
+          <folding>
+            <marker date="1436409995000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1436409995000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436409995000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436409995000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436409995000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436409995000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436409995000" expanded="false" signature="-1:-1" placeholder="&lt;~&gt;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/events/RegisteredEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1183432">
+          <caret line="4" column="37" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
+          <folding>
+            <marker date="1436407444000" expanded="true" signature="-1:-1" placeholder=" { " />
+            <marker date="1436407444000" expanded="true" signature="-1:-1" placeholder=" }" />
+            <marker date="1436407444000" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/events/LoggedInEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4733728">
+          <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+          <folding>
+            <marker date="1436409995000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436409995000" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/network/Impl/FirebaseAccountApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4733728">
+          <caret line="52" column="61" selection-start-line="52" selection-start-column="61" selection-end-line="52" selection-end-column="61" />
+          <folding>
+            <marker date="1436409995000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1436409995000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436409995000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436409995000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436409995000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436409995000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436409995000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436409995000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436409995000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436409995000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436409995000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436409995000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436409995000" expanded="false" signature="-1:-1" placeholder=" { " />
+            <marker date="1436409995000" expanded="false" signature="-1:-1" placeholder=" }" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/presenters/Impl/RegisterPresenterImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7928994">
+          <caret line="52" column="43" selection-start-line="52" selection-start-column="43" selection-end-line="52" selection-end-column="43" />
+          <folding>
+            <marker date="1436409995000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1436409995000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436409995000" expanded="false" signature="-1:-1" placeholder=" { " />
+            <marker date="1436409995000" expanded="false" signature="-1:-1" placeholder=" }" />
+            <marker date="1436409995000" expanded="false" signature="-1:-1" placeholder=" { " />
+            <marker date="1436409995000" expanded="false" signature="-1:-1" placeholder=" }" />
+            <marker date="1436409995000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436409995000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436409995000" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/ui/StartUp/RegisterActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6745562">
+          <caret line="63" column="17" selection-start-line="63" selection-start-column="17" selection-end-line="63" selection-end-column="17" />
+          <folding>
+            <marker date="1436409995000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1436409995000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436409995000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436409995000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436409995000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436409995000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436409995000" expanded="false" signature="-1:-1" placeholder="&lt;~&gt;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/ui/Home/HomeActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.1111112">
+          <caret line="83" column="50" selection-start-line="83" selection-start-column="50" selection-end-line="83" selection-end-column="50" />
+          <folding>
+            <marker date="1436409995000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1436409995000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436409995000" expanded="false" signature="-1:-1" placeholder=" { " />
+            <marker date="1436409995000" expanded="false" signature="-1:-1" placeholder=" }" />
+            <marker date="1436409995000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436409995000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436409995000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436409995000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436409995000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436409995000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436409995000" expanded="false" signature="-1:-1" placeholder="(v) → {" />
+            <marker date="1436409995000" expanded="false" signature="-1:-1" placeholder="}" />
+            <marker date="1436409995000" expanded="false" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436409995000" expanded="false" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436409995000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436409995000" expanded="false" signature="-1:-1" placeholder="&lt;~&gt;" />
+            <marker date="1436409995000" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/ui/Home/PostListFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8042328">
+          <caret line="85" column="15" selection-start-line="85" selection-start-column="15" selection-end-line="85" selection-end-column="15" />
+          <folding>
+            <marker date="1436143156000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1436143156000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436143156000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436143156000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436143156000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436143156000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436143156000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436143156000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436143156000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436143156000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436143156000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436143156000" expanded="false" signature="-1:-1" placeholder=" { " />
+            <marker date="1436143156000" expanded="false" signature="-1:-1" placeholder=" }" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/presenters/Impl/PostListPresenterImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.47619048">
+          <caret line="36" column="37" selection-start-line="36" selection-start-column="37" selection-end-line="36" selection-end-column="37" />
+          <folding>
+            <marker date="1436143156000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1436143156000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436143156000" expanded="false" signature="-1:-1" placeholder=" { " />
+            <marker date="1436143156000" expanded="false" signature="-1:-1" placeholder=" }" />
+            <marker date="1436143156000" expanded="true" signature="-1:-1" placeholder=" { " />
+            <marker date="1436143156000" expanded="true" signature="-1:-1" placeholder=" }" />
+            <marker date="1436143156000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436143156000" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/network/Impl/FirebaseAppApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.0595238">
+          <caret line="79" column="0" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
           <folding />
         </state>
       </provider>

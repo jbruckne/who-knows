@@ -67,4 +67,9 @@ public class PostSummaryFragment extends BaseFragment implements PostSummaryView
 		this.post = post;
 		showContent();
 	}
+
+	@Override public void onDestroyView() {
+		presenter.detachView();
+		super.onDestroyView();
+	}
 }

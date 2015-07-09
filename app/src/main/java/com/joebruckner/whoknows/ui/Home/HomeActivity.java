@@ -7,17 +7,15 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
-import com.firebase.client.Firebase;
-import com.firebase.client.FirebaseError;
 import com.joebruckner.whoknows.R;
 import com.joebruckner.whoknows.common.BaseActivity;
 import com.joebruckner.whoknows.modules.HomeModule;
 import com.joebruckner.whoknows.ui.NewPost.NewPostActivity;
+import com.joebruckner.whoknows.ui.StartUp.LoginActivity;
 
 import java.util.Arrays;
 import java.util.List;
@@ -105,15 +103,8 @@ public class HomeActivity extends BaseActivity {
 	}
 
 	private void test() {
-		final Firebase ref = new Firebase("https://sizzling-torch-124.firebaseio.com");
-		ref.createUser("joembruckner@gmail.com", "doodle", new Firebase.ResultHandler() {
-			@Override public void onSuccess() {
-				Log.d("Auth", "Success");
-			}
-
-			@Override public void onError(FirebaseError firebaseError) {
-				Log.d("Auth", firebaseError.toString());
-			}
-		});
+		Intent intent = new Intent(this, LoginActivity.class);
+		startActivity(intent);
+		finish();
 	}
 }
