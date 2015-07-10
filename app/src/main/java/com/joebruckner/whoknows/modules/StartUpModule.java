@@ -36,8 +36,8 @@ public class StartUpModule {
 		return activity;
 	}
 
-	@Provides LoginPresenter providesLoginPresenter(Bus bus) {
-		return new LoginPresenterImpl(bus);
+	@Provides LoginPresenter providesLoginPresenter(Bus bus, AccountApi api) {
+		return new LoginPresenterImpl(bus, api);
 	}
 
 	@Provides RegisterPresenter providesRegisterPresenter(Bus bus, AccountApi api) {

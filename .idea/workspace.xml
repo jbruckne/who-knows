@@ -102,11 +102,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="FirebaseAppApi.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/network/Impl/FirebaseAppApi.java">
+      <file leaf-file-name="HomeActivity.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/ui/Home/HomeActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.0595238">
-              <caret line="79" column="0" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
+            <state vertical-scroll-proportion="-0.12426036">
+              <caret line="76" column="0" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -1816,9 +1816,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/ui/Post/PostSummaryView.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/presenters/Impl/PostAttendeesPresenter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/presenters/Impl/PostListPresenter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/presenters/Impl/PostSummaryPresenter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/presenters/PostSummaryPresenter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/presenters/Impl/PostListPresenterImpl.java" />
@@ -1836,7 +1833,6 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/common/BaseActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/ui/Post/PostDetailActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/ui/Home/ViewPagerAdapter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/themes.xml" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
@@ -1848,9 +1844,7 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/ui/StartUp/LoginView.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/presenters/Impl/LoginPresenter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/presenters/LoginPresenter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/presenters/Impl/LoginPresenterImpl.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/network/Impl/FirebaseAppApi.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/modules/StartUpModule.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/presenters/RegisterPresenter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/network/AccountApi.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/events/RegisteredEvent.java" />
@@ -1861,12 +1855,18 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/ui/Post/PostAttendeesAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/ui/NewPost/NewPostActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/ui/StartUp/AuthView.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/ui/StartUp/LoginActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/events/LoggedInEvent.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/network/Impl/FirebaseAccountApi.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/presenters/Impl/RegisterPresenterImpl.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/ui/Home/HomeActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/Navigator.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/ui/StartUp/RegisterActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/presenters/Impl/LoginPresenterImpl.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/modules/StartUpModule.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/ui/StartUp/LoginActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/ui/Widgets/simpleOnTabSelectedListener.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/ui/Widgets/SimpleOnTabSelectedListener.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/ui/Home/HomeActivity.java" />
       </list>
     </option>
   </component>
@@ -2071,6 +2071,32 @@
               <option name="myItemId" value="ui" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Widgets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Who-Knows" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="whoknows" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -2095,32 +2121,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="StartUp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Who-Knows" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="whoknows" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ui" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NewPost" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -2667,7 +2667,7 @@
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25679544" sideWeight="0.50462353" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32893" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32893" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32893" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32893" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297568" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -2735,67 +2735,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/ui/Post/PostAttendeesFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.57593685">
-          <caret line="49" column="37" selection-start-line="49" selection-start-column="37" selection-end-line="49" selection-end-column="37" />
-          <folding>
-            <marker date="1436143156000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1436143156000" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1436143156000" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1436143156000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436143156000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436143156000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436143156000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436143156000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436143156000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436143156000" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1436143156000" expanded="false" signature="-1:-1" placeholder=" }" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/ui/Home/PostListView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.20710059">
-          <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
-          <folding>
-            <marker date="1436143156000" expanded="false" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/ui/Home/PostListAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.46745563">
-          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding>
-            <marker date="1436143156000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1436143156000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436143156000" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1436143156000" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1436143156000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436143156000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436143156000" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1436143156000" expanded="false" signature="-1:-1" placeholder=" }" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/ui/Home/AccountFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.147929">
-          <caret line="10" column="68" selection-start-line="10" selection-start-column="68" selection-end-line="10" selection-end-column="68" />
-          <folding>
-            <marker date="1436143156000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1436143156000" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1436143156000" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1436143156000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436143156000" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/presenters/PostSummaryPresenter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.20710059">
@@ -2952,16 +2891,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21118012">
-          <caret line="7" column="36" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
-          <folding>
-            <marker date="1436144379000" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/themes.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.45081967">
@@ -2970,22 +2899,6 @@
             <marker date="1436144379000" expanded="true" signature="-1:-1" placeholder="..." />
             <marker date="1436144379000" expanded="true" signature="-1:-1" placeholder="..." />
             <marker date="1436144379000" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.2544379">
-          <caret line="45" column="55" selection-start-line="45" selection-start-column="55" selection-end-line="45" selection-end-column="55" />
-          <folding>
-            <marker date="1436147462000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436147462000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436147462000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436147462000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436147462000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436147462000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436147462000" expanded="true" signature="-1:-1" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -3030,27 +2943,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4900568">
-          <caret line="24" column="48" selection-start-line="24" selection-start-column="48" selection-end-line="24" selection-end-column="48" />
-          <folding>
-            <marker date="1436154068000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1436154068000" expanded="false" signature="-1:-1" placeholder="&quot;16dp&quot;" />
-            <marker date="1436154068000" expanded="false" signature="-1:-1" placeholder="&quot;16dp&quot;" />
-            <marker date="1436154068000" expanded="false" signature="-1:-1" placeholder="&quot;16dp&quot;" />
-            <marker date="1436154068000" expanded="false" signature="-1:-1" placeholder="&quot;16dp&quot;" />
-            <marker date="1436154068000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1436154068000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1436154068000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1436154068000" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/models/Profile.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.17857143">
@@ -3062,22 +2954,6 @@
             <marker date="1436154068000" expanded="true" signature="-1:-1" placeholder=" }" />
             <marker date="1436154068000" expanded="true" signature="-1:-1" placeholder=" { " />
             <marker date="1436154068000" expanded="true" signature="-1:-1" placeholder=" }" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/presenters/Impl/LoginPresenterImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.09920635">
-          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="25" selection-end-column="5" />
-          <folding>
-            <marker date="1436324603000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1436324603000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436324603000" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1436324603000" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1436324603000" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1436324603000" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1436324603000" expanded="true" signature="-1:-1" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -3154,24 +3030,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/modules/StartUpModule.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6804734">
-          <caret line="43" column="23" selection-start-line="43" selection-start-column="23" selection-end-line="43" selection-end-column="23" />
-          <folding>
-            <marker date="1436324603000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1436324603000" expanded="true" signature="-1:-1" placeholder="@{...}" />
-            <marker date="1436324603000" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1436324603000" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1436324603000" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1436324603000" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1436324603000" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1436324603000" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1436324603000" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_register.xml">
       <provider editor-type-id="android-designer">
         <state />
@@ -3190,22 +3048,6 @@
             <marker date="1436154068000" expanded="true" signature="-1:-1" placeholder="..." />
             <marker date="1436154068000" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/presenters/LoginPresenter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.20710059">
-          <caret line="7" column="46" selection-start-line="7" selection-start-column="46" selection-end-line="7" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/presenters/RegisterPresenter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.20710059">
-          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3371,22 +3213,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/ui/StartUp/LoginActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.61538464">
-          <caret line="45" column="8" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="8" />
-          <folding>
-            <marker date="1436409995000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1436409995000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436409995000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436409995000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436409995000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436409995000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436409995000" expanded="false" signature="-1:-1" placeholder="&lt;~&gt;" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/events/RegisteredEvent.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.1183432">
@@ -3433,66 +3259,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/presenters/Impl/RegisterPresenterImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7928994">
-          <caret line="52" column="43" selection-start-line="52" selection-start-column="43" selection-end-line="52" selection-end-column="43" />
-          <folding>
-            <marker date="1436409995000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1436409995000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436409995000" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1436409995000" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1436409995000" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1436409995000" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1436409995000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436409995000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436409995000" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/ui/StartUp/RegisterActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6745562">
-          <caret line="63" column="17" selection-start-line="63" selection-start-column="17" selection-end-line="63" selection-end-column="17" />
-          <folding>
-            <marker date="1436409995000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1436409995000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436409995000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436409995000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436409995000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436409995000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436409995000" expanded="false" signature="-1:-1" placeholder="&lt;~&gt;" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/ui/Home/HomeActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.1111112">
-          <caret line="83" column="50" selection-start-line="83" selection-start-column="50" selection-end-line="83" selection-end-column="50" />
-          <folding>
-            <marker date="1436409995000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1436409995000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436409995000" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1436409995000" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1436409995000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436409995000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436409995000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436409995000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436409995000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436409995000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436409995000" expanded="false" signature="-1:-1" placeholder="(v) → {" />
-            <marker date="1436409995000" expanded="false" signature="-1:-1" placeholder="}" />
-            <marker date="1436409995000" expanded="false" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436409995000" expanded="false" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436409995000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436409995000" expanded="false" signature="-1:-1" placeholder="&lt;~&gt;" />
-            <marker date="1436409995000" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/ui/Home/PostListFragment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.8042328">
@@ -3534,8 +3300,217 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/network/Impl/FirebaseAppApi.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.0595238">
+        <state vertical-scroll-proportion="1.0133333">
           <caret line="79" column="0" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
+          <folding>
+            <marker date="1436155172000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1436155172000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436155172000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436155172000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436155172000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436155172000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436155172000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436155172000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436155172000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436155172000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436155172000" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1431484453000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431484453000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431484453000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431484453000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431484453000" expanded="true" signature="-1:-1" placeholder="{" />
+            <marker date="1431484453000" expanded="true" signature="-1:-1" placeholder="}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/settings.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.5">
+          <caret line="45" column="55" selection-start-line="45" selection-start-column="55" selection-end-line="45" selection-end-column="55" />
+          <folding>
+            <marker date="1436147462000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436147462000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436147462000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436147462000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436147462000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436147462000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436147462000" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4037267">
+          <caret line="28" column="43" selection-start-line="28" selection-start-column="43" selection-end-line="28" selection-end-column="43" />
+          <folding>
+            <marker date="1436498662000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/Navigator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0591716">
+          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/presenters/LoginPresenter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.20710059">
+          <caret line="7" column="46" selection-start-line="7" selection-start-column="46" selection-end-line="7" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/presenters/RegisterPresenter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.20710059">
+          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/presenters/Impl/RegisterPresenterImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.852071">
+          <caret line="54" column="5" selection-start-line="54" selection-start-column="5" selection-end-line="54" selection-end-column="5" />
+          <folding>
+            <marker date="1436409995000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1436409995000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436409995000" expanded="false" signature="-1:-1" placeholder=" { " />
+            <marker date="1436409995000" expanded="false" signature="-1:-1" placeholder=" }" />
+            <marker date="1436409995000" expanded="false" signature="-1:-1" placeholder=" { " />
+            <marker date="1436409995000" expanded="false" signature="-1:-1" placeholder=" }" />
+            <marker date="1436409995000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436409995000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436409995000" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/presenters/Impl/LoginPresenterImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.82840234">
+          <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
+          <folding>
+            <marker date="1436499089000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1436499089000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436499089000" expanded="false" signature="-1:-1" placeholder=" { " />
+            <marker date="1436499089000" expanded="false" signature="-1:-1" placeholder=" }" />
+            <marker date="1436499089000" expanded="false" signature="-1:-1" placeholder=" { " />
+            <marker date="1436499089000" expanded="false" signature="-1:-1" placeholder=" }" />
+            <marker date="1436499089000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436499089000" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/modules/StartUpModule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6213018">
+          <caret line="39" column="48" selection-start-line="39" selection-start-column="48" selection-end-line="39" selection-end-column="48" />
+          <folding>
+            <marker date="1436499122000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1436499122000" expanded="true" signature="-1:-1" placeholder="@{...}" />
+            <marker date="1436499122000" expanded="false" signature="-1:-1" placeholder=" { " />
+            <marker date="1436499122000" expanded="false" signature="-1:-1" placeholder=" }" />
+            <marker date="1436499122000" expanded="false" signature="-1:-1" placeholder=" { " />
+            <marker date="1436499122000" expanded="false" signature="-1:-1" placeholder=" }" />
+            <marker date="1436499122000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436499122000" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/ui/StartUp/RegisterActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9408284">
+          <caret line="55" column="5" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
+          <folding>
+            <marker date="1436498844000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1436498844000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436498844000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436498844000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436498844000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436498844000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436498844000" expanded="false" signature="-1:-1" placeholder="&lt;~&gt;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.51648355">
+          <caret line="24" column="48" selection-start-line="24" selection-start-column="48" selection-end-line="24" selection-end-column="48" />
+          <folding>
+            <marker date="1436154068000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1436154068000" expanded="false" signature="-1:-1" placeholder="&quot;16dp&quot;" />
+            <marker date="1436154068000" expanded="false" signature="-1:-1" placeholder="&quot;16dp&quot;" />
+            <marker date="1436154068000" expanded="false" signature="-1:-1" placeholder="&quot;16dp&quot;" />
+            <marker date="1436154068000" expanded="false" signature="-1:-1" placeholder="&quot;16dp&quot;" />
+            <marker date="1436154068000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1436154068000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1436154068000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1436154068000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/ui/StartUp/LoginActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.09467456">
+          <caret line="36" column="81" selection-start-line="36" selection-start-column="81" selection-end-line="36" selection-end-column="81" />
+          <folding>
+            <marker date="1436499355000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1436499355000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436499355000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436499355000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436499355000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436499355000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436499355000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436499355000" expanded="false" signature="-1:-1" placeholder="&lt;~&gt;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/ui/Widgets/SimpleOnTabSelectedListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1183432">
+          <caret line="4" column="40" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
+          <folding>
+            <marker date="1436499696000" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joebruckner/whoknows/ui/Home/HomeActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.12426036">
+          <caret line="76" column="0" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
           <folding />
         </state>
       </provider>

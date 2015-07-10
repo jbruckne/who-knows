@@ -49,7 +49,7 @@ public class RegisterActivity extends BaseActivity implements AuthView {
 	}
 
 	@Override public void showSuccess() {
-		Snackbar.make(getWindow().getDecorView().getRootView(), "Successfully Logged In", Snackbar
+		Snackbar.make(getWindow().getDecorView().getRootView(), "Successfully Registered", Snackbar
 				.LENGTH_SHORT)
 				.setAction("Action", null)
 				.show();
