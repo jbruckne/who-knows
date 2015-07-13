@@ -1,6 +1,6 @@
-package com.joebruckner.whoknows.network;
+package com.joebruckner.whoknows.managers;
 
-public interface AppApi {
+public interface DatabaseManager {
 	void getNearbyPosts();
 	void getJoinedPosts();
 	void getPostedPosts();

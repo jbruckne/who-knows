@@ -16,9 +16,9 @@ import android.widget.Toast;
 import com.joebruckner.whoknows.R;
 import com.joebruckner.whoknows.common.BaseActivity;
 import com.joebruckner.whoknows.modules.HomeModule;
-import com.joebruckner.whoknows.network.AccountApi;
+import com.joebruckner.whoknows.managers.AccountManager;
 import com.joebruckner.whoknows.ui.NewPost.NewPostActivity;
-import com.joebruckner.whoknows.ui.StartUp.LoginActivity;
+import com.joebruckner.whoknows.ui.StartUp.AuthActivity;
 import com.joebruckner.whoknows.ui.Widgets.SimpleOnTabSelectedListener;
 
 import java.util.Arrays;
@@ -35,23 +35,23 @@ public class HomeActivity extends BaseActivity {
 	@Bind(R.id.fab) FloatingActionButton fab;
 	@Bind(R.id.pager) ViewPager pager;
 	@Inject Activity activity;
-	@Inject AccountApi accountApi;
+	@Inject AccountManager accountManager;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_home);
-		ButterKnife.bind(this);
+		Log.d("Home", "" + this);
 		checkAuth();
+		ButterKnife.bind(this);
 		setupToolbar();
 		setupTabs();
 		setupFab();
 	}
 
 	protected void checkAuth() {
-		if (!accountApi.isLoggedIn()) {
-			startActivity(new Intent(this, LoginActivity.class));
-			finish();
+		if (!accountManager.isLoggedIn()) {
+			startActivity(new Intent(this, AuthActivity.class));
 		}
 	}
 

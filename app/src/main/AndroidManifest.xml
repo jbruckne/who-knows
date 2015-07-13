@@ -2,12 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.joebruckner.whoknows" >
 
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
         android:name=".WhoKnowsApp"
@@ -33,10 +31,10 @@
         </activity>
         <activity
             android:name=".ui.Home.HomeActivity"
-            android:label="@string/app_name" >
+            android:label="@string/app_name"
+            android:launchMode="singleTask">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -49,16 +47,8 @@
                 android:value=".ui.Home.HomeActivity" />
         </activity>
         <activity
-            android:name=".ui.StartUp.LoginActivity"
-            android:label="@string/title_activity_login" >
-        </activity>
-        <activity
-            android:name=".ui.StartUp.RegisterActivity"
-            android:label="@string/title_activity_register"
-            android:parentActivityName=".ui.StartUp.LoginActivity" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.joebruckner.whoknows.ui.StartUp.LoginActivity" />
+            android:name=".ui.StartUp.AuthActivity"
+            android:label="@string/title_activity_login">
         </activity>
     </application>
 

@@ -1,4 +1,4 @@
-package com.joebruckner.whoknows.network.Test;
+package com.joebruckner.whoknows.managers.Test;
 
 import android.app.Application;
 import android.location.Location;
@@ -6,7 +6,7 @@ import android.location.LocationListener;
 import android.location.LocationManager;
 import android.os.Bundle;
 
-import com.joebruckner.whoknows.network.LocationApi;
+import com.joebruckner.whoknows.managers.LocationApi;
 import com.squareup.otto.Bus;
 
 public class TestLocationApi implements LocationApi, LocationListener {

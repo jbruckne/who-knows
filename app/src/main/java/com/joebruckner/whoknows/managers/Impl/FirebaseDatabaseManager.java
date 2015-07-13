@@ -1,4 +1,4 @@
-package com.joebruckner.whoknows.network.Impl;
+package com.joebruckner.whoknows.managers.Impl;
 
 import android.content.Context;
 import android.util.Log;
@@ -9,28 +9,28 @@ import com.firebase.client.Firebase;
 import com.firebase.client.FirebaseError;
 import com.firebase.client.GenericTypeIndicator;
 import com.firebase.client.ValueEventListener;
+import com.joebruckner.whoknows.events.Event;
+import com.joebruckner.whoknows.events.PostFetchedEvent;
+import com.joebruckner.whoknows.events.PostsFetchedEvent;
 import com.joebruckner.whoknows.models.Post;
-import com.joebruckner.whoknows.network.AccountApi;
-import com.joebruckner.whoknows.network.AppApi;
+import com.joebruckner.whoknows.managers.AccountManager;
+import com.joebruckner.whoknows.managers.DatabaseManager;
 import com.squareup.otto.Bus;
 
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.Map;
+import java.util.UUID;
 
-public class FirebaseAppApi implements AppApi {
+public class FirebaseDatabaseManager implements DatabaseManager {
 	Firebase baseRef;
 	Context context;
-	AccountApi api;
+	AccountManager api;
 	Bus bus;
 
-	private static final String TITLE = "title";
-	private static final String DESCRIPTION = "description";
-	private static final String CONTACT_INFO = "contact_info";
-	private static final String NAME = "name";
-	private static final String DATE = "date";
+	private boolean isDoingRequest = false;
 
-	public FirebaseAppApi(Context context, AccountApi api, Bus bus) {
+	public FirebaseDatabaseManager(Context context, AccountManager api, Bus bus) {
 		this.baseRef = new Firebase("https://sizzling-torch-124.firebaseio.com");
 		this.context = context;
 		this.api = api;
@@ -38,18 +38,25 @@ public class FirebaseAppApi implements AppApi {
 	}
 
 	@Override public void getNearbyPosts() {
-		Firebase postsRef = baseRef.child("posts");
+		if (isDoingRequest) return;
+		isDoingRequest = true;
+		final Firebase postsRef = baseRef.child("posts");
 		postsRef.addListenerForSingleValueEvent(new ValueEventListener() {
 			@Override public void onDataChange(DataSnapshot dataSnapshot) {
 				GenericTypeIndicator<Map<String, Post>> type = new
 						GenericTypeIndicator<Map<String, Post>>() {};
 				Map<String, Post> data = dataSnapshot.getValue(type);
 				ArrayList<Post> posts = new ArrayList<>(data.values());
-				bus.post(posts);
+				Log.d("Value Event", "Posting new Value Event. " + UUID.randomUUID().toString());
+				bus.post(new PostsFetchedEvent(Event.SUCCESS, posts));
+				postsRef.removeEventListener(this);
+				isDoingRequest = false;
 			}
 
 			@Override public void onCancelled(FirebaseError firebaseError) {
 				Log.e("Firebase", firebaseError.toString());
+				postsRef.removeEventListener(this);
+				isDoingRequest = false;
 			}
 		});
 	}
@@ -64,8 +71,14 @@ public class FirebaseAppApi implements AppApi {
 
 	@Override public void put(String title, String description, String contactInfo) {
 		Firebase newPostRef = baseRef.child("posts").push();
-		Post post = new Post(newPostRef.getKey(), title, api.getUser().getName(), new Date().getTime
-				(), contactInfo, description, 0, 0);
+		Post post = new Post.Builder()
+				.id(newPostRef.getKey())
+				.title(title)
+				.name(api.getUser().getName())
+				.date(new Date().getTime())
+				.contactInfo(contactInfo)
+				.description(description)
+				.build();
 		newPostRef.setValue(post);
 		Toast.makeText(context, newPostRef.getKey(), Toast.LENGTH_SHORT).show();
 	}
@@ -77,11 +90,12 @@ public class FirebaseAppApi implements AppApi {
 				Log.d("Firebase", dataSnapshot.toString());
 				GenericTypeIndicator<Post> type = new GenericTypeIndicator<Post>() {};
 				Post post = dataSnapshot.getValue(type);
-				bus.post(post);
+				bus.post(new PostFetchedEvent(post));
 			}
 
 			@Override public void onCancelled(FirebaseError firebaseError) {
 				Log.e("Firebase", firebaseError.toString());
+				bus.post(new PostFetchedEvent(0));
 			}
 		});
 

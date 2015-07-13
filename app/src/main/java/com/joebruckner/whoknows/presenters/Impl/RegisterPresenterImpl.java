@@ -4,8 +4,7 @@ import android.util.Log;
 
 import com.joebruckner.whoknows.events.Event;
 import com.joebruckner.whoknows.events.LoggedInEvent;
-import com.joebruckner.whoknows.events.RegisteredEvent;
-import com.joebruckner.whoknows.network.AccountApi;
+import com.joebruckner.whoknows.managers.AccountManager;
 import com.joebruckner.whoknows.presenters.RegisterPresenter;
 import com.joebruckner.whoknows.ui.StartUp.AuthView;
 import com.squareup.otto.Bus;
@@ -13,44 +12,33 @@ import com.squareup.otto.Subscribe;
 
 public class RegisterPresenterImpl implements RegisterPresenter {
 	AuthView view;
-	AccountApi api;
+	AccountManager accountManager;
 	Bus bus;
 
-	private String email;
-	private String password;
-
-	public RegisterPresenterImpl(Bus bus, AccountApi api) {
-		this.api = api;
+	public RegisterPresenterImpl(Bus bus, AccountManager accountManager) {
+		this.accountManager = accountManager;
 		this.bus = bus;
-		bus.register(this);
 	}
 
 	@Override public void attachView(AuthView view) {
+		bus.register(this);
 		this.view = view;
 	}
 
 	@Override public void detachView() {
+		bus.unregister(this);
 		view = null;
 	}
 
-	@Override public void registerAndAuth(String email, String password, String confirmPassword) {
+	@Override public void registerAndAuth(String name, String email, String password,
+	                                      String confirmPassword) {
 		Log.d("Register", "registering...");
-		this.email = email;
-		this.password = password;
-		api.register(email, password);
-	}
-
-	@Subscribe public void getRegisteredEvent(RegisteredEvent e) {
-		Log.d("Register", "Event received");
-		if (e.getStatus() == Event.SUCCESS) {
-			view.showSuccess();
-			api.login(email, password);
-		}
+		accountManager.register(name, email, password);
 	}
 
 	@Subscribe public void getLoggedInEvent(LoggedInEvent e) {
 		Log.d("Login", "Event recieved");
 		if (e.getStatus() == Event.SUCCESS)
-			view.advanceToHome();
+			view.showSuccess();
 	}
 }

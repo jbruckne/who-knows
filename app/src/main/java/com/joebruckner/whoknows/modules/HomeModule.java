@@ -4,7 +4,7 @@ import android.app.Activity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
-import com.joebruckner.whoknows.network.AppApi;
+import com.joebruckner.whoknows.managers.DatabaseManager;
 import com.joebruckner.whoknows.presenters.Impl.PostListPresenterImpl;
 import com.joebruckner.whoknows.presenters.PostListPresenter;
 import com.joebruckner.whoknows.ui.Home.HomeActivity;
@@ -39,7 +39,7 @@ public class HomeModule {
 		return activity;
 	}
 
-	@Provides PostListPresenter providesPostListPresenter(AppApi api, Bus bus) {
+	@Provides PostListPresenter providesPostListPresenter(DatabaseManager api, Bus bus) {
 		return new PostListPresenterImpl(api, bus);
 	}
 

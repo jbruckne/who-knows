@@ -2,32 +2,31 @@ package com.joebruckner.whoknows.presenters.Impl;
 
 import android.util.Log;
 
-import com.joebruckner.whoknows.models.Post;
-import com.joebruckner.whoknows.network.AppApi;
+import com.joebruckner.whoknows.events.PostsFetchedEvent;
+import com.joebruckner.whoknows.managers.DatabaseManager;
 import com.joebruckner.whoknows.presenters.PostListPresenter;
 import com.joebruckner.whoknows.ui.Home.PostListFragment;
 import com.joebruckner.whoknows.ui.Home.PostListView;
 import com.squareup.otto.Bus;
 import com.squareup.otto.Subscribe;
 
-import java.util.ArrayList;
-
 public class PostListPresenterImpl implements PostListPresenter {
 	PostListView view;
-	AppApi api;
+	DatabaseManager api;
 	Bus bus;
 
-	public PostListPresenterImpl(AppApi api, Bus bus) {
+	public PostListPresenterImpl(DatabaseManager api, Bus bus) {
 		this.api = api;
 		this.bus = bus;
-		bus.register(this);
 	}
 
 	@Override public void attachView(PostListView view) {
+		bus.register(this);
 		this.view = view;
 	}
 
 	@Override public void detachView() {
+		bus.unregister(this);
 		view = null;
 	}
 
@@ -46,8 +45,8 @@ public class PostListPresenterImpl implements PostListPresenter {
 		view.showContent();
 	}
 
-	@Subscribe public void postsLoaded(ArrayList<Post> posts) {
-		Log.d("Presenter", "posts recieved");
-		view.setData(posts);
+	@Subscribe public void postsLoaded(PostsFetchedEvent e) {
+		Log.d("Presenter", "PostsFetchedEvent recieved.");
+		view.setData(e.getPosts());
 	}
 }

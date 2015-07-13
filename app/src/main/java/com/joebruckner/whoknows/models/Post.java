@@ -13,6 +13,17 @@ public class Post {
 	public Post() {
 	}
 
+	public Post(Builder builder) {
+		this.id = builder.id;
+		this.title = builder.title;
+		this.name = builder.name;
+		this.date = builder.date;
+		this.contactInfo = builder.contactInfo;
+		this.description = builder.description;
+		this.lat = builder.lat;
+		this.lng = builder.lng;
+	}
+
 	public Post(String id, String title, String name, long date, String contactInfo, String
 			description, double lat, double lng) {
 		this.id = id;
@@ -87,5 +98,60 @@ public class Post {
 
 	public void setLng(double lng) {
 		this.lng = lng;
+	}
+
+	public static class Builder {
+		private String id;
+		private String title;
+		private String name;
+		private long date;
+		private String contactInfo;
+		private String description;
+		private double lat;
+		private double lng;
+
+		public Builder id(String id) {
+			this.id = id;
+			return this;
+		}
+
+		public Builder title(String title) {
+			this.title = title;
+			return this;
+		}
+
+		public Builder name(String name) {
+			this.name = name;
+			return this;
+		}
+
+		public Builder date(long date) {
+			this.date = date;
+			return this;
+		}
+
+		public Builder contactInfo(String contactInfo) {
+			this.contactInfo = contactInfo;
+			return this;
+		}
+
+		public Builder description(String description) {
+			this.description = description;
+			return this;
+		}
+
+		public Builder lat(double lat) {
+			this.lat = lat;
+			return this;
+		}
+
+		public Builder lng(double lng) {
+			this.lng = lng;
+			return this;
+		}
+
+		public Post build() {
+			return new Post(this);
+		}
 	}
 }

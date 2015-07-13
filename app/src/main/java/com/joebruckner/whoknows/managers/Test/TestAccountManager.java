@@ -1,16 +1,16 @@
-package com.joebruckner.whoknows.network.Test;
+package com.joebruckner.whoknows.managers.Test;
 
 import android.util.Log;
 
 import com.joebruckner.whoknows.models.Profile;
-import com.joebruckner.whoknows.network.AccountApi;
+import com.joebruckner.whoknows.managers.AccountManager;
 
-public class TestAccountApi implements AccountApi {
+public class TestAccountManager implements AccountManager {
 
 	private static final String TAG = "TestAccountApi";
 	private boolean authStatus = false;
 
-	@Override public void register(String email, String password) {
+	@Override public void register(String name, String email, String password) {
 		Log.d(TAG, "registered");
 	}
 
@@ -25,7 +25,7 @@ public class TestAccountApi implements AccountApi {
 	}
 
 	@Override public Profile getUser() {
-		return new Profile("Joe");
+		return new Profile("0", "Joe");
 	}
 
 	@Override public boolean isLoggedIn() {

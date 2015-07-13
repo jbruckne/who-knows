@@ -2,7 +2,7 @@ package com.joebruckner.whoknows.modules;
 
 import android.app.Activity;
 
-import com.joebruckner.whoknows.network.AppApi;
+import com.joebruckner.whoknows.managers.DatabaseManager;
 import com.joebruckner.whoknows.presenters.Impl.PostAttendeesPresenterImpl;
 import com.joebruckner.whoknows.presenters.Impl.PostSummaryPresenterImpl;
 import com.joebruckner.whoknows.presenters.PostAttendeesPresenter;
@@ -39,11 +39,11 @@ public class PostModule {
 		return activity;
 	}
 
-	@Provides PostSummaryPresenter providesPostSummaryPresenter(AppApi api, Bus bus) {
+	@Provides PostSummaryPresenter providesPostSummaryPresenter(DatabaseManager api, Bus bus) {
 		return new PostSummaryPresenterImpl(api, bus);
 	}
 
-	@Provides PostAttendeesPresenter providesPostAttendeesPresenter(AppApi api, Bus bus) {
+	@Provides PostAttendeesPresenter providesPostAttendeesPresenter(DatabaseManager api, Bus bus) {
 		return new PostAttendeesPresenterImpl(api, bus);
 	}
 

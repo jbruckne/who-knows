@@ -13,8 +13,8 @@ import com.google.android.gms.maps.model.LatLng;
 import com.joebruckner.whoknows.R;
 import com.joebruckner.whoknows.common.BaseActivity;
 import com.joebruckner.whoknows.modules.HomeModule;
-import com.joebruckner.whoknows.network.AppApi;
-import com.joebruckner.whoknows.network.LocationApi;
+import com.joebruckner.whoknows.managers.DatabaseManager;
+import com.joebruckner.whoknows.managers.LocationApi;
 import com.squareup.otto.Bus;
 import com.squareup.otto.Subscribe;
 
@@ -33,7 +33,7 @@ public class NewPostActivity extends BaseActivity {
 	@Bind(R.id.contact_info) EditText editContactInfo;
 	@Bind(R.id.location) CheckBox showLocation;
 	@Inject LocationApi locationApi;
-	@Inject AppApi appApi;
+	@Inject DatabaseManager databaseManager;
 	@Inject Bus bus;
 
 	String title;
@@ -84,7 +84,7 @@ public class NewPostActivity extends BaseActivity {
 		title = editTitle.getText().toString();
 		description = editDescription.getText().toString();
 		contactInfo = editContactInfo.getText().toString();
-		appApi.put(title, description, contactInfo);
+		databaseManager.put(title, description, contactInfo);
 		finish();
 	}
 

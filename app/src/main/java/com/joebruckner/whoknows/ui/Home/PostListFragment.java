@@ -53,14 +53,10 @@ public class PostListFragment extends BaseFragment implements PostListView {
 	                         Bundle savedInstanceState) {
 		View view = inflater.inflate(R.layout.fragment_post_list, container, false);
 		ButterKnife.bind(this, view);
-		return view;
-	}
-
-	@Override public void onResume() {
-		super.onResume();
 		int filter = getArguments().getInt(LIST_TYPE);
 		presenter.attachView(this);
 		presenter.fetchPosts(filter);
+		return view;
 	}
 
 	@Override public void showLoading() {
@@ -92,5 +88,10 @@ public class PostListFragment extends BaseFragment implements PostListView {
 
 	@Override public void setData(List<Post> posts) {
 		adapter.setItems(posts);
+	}
+
+	@Override public void onDestroyView() {
+		presenter.detachView();
+		super.onDestroyView();
 	}
 }

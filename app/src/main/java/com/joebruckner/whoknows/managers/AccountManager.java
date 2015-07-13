@@ -1,9 +1,9 @@
-package com.joebruckner.whoknows.network;
+package com.joebruckner.whoknows.managers;
 
 import com.joebruckner.whoknows.models.Profile;
 
-public interface AccountApi {
-	void register(String email, String password);
+public interface AccountManager {
+	void register(String name, String email, String password);
 	void login(String email, String password);
 	void logout();
 	Profile getUser();

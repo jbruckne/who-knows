@@ -6,12 +6,12 @@ import android.location.LocationManager;
 
 import com.firebase.client.Firebase;
 import com.joebruckner.whoknows.WhoKnowsApp;
-import com.joebruckner.whoknows.network.AccountApi;
-import com.joebruckner.whoknows.network.AppApi;
-import com.joebruckner.whoknows.network.Impl.FirebaseAccountApi;
-import com.joebruckner.whoknows.network.Impl.FirebaseAppApi;
-import com.joebruckner.whoknows.network.LocationApi;
-import com.joebruckner.whoknows.network.Test.TestLocationApi;
+import com.joebruckner.whoknows.managers.AccountManager;
+import com.joebruckner.whoknows.managers.DatabaseManager;
+import com.joebruckner.whoknows.managers.Impl.FirebaseAccountManager;
+import com.joebruckner.whoknows.managers.Impl.FirebaseDatabaseManager;
+import com.joebruckner.whoknows.managers.LocationApi;
+import com.joebruckner.whoknows.managers.Test.TestLocationApi;
 import com.squareup.otto.Bus;
 import com.squareup.otto.ThreadEnforcer;
 
@@ -45,12 +45,13 @@ public class AppModule {
 		return new Firebase("https://sizzling-torch-124.firebaseio.com");
 	}
 
-	@Provides @Singleton AccountApi providesAccountApi(Firebase ref, Bus bus) {
-		return new FirebaseAccountApi(ref, bus);
+	@Provides @Singleton AccountManager providesAccountManager(Firebase ref, Bus bus) {
+		return new FirebaseAccountManager(ref, bus);
 	}
 
-	@Provides @Singleton AppApi providesWhoKnowsApi(Application app, AccountApi api, Bus bus) {
-		return new FirebaseAppApi(app, api, bus);
+	@Provides @Singleton DatabaseManager providesDatabaseManager(Application app,
+	                                                             AccountManager api, Bus bus) {
+		return new FirebaseDatabaseManager(app, api, bus);
 	}
 
 	@Provides @Singleton LocationApi providesLocationApi(LocationManager manager, Bus bus) {

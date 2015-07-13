@@ -1,4 +1,4 @@
-package com.joebruckner.whoknows.network;
+package com.joebruckner.whoknows.managers;
 
 public interface LocationApi {
 	void getLocation();

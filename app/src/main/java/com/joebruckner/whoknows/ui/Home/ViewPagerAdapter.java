@@ -10,6 +10,9 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
 	int numPages = 3;
 	Activity activity;
 
+	Fragment nearby = PostListFragment.newInstance(0);
+	Fragment joined = PostListFragment.newInstance(0);
+	Fragment account = AccountFragment.newInstance();
 
 	public ViewPagerAdapter(FragmentManager manager, Activity activity) {
 		super(manager);
@@ -19,11 +22,11 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
 	@Override public Fragment getItem(int position) {
 		switch(position) {
 			case 0:
-				return PostListFragment.newInstance(0);
+				return nearby;
 			case 1:
-				return PostListFragment.newInstance(0);
+				return joined;
 			case 2:
-				return AccountFragment.newInstance();
+				return account;
 			default:
 				return new Fragment();
 		}

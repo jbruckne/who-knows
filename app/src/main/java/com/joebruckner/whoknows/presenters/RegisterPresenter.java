@@ -5,5 +5,5 @@ import com.joebruckner.whoknows.ui.StartUp.AuthView;
 public interface RegisterPresenter {
 	void attachView(AuthView view);
 	void detachView();
-	void registerAndAuth(String email, String password, String confirm_pass);
+	void registerAndAuth(String name, String email, String password, String confirmPass);
 }

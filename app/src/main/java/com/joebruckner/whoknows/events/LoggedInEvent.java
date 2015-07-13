@@ -3,17 +3,21 @@ package com.joebruckner.whoknows.events;
 import com.joebruckner.whoknows.models.Profile;
 
 public class LoggedInEvent extends Event {
-	Profile user;
+	Profile profile;
 
-	public LoggedInEvent(int status, Profile user) {
+	public LoggedInEvent(int status, Profile profile) {
 		this.status = Event.SUCCESS;
 		this.error = 0;
-		this.user = user;
+		this.profile = profile;
 	}
 
 	public LoggedInEvent(int status, int error) {
 		this.status = status;
 		this.error = error;
-		this.user = null;
+		this.profile = null;
+	}
+
+	public Profile getProfile() {
+		return profile;
 	}
 }
