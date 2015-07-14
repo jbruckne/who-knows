@@ -2,8 +2,8 @@ package com.joebruckner.whoknows.presenters.Impl;
 
 import android.util.Log;
 
+import com.joebruckner.whoknows.events.AuthorizedEvent;
 import com.joebruckner.whoknows.events.Event;
-import com.joebruckner.whoknows.events.LoggedInEvent;
 import com.joebruckner.whoknows.managers.AccountManager;
 import com.joebruckner.whoknows.presenters.RegisterPresenter;
 import com.joebruckner.whoknows.ui.StartUp.AuthView;
@@ -36,7 +36,7 @@ public class RegisterPresenterImpl implements RegisterPresenter {
 		accountManager.register(name, email, password);
 	}
 
-	@Subscribe public void getLoggedInEvent(LoggedInEvent e) {
+	@Subscribe public void getLoggedInEvent(AuthorizedEvent e) {
 		Log.d("Login", "Event recieved");
 		if (e.getStatus() == Event.SUCCESS)
 			view.showSuccess();

@@ -12,7 +12,7 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
 
 	Fragment nearby = PostListFragment.newInstance(0);
 	Fragment joined = PostListFragment.newInstance(0);
-	Fragment account = AccountFragment.newInstance();
+	Fragment account = ProfileFragment.newInstance();
 
 	public ViewPagerAdapter(FragmentManager manager, Activity activity) {
 		super(manager);

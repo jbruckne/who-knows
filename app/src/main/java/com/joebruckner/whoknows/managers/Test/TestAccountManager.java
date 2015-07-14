@@ -24,8 +24,17 @@ public class TestAccountManager implements AccountManager {
 		authStatus = false;
 	}
 
-	@Override public Profile getUser() {
-		return new Profile("0", "Joe");
+	@Override public void getProfile() {
+		Log.d(TAG, "fetch profile");
+	}
+
+	@Override public Profile getCachedProfile() {
+		return new Profile.Builder()
+				.id("1234")
+				.email("wank@test.com")
+				.name("John Doe")
+				.phone("None")
+				.build();
 	}
 
 	@Override public boolean isLoggedIn() {

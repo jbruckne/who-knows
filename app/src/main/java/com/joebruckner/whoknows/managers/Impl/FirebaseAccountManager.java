@@ -8,9 +8,8 @@ import com.firebase.client.Firebase;
 import com.firebase.client.FirebaseError;
 import com.firebase.client.GenericTypeIndicator;
 import com.firebase.client.ValueEventListener;
-import com.joebruckner.whoknows.events.Event;
-import com.joebruckner.whoknows.events.LoggedInEvent;
-import com.joebruckner.whoknows.events.RegisteredEvent;
+import com.joebruckner.whoknows.events.AuthorizedEvent;
+import com.joebruckner.whoknows.events.ProfileFetchedEvent;
 import com.joebruckner.whoknows.managers.AccountManager;
 import com.joebruckner.whoknows.models.Profile;
 import com.squareup.otto.Bus;
@@ -24,6 +23,9 @@ public class FirebaseAccountManager implements AccountManager {
 	private static final String TAG = "FirebaseAccountApi";
 	private boolean authStatus = false;
 
+	private String currentUserId;
+	private Profile cachedProfile;
+
 	public FirebaseAccountManager(Firebase ref, Bus bus) {
 		this.ref = ref;
 		this.bus = bus;
@@ -35,14 +37,18 @@ public class FirebaseAccountManager implements AccountManager {
 			@Override public void onSuccess(Map<String, Object> result) {
 				String id = result.get("uid").toString();
 				Log.d(TAG, "registration complete: " + id);
-				Profile profile = new Profile(id, name);
+				Profile profile = new Profile.Builder()
+						.id(id)
+						.email(email)
+						.name(name)
+						.build();
 				ref.child("users").child(id).setValue(profile);
 				login(email, password);
 			}
 
 			@Override public void onError(FirebaseError firebaseError) {
 				Log.e(TAG, firebaseError.toString());
-				bus.post(new RegisteredEvent(Event.FAILED, 0));
+				bus.post(new AuthorizedEvent(0));
 			}
 		});
 	}
@@ -52,26 +58,13 @@ public class FirebaseAccountManager implements AccountManager {
 			@Override public void onAuthenticated(AuthData authData) {
 				authStatus = true;
 				Log.d(TAG, "logged in" + authData.getUid());
-				Firebase userRef = ref.child("users").child(authData.getUid());
-				userRef.addListenerForSingleValueEvent(new ValueEventListener() {
-					@Override public void onDataChange(DataSnapshot dataSnapshot) {
-						Log.d("Value", dataSnapshot.toString());
-						GenericTypeIndicator<Profile> type = new GenericTypeIndicator<Profile>() {};
-						Profile profile = dataSnapshot.getValue(type);
-						Log.d("Value", "Converted");
-						bus.post(new LoggedInEvent(Event.SUCCESS, profile));
-					}
-
-					@Override public void onCancelled(FirebaseError firebaseError) {
-						bus.post(new LoggedInEvent(Event.FAILED, 1));
-					}
-				});
-				bus.post(new LoggedInEvent(Event.SUCCESS, new Profile(authData.getUid(), "Joe")));
+				currentUserId = authData.getUid();
+				bus.post(new AuthorizedEvent());
 			}
 
 			@Override public void onAuthenticationError(FirebaseError firebaseError) {
 				Log.e(TAG, "Error:" + firebaseError.getCode());
-				bus.post(new LoggedInEvent(Event.FAILED, 0));
+				bus.post(new AuthorizedEvent(0));
 			}
 		});
 	}
@@ -82,9 +75,25 @@ public class FirebaseAccountManager implements AccountManager {
 		authStatus = false;
 	}
 
-	@Override public Profile getUser() {
-		Log.d(TAG, "getting user");
-		return new Profile("0", "Joe");
+	@Override public void getProfile() {
+		Firebase userRef = ref.child("users").child(currentUserId);
+		userRef.addListenerForSingleValueEvent(new ValueEventListener() {
+			@Override public void onDataChange(DataSnapshot dataSnapshot) {
+				Log.d("Value", dataSnapshot.toString());
+				GenericTypeIndicator<Profile> type = new GenericTypeIndicator<Profile>() {
+				};
+				Profile profile = dataSnapshot.getValue(type);
+				bus.post(new ProfileFetchedEvent(profile));
+			}
+
+			@Override public void onCancelled(FirebaseError firebaseError) {
+				bus.post(new ProfileFetchedEvent(0));
+			}
+		});
+	}
+
+	@Override public Profile getCachedProfile() {
+		return cachedProfile;
 	}
 
 	@Override public boolean isLoggedIn() {

@@ -74,7 +74,7 @@ public class FirebaseDatabaseManager implements DatabaseManager {
 		Post post = new Post.Builder()
 				.id(newPostRef.getKey())
 				.title(title)
-				.name(api.getUser().getName())
+				.name(api.getCachedProfile().getName())
 				.date(new Date().getTime())
 				.contactInfo(contactInfo)
 				.description(description)

@@ -31,4 +31,7 @@
     <string name="dummy_user">dummy user</string>
     <string name="title_activity_login">LoginActivity</string>
     <string name="title_activity_register">RegisterActivity</string>
+    <string name="email_title">Email</string>
+    <string name="post_history">Post History</string>
+    <string name="phone_title">Phone</string>
 </resources>
