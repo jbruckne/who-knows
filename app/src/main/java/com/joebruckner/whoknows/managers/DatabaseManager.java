@@ -1,6 +1,9 @@
 package com.joebruckner.whoknows.managers;
 
 public interface DatabaseManager {
+	String EMAIL = "Email";
+	String PHONE = "Phone";
+
 	void getNearbyPosts();
 	void getJoinedPosts();
 	void getPostedPosts();

@@ -6,8 +6,10 @@ import android.support.v7.widget.RecyclerView;
 
 import com.joebruckner.whoknows.managers.AccountManager;
 import com.joebruckner.whoknows.managers.DatabaseManager;
+import com.joebruckner.whoknows.presenters.Impl.NewPostPresenterImpl;
 import com.joebruckner.whoknows.presenters.Impl.PostListPresenterImpl;
 import com.joebruckner.whoknows.presenters.Impl.ProfilePresenterImpl;
+import com.joebruckner.whoknows.presenters.NewPostPresenter;
 import com.joebruckner.whoknows.presenters.PostListPresenter;
 import com.joebruckner.whoknows.presenters.ProfilePresenter;
 import com.joebruckner.whoknows.ui.Home.HomeActivity;

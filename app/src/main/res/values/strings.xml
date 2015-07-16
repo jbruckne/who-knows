@@ -34,4 +34,7 @@
     <string name="email_title">Email</string>
     <string name="post_history">Post History</string>
     <string name="phone_title">Phone</string>
+    <string name="action_refresh">Refresh</string>
+    <string name="action_test">Test</string>
+    <string name="action_logout">Logout</string>
 </resources>

@@ -10,9 +10,6 @@ import com.joebruckner.whoknows.R;
 import com.joebruckner.whoknows.common.BaseActivity;
 import com.joebruckner.whoknows.modules.PostModule;
 
-import java.util.Arrays;
-import java.util.List;
-
 import butterknife.Bind;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
@@ -69,7 +66,7 @@ public class PostDetailActivity extends BaseActivity {
 				.commit();
 	}
 
-	@Override protected List<Object> getModules() {
-		return Arrays.<Object>asList(new PostModule(this));
+	@Override protected Object[] getModules() {
+		return new Object[] { new PostModule(this) };
 	}
 }

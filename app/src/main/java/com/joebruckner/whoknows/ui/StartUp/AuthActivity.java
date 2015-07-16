@@ -6,9 +6,6 @@ import com.joebruckner.whoknows.R;
 import com.joebruckner.whoknows.common.BaseActivity;
 import com.joebruckner.whoknows.modules.StartUpModule;
 
-import java.util.Arrays;
-import java.util.List;
-
 public class AuthActivity extends BaseActivity {
 
 	@Override
@@ -25,7 +22,7 @@ public class AuthActivity extends BaseActivity {
 				.commit();
 	}
 
-	@Override protected List<Object> getModules() {
-		return Arrays.<Object>asList(new StartUpModule(this));
+	@Override protected Object[] getModules() {
+		return new Object[] { new StartUpModule(this) };
 	}
 }

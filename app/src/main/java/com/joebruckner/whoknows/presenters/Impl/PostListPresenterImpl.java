@@ -42,7 +42,6 @@ public class PostListPresenterImpl implements PostListPresenter {
 				api.getPostedPosts();
 				break;
 		}
-		view.showContent();
 	}
 
 	@Subscribe public void postsLoaded(PostsFetchedEvent e) {

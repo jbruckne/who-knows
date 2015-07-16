@@ -1,14 +1,7 @@
 package com.joebruckner.whoknows.ui.Home;
 
 
-import android.app.Activity;
-import android.os.Bundle;
 import android.support.design.widget.Snackbar;
-import android.util.Log;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.TextView;
 
 import com.joebruckner.whoknows.R;
@@ -25,7 +18,6 @@ public class ProfileFragment extends BaseFragment implements ProfileView {
 	@Bind(R.id.name) TextView name;
 	@Bind(R.id.email) TextView email;
 	@Bind(R.id.phone) TextView phone;
-	@Bind(R.id.post_history) Button postHistory;
 	@Inject ProfilePresenter presenter;
 
 	Profile profile;
@@ -38,20 +30,14 @@ public class ProfileFragment extends BaseFragment implements ProfileView {
 		// Required empty public constructor
 	}
 
-	@Override public void onAttach(Activity activity) {
-		super.onAttach(activity);
-		if (presenter == null) Log.e("ProfileFragment", "Presenter is null!!!");
-		else Log.d("ProfileFragment", presenter + "");
+	@Override public int getLayout() {
+		return R.layout.fragment_profile;
 	}
 
-	@Override
-	public View onCreateView(LayoutInflater inflater, ViewGroup container,
-	                         Bundle savedInstanceState) {
-		// Inflate the layout for this fragment
-		Log.d("ProfileFragment", "creating view");
+	@Override public void onResume() {
+		super.onResume();
 		presenter.attachView(this);
 		presenter.loadProfile();
-		return inflater.inflate(R.layout.fragment_profile, container, false);
 	}
 
 	@OnClick(R.id.post_history) public void postHistory() {

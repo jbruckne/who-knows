@@ -4,11 +4,12 @@ package com.joebruckner.whoknows.ui.Home;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.view.LayoutInflater;
+import android.util.Log;
+import android.view.MenuItem;
 import android.view.View;
-import android.view.ViewGroup;
 
 import com.joebruckner.whoknows.R;
 import com.joebruckner.whoknows.common.BaseFragment;
@@ -23,7 +24,6 @@ import java.util.List;
 import javax.inject.Inject;
 
 import butterknife.Bind;
-import butterknife.ButterKnife;
 
 public class PostListFragment extends BaseFragment implements PostListView {
 	@Bind(R.id.list_view) RecyclerView listView;
@@ -35,6 +35,8 @@ public class PostListFragment extends BaseFragment implements PostListView {
 	public static final int JOINED = 1;
 	public static final int POSTED = 2;
 	public static String LIST_TYPE = "TYPE";
+
+	private int filter = 0;
 
 	public static PostListFragment newInstance(int type) {
 		PostListFragment fragment = new PostListFragment();
@@ -48,15 +50,16 @@ public class PostListFragment extends BaseFragment implements PostListView {
 		// Required empty public constructor
 	}
 
-	@Override
-	public View onCreateView(LayoutInflater inflater, ViewGroup container,
-	                         Bundle savedInstanceState) {
-		View view = inflater.inflate(R.layout.fragment_post_list, container, false);
-		ButterKnife.bind(this, view);
-		int filter = getArguments().getInt(LIST_TYPE);
+	@Override public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+		super.onActivityCreated(savedInstanceState);
+		filter = getArguments().getInt(LIST_TYPE);
 		presenter.attachView(this);
 		presenter.fetchPosts(filter);
-		return view;
+		showContent();
+	}
+
+	@Override public int getLayout() {
+		return R.layout.fragment_post_list;
 	}
 
 	@Override public void showLoading() {
@@ -93,5 +96,16 @@ public class PostListFragment extends BaseFragment implements PostListView {
 	@Override public void onDestroyView() {
 		presenter.detachView();
 		super.onDestroyView();
+	}
+
+	@Override public boolean onOptionsItemSelected(MenuItem item) {
+		switch(item.getItemId()) {
+			case R.id.action_refresh:
+				presenter.fetchPosts(filter);
+				Log.d("Post List", "Refresh");
+				return true;
+			default:
+				return super.onOptionsItemSelected(item);
+		}
 	}
 }

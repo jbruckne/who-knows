@@ -3,11 +3,7 @@ package com.joebruckner.whoknows.ui.StartUp;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.os.Bundle;
 import android.util.Log;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.joebruckner.whoknows.R;
@@ -36,17 +32,14 @@ public class RegisterFragment extends BaseFragment implements AuthView {
 		// Required empty public constructor
 	}
 
-
-	@Override
-	public View onCreateView(LayoutInflater inflater, ViewGroup container,
-	                         Bundle savedInstanceState) {
-		// Inflate the layout for this fragment
-		View view = inflater.inflate(R.layout.fragment_register, container, false);
-		presenter.attachView(this);
-		return view;
+	@Override public int getLayout() {
+		return R.layout.fragment_register;
 	}
 
-
+	@Override public void onResume() {
+		super.onResume();
+		presenter.attachView(this);
+	}
 
 	@OnClick(R.id.register_button) public void register() {
 		Log.d("Register", "Register clicked");

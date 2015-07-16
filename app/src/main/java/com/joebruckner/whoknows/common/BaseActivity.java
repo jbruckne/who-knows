@@ -5,9 +5,6 @@ import android.support.v7.app.AppCompatActivity;
 
 import com.joebruckner.whoknows.WhoKnowsApp;
 
-import java.util.Collections;
-import java.util.List;
-
 import dagger.ObjectGraph;
 
 public abstract class BaseActivity extends AppCompatActivity {
@@ -27,13 +24,11 @@ public abstract class BaseActivity extends AppCompatActivity {
 
 	protected void setActivityGraph() {
 		WhoKnowsApp app = (WhoKnowsApp) getApplication();
-		activityGraph = app.getActivityGraph().plus(getModules().toArray());
+		activityGraph = app.getActivityGraph().plus(getModules());
 		activityGraph.inject(this);
 	}
 
-	protected List<Object> getModules() {
-		return Collections.emptyList();
-	}
+	protected abstract Object[] getModules();
 
 	public void inject(Object object) {
 		if (activityGraph == null) setActivityGraph();

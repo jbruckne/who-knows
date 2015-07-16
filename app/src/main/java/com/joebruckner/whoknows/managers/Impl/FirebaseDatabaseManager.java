@@ -25,15 +25,15 @@ import java.util.UUID;
 public class FirebaseDatabaseManager implements DatabaseManager {
 	Firebase baseRef;
 	Context context;
-	AccountManager api;
+	AccountManager accountManager;
 	Bus bus;
 
 	private boolean isDoingRequest = false;
 
-	public FirebaseDatabaseManager(Context context, AccountManager api, Bus bus) {
+	public FirebaseDatabaseManager(Context context, AccountManager accountManager, Bus bus) {
 		this.baseRef = new Firebase("https://sizzling-torch-124.firebaseio.com");
 		this.context = context;
-		this.api = api;
+		this.accountManager = accountManager;
 		this.bus = bus;
 	}
 
@@ -74,7 +74,7 @@ public class FirebaseDatabaseManager implements DatabaseManager {
 		Post post = new Post.Builder()
 				.id(newPostRef.getKey())
 				.title(title)
-				.name(api.getCachedProfile().getName())
+				.name(accountManager.getCachedProfile().getName())
 				.date(new Date().getTime())
 				.contactInfo(contactInfo)
 				.description(description)

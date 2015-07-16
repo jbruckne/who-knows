@@ -1,53 +1,30 @@
 package com.joebruckner.whoknows.ui.NewPost;
 
-import android.location.Location;
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.support.v7.widget.Toolbar;
-import android.view.Menu;
-import android.view.MenuItem;
-import android.widget.CheckBox;
-import android.widget.EditText;
 
-import com.google.android.gms.maps.model.LatLng;
 import com.joebruckner.whoknows.R;
 import com.joebruckner.whoknows.common.BaseActivity;
-import com.joebruckner.whoknows.modules.HomeModule;
-import com.joebruckner.whoknows.managers.DatabaseManager;
-import com.joebruckner.whoknows.managers.LocationApi;
-import com.squareup.otto.Bus;
-import com.squareup.otto.Subscribe;
-
-import java.util.Arrays;
-import java.util.List;
-
-import javax.inject.Inject;
+import com.joebruckner.whoknows.modules.NewPostModule;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
 
 public class NewPostActivity extends BaseActivity {
 	@Bind(R.id.toolbar) Toolbar toolbar;
-	@Bind(R.id.title) EditText editTitle;
-	@Bind(R.id.description) EditText editDescription;
-	@Bind(R.id.contact_info) EditText editContactInfo;
-	@Bind(R.id.location) CheckBox showLocation;
-	@Inject LocationApi locationApi;
-	@Inject DatabaseManager databaseManager;
-	@Inject Bus bus;
-
-	String title;
-	String description;
-	String contactInfo;
-	LatLng location = null;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_new_post);
 		ButterKnife.bind(this);
-		bus.register(this);
-		toolbar.setTitle("New Beacon");
+		setToolbar();
+		setLayout();
+	}
+
+	private void setToolbar() {
+		toolbar.setTitle("New Post");
 		setSupportActionBar(toolbar);
 		ActionBar actionBar = getSupportActionBar();
 		if (actionBar != null) {
@@ -57,38 +34,13 @@ public class NewPostActivity extends BaseActivity {
 		}
 	}
 
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		getMenuInflater().inflate(R.menu.menu_new_beacon, menu);
-		return true;
+	private void setLayout() {
+		getSupportFragmentManager().beginTransaction()
+				.add(R.id.container, CreatePostFragment.newInstance())
+				.commit();
 	}
 
-	@Override
-	public boolean onOptionsItemSelected(MenuItem item) {
-		switch(item.getItemId()) {
-			case R.id.action_post:
-				if (showLocation.isChecked()) locationApi.getLocation();
-				else newBeacon();
-				return true;
-			default:
-				return super.onOptionsItemSelected(item);
-		}
-	}
-
-	@Subscribe public void getLocation(Location location) {
-		this.location = new LatLng(location.getLatitude(), location.getLongitude());
-		newBeacon();
-	}
-
-	private void newBeacon() {
-		title = editTitle.getText().toString();
-		description = editDescription.getText().toString();
-		contactInfo = editContactInfo.getText().toString();
-		databaseManager.put(title, description, contactInfo);
-		finish();
-	}
-
-	@Override protected List<Object> getModules() {
-		return Arrays.<Object>asList(new HomeModule(this));
+	@Override protected Object[] getModules() {
+		return new Object[] { new NewPostModule(this) };
 	}
 }

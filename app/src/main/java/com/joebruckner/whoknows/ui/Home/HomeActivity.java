@@ -15,14 +15,11 @@ import android.widget.Toast;
 
 import com.joebruckner.whoknows.R;
 import com.joebruckner.whoknows.common.BaseActivity;
-import com.joebruckner.whoknows.modules.HomeModule;
 import com.joebruckner.whoknows.managers.AccountManager;
+import com.joebruckner.whoknows.modules.HomeModule;
 import com.joebruckner.whoknows.ui.NewPost.NewPostActivity;
 import com.joebruckner.whoknows.ui.StartUp.AuthActivity;
 import com.joebruckner.whoknows.ui.Widgets.SimpleOnTabSelectedListener;
-
-import java.util.Arrays;
-import java.util.List;
 
 import javax.inject.Inject;
 
@@ -36,6 +33,8 @@ public class HomeActivity extends BaseActivity {
 	@Bind(R.id.pager) ViewPager pager;
 	@Inject Activity activity;
 	@Inject AccountManager accountManager;
+
+	ViewPagerAdapter pagerAdapter;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -52,6 +51,7 @@ public class HomeActivity extends BaseActivity {
 	protected void checkAuth() {
 		if (!accountManager.isLoggedIn()) {
 			startActivity(new Intent(this, AuthActivity.class));
+			finish();
 		}
 	}
 
@@ -60,10 +60,10 @@ public class HomeActivity extends BaseActivity {
 	}
 
 	protected void setupTabs() {
-		final ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager(), this);
-		pager.setAdapter(adapter);
-		for (int i = 0; i < adapter.getCount(); i++)
-			tabLayout.addTab(tabLayout.newTab().setText(adapter.getPageTitle(i)));
+		pagerAdapter = new ViewPagerAdapter(getSupportFragmentManager(), this);
+		pager.setAdapter(pagerAdapter);
+		for (int i = 0; i < pagerAdapter.getCount(); i++)
+			tabLayout.addTab(tabLayout.newTab().setText(pagerAdapter.getPageTitle(i)));
 		tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
 		pager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
 		tabLayout.setOnTabSelectedListener(new SimpleOnTabSelectedListener() {
@@ -92,15 +92,31 @@ public class HomeActivity extends BaseActivity {
 		switch(item.getItemId()) {
 			case R.id.action_settings:
 				return true;
+			case R.id.action_refresh:
+				refresh(item);
+				return true;
+			case R.id.action_logout:
+				logout();
+				return true;
 			case R.id.action_test:
 				test();
+				return true;
 			default:
 				return super.onOptionsItemSelected(item);
 		}
 	}
 
-	@Override protected List<Object> getModules() {
-		return Arrays.<Object>asList(new HomeModule(this));
+	@Override protected Object[] getModules() {
+		return new Object[] { new HomeModule(this) };
+	}
+
+	private void refresh(MenuItem item) {
+		pagerAdapter.getItem(pager.getCurrentItem()).onOptionsItemSelected(item);
+	}
+
+	private void logout() {
+		accountManager.logout();
+		checkAuth();
 	}
 
 	private void test() {

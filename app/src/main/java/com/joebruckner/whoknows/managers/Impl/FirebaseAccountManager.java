@@ -60,6 +60,7 @@ public class FirebaseAccountManager implements AccountManager {
 				Log.d(TAG, "logged in" + authData.getUid());
 				currentUserId = authData.getUid();
 				bus.post(new AuthorizedEvent());
+				getProfile();
 			}
 
 			@Override public void onAuthenticationError(FirebaseError firebaseError) {
@@ -83,6 +84,8 @@ public class FirebaseAccountManager implements AccountManager {
 				GenericTypeIndicator<Profile> type = new GenericTypeIndicator<Profile>() {
 				};
 				Profile profile = dataSnapshot.getValue(type);
+				if (profile != null) cachedProfile = profile;
+				Log.d("New Profile", profile + "");
 				bus.post(new ProfileFetchedEvent(profile));
 			}
 
