@@ -7,6 +7,9 @@ public class Event {
 	public static final int SUCCESS = 0;
 	public static final int FAILED = 1;
 
+	public static final int REQUEST_ERROR = 401;
+	public static final int DOES_NOT_EXIST = 402;
+
 	protected long id;
 	protected int status;
 	protected int error;

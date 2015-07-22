@@ -3,6 +3,7 @@ package com.joebruckner.whoknows.ui.Home;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.design.widget.CoordinatorLayout;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
@@ -11,11 +12,11 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Toast;
 
 import com.joebruckner.whoknows.R;
 import com.joebruckner.whoknows.common.BaseActivity;
 import com.joebruckner.whoknows.managers.AccountManager;
+import com.joebruckner.whoknows.managers.DatabaseManager;
 import com.joebruckner.whoknows.modules.HomeModule;
 import com.joebruckner.whoknows.ui.NewPost.NewPostActivity;
 import com.joebruckner.whoknows.ui.StartUp.AuthActivity;
@@ -27,12 +28,14 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 
 public class HomeActivity extends BaseActivity {
+	@Bind(R.id.coordinator) CoordinatorLayout coordinator;
 	@Bind(R.id.toolbar) Toolbar toolbar;
 	@Bind(R.id.tab_layout) TabLayout tabLayout;
 	@Bind(R.id.fab) FloatingActionButton fab;
 	@Bind(R.id.pager) ViewPager pager;
 	@Inject Activity activity;
 	@Inject AccountManager accountManager;
+	@Inject DatabaseManager databaseManager;
 
 	ViewPagerAdapter pagerAdapter;
 
@@ -120,7 +123,6 @@ public class HomeActivity extends BaseActivity {
 	}
 
 	private void test() {
-		Log.d("Home", "No Current Test");
-		Toast.makeText(this, "No Current Test", Toast.LENGTH_SHORT).show();
+		databaseManager.getOffer("lol");
 	}
 }

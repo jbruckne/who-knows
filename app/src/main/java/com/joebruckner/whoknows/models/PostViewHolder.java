@@ -15,7 +15,7 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 
 @SuppressWarnings( "ALL" ) public class PostViewHolder extends RecyclerView.ViewHolder {
-	@Nullable @Bind(R.id.title) TextView titleView;
+	@Nullable @Bind (R.id.title) TextView titleView;
 	@Nullable @Bind (R.id.name) TextView nameView;
 	@Nullable @Bind (R.id.description) TextView descriptionView;
 	@Nullable @Bind (R.id.date) TextView dateView;

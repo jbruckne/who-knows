@@ -6,7 +6,7 @@ import com.joebruckner.whoknows.events.PostsFetchedEvent;
 import com.joebruckner.whoknows.managers.DatabaseManager;
 import com.joebruckner.whoknows.presenters.PostListPresenter;
 import com.joebruckner.whoknows.ui.Home.PostListFragment;
-import com.joebruckner.whoknows.ui.Home.PostListView;
+import com.joebruckner.whoknows.ui.views.PostListView;
 import com.squareup.otto.Bus;
 import com.squareup.otto.Subscribe;
 
@@ -33,10 +33,10 @@ public class PostListPresenterImpl implements PostListPresenter {
 	@Override public void fetchPosts(int filter) {
 		switch (filter) {
 			case PostListFragment.NEARBY:
-				api.getNearbyPosts();
+				api.getPosts();
 				break;
 			case PostListFragment.JOINED:
-				api.getJoinedPosts();
+				api.getOffers();
 				break;
 			case PostListFragment.POSTED:
 				api.getPostedPosts();

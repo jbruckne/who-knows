@@ -1,7 +1,7 @@
 package com.joebruckner.whoknows.ui.Post;
 
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
+import android.support.design.widget.CoordinatorLayout;
 import android.support.v7.app.ActionBar;
 import android.support.v7.widget.Toolbar;
 import android.widget.FrameLayout;
@@ -12,12 +12,11 @@ import com.joebruckner.whoknows.modules.PostModule;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
-import butterknife.OnClick;
 
-public class PostDetailActivity extends BaseActivity {
+public class PostActivity extends BaseActivity {
+	@Bind(R.id.coordinator) CoordinatorLayout coordinator;
 	@Bind(R.id.toolbar) Toolbar toolbar;
 	@Bind(R.id.frame) FrameLayout frame;
-	@Bind(R.id.fab) FloatingActionButton fab;
 
 	public static String BEACON_ID = "ID";
 	public static String BEACON_TITLE = "TITLE";
@@ -25,12 +24,11 @@ public class PostDetailActivity extends BaseActivity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_post_detail);
+		setContentView(R.layout.activity_post);
 		ButterKnife.bind(this);
 
 		setupToolbar();
 		if (savedInstanceState == null) setupFrame();
-		setupFab();
 	}
 
 	private void setupToolbar() {
@@ -45,24 +43,8 @@ public class PostDetailActivity extends BaseActivity {
 	}
 
 	private void setupFrame() {
-		PostSummaryFragment postSummaryFragment = PostSummaryFragment.newInstant();
-		getSupportFragmentManager()
-				.beginTransaction()
-				.add(R.id.frame, postSummaryFragment)
-				.commit();
-	}
-
-	private void setupFab() {
-		// TODO
-	}
-
-	@OnClick(R.id.view_attendees)
-	public void onClick() {
-		PostAttendeesFragment fragment = PostAttendeesFragment.newInstance();
-		getSupportFragmentManager()
-				.beginTransaction()
-				.replace(R.id.frame, fragment)
-				.addToBackStack(null)
+		getSupportFragmentManager().beginTransaction()
+				.add(R.id.frame, PostSummaryFragment.newInstance())
 				.commit();
 	}
 

@@ -1,8 +1,10 @@
 package com.joebruckner.whoknows.ui;
 
-public interface SimpleView<M> {
+import android.support.annotation.NonNull;
+
+public interface SimpleView<Data> {
 	void showContent();
 	void showLoading();
 	void showError();
-	void setData(M data);
+	void setData(@NonNull Data data);
 }

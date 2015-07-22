@@ -37,4 +37,5 @@
     <string name="action_refresh">Refresh</string>
     <string name="action_test">Test</string>
     <string name="action_logout">Logout</string>
+    <string name="action_attendees">Attendees</string>
 </resources>

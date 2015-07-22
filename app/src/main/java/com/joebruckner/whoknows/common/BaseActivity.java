@@ -10,6 +10,8 @@ import dagger.ObjectGraph;
 public abstract class BaseActivity extends AppCompatActivity {
 	private ObjectGraph activityGraph;
 
+	protected final String TAG = this.getClass().getSimpleName();
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);

@@ -3,13 +3,9 @@ package com.joebruckner.whoknows.modules;
 import android.app.Activity;
 
 import com.joebruckner.whoknows.managers.DatabaseManager;
-import com.joebruckner.whoknows.presenters.Impl.PostAttendeesPresenterImpl;
 import com.joebruckner.whoknows.presenters.Impl.PostSummaryPresenterImpl;
-import com.joebruckner.whoknows.presenters.PostAttendeesPresenter;
 import com.joebruckner.whoknows.presenters.PostSummaryPresenter;
-import com.joebruckner.whoknows.ui.Post.PostAttendeesAdapter;
-import com.joebruckner.whoknows.ui.Post.PostAttendeesFragment;
-import com.joebruckner.whoknows.ui.Post.PostDetailActivity;
+import com.joebruckner.whoknows.ui.Post.PostActivity;
 import com.joebruckner.whoknows.ui.Post.PostSummaryFragment;
 import com.squareup.otto.Bus;
 
@@ -20,9 +16,8 @@ import dagger.Provides;
 
 @Module (
 		injects = {
-				PostDetailActivity.class,
-				PostSummaryFragment.class,
-				PostAttendeesFragment.class
+				PostActivity.class,
+				PostSummaryFragment.class
 		},
 		addsTo = AppModule.class,
 		complete = false,
@@ -41,13 +36,5 @@ public class PostModule {
 
 	@Provides PostSummaryPresenter providesPostSummaryPresenter(DatabaseManager api, Bus bus) {
 		return new PostSummaryPresenterImpl(api, bus);
-	}
-
-	@Provides PostAttendeesPresenter providesPostAttendeesPresenter(DatabaseManager api, Bus bus) {
-		return new PostAttendeesPresenterImpl(api, bus);
-	}
-
-	@Provides PostAttendeesAdapter providesPostAttendeesAdapter() {
-		return new PostAttendeesAdapter();
 	}
 }

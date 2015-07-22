@@ -1,6 +1,6 @@
 package com.joebruckner.whoknows.presenters;
 
-import com.joebruckner.whoknows.ui.Home.PostListView;
+import com.joebruckner.whoknows.ui.views.PostListView;
 
 public interface PostListPresenter {
 	void attachView(PostListView view);

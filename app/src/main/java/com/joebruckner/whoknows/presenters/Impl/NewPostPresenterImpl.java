@@ -37,6 +37,6 @@ public class NewPostPresenterImpl implements NewPostPresenter {
 
 	@Override public void sendPost(String title, String descripton, boolean location) {
 		Log.d("New Post", "Title: " + title + ", Description: " + descripton);
-		databaseManager.put(title, descripton, DatabaseManager.PHONE);
+		databaseManager.putPost(title, descripton, DatabaseManager.PHONE);
 	}
 }

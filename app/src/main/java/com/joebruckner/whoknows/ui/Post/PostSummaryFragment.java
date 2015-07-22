@@ -2,6 +2,12 @@ package com.joebruckner.whoknows.ui.Post;
 
 
 import android.app.Activity;
+import android.os.Bundle;
+import android.support.annotation.Nullable;
+import android.support.design.widget.FloatingActionButton;
+import android.util.Log;
+import android.view.View;
+import android.widget.TextView;
 
 import com.joebruckner.whoknows.R;
 import com.joebruckner.whoknows.common.BaseFragment;
@@ -13,14 +19,21 @@ import java.util.Date;
 
 import javax.inject.Inject;
 
-public class PostSummaryFragment extends BaseFragment implements PostSummaryView {
+import butterknife.Bind;
+
+public class PostSummaryFragment extends BaseFragment
+		implements PostSummaryView, View.OnClickListener {
+	@Bind(R.id.name) TextView name;
+	@Bind(R.id.date) TextView date;
+	@Bind(R.id.contact_info) TextView contactInfo;
+	@Bind(R.id.description) TextView description;
+	@Bind(R.id.fab) FloatingActionButton fab;
 	@Inject PostSummaryPresenter presenter;
 	@Inject Activity activity;
 
-	PostViewHolder holder;
-	Post post = new Post();
+	@Nullable Post post;
 
-	public static PostSummaryFragment newInstant() {
+	public static PostSummaryFragment newInstance() {
 		return new PostSummaryFragment();
 	}
 
@@ -32,38 +45,48 @@ public class PostSummaryFragment extends BaseFragment implements PostSummaryView
 		return R.layout.fragment_summary;
 	}
 
-	@Override public void onResume() {
-		super.onResume();
-		String id = activity.getIntent().getStringExtra(PostDetailActivity.BEACON_ID);
+	@Override public void sendEvent(int tag) {
+
+	}
+
+	@Override public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+		super.onActivityCreated(savedInstanceState);
+		fab.setOnClickListener(this);
+		String id = activity.getIntent().getStringExtra(PostActivity.BEACON_ID);
 		presenter.attachView(this);
-		presenter.fetchPost(id);
+		presenter.getPosts(id);
 	}
 
 	@Override public void showLoading() {
 		// TODO
 	}
 
-	@Override public void showContent() {
-		Date date = new Date();
-		date.setTime(post.getDate());
-		holder = new PostViewHolder(getView());
-		holder.getNameView().setText(post.getName());
-		holder.getDateView().setText(PostViewHolder.formatDate(date));
-		holder.getContactInfo().setText(post.getContactInfo());
-		holder.getDescriptionView().setText(post.getDescription());
+	@Override public void showSummary() {
+		if (post == null) return;
+		Date timestamp = new Date();
+		timestamp.setTime(post.getDate());
+		name.setText(post.getName());
+		date.setText(PostViewHolder.formatDate(timestamp));
+		contactInfo.setText(post.getContactInfo());
+		description.setText(post.getDescription());
 	}
 
 	@Override public void showError() {
-		// TODO
+		Log.e(TAG, "Error");
 	}
 
 	@Override public void setData(Post post) {
 		this.post = post;
-		showContent();
+		showSummary();
 	}
 
 	@Override public void onDestroyView() {
 		presenter.detachView();
 		super.onDestroyView();
+	}
+
+	@Override public void onClick(View v) {
+		if (post != null)
+			presenter.offerHelp(post.getId(), post.getUserId());
 	}
 }

@@ -34,6 +34,10 @@ public class ProfileFragment extends BaseFragment implements ProfileView {
 		return R.layout.fragment_profile;
 	}
 
+	@Override public void sendEvent(int tag) {
+
+	}
+
 	@Override public void onResume() {
 		super.onResume();
 		presenter.attachView(this);

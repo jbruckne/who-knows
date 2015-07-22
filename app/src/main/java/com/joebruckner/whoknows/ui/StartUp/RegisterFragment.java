@@ -36,6 +36,10 @@ public class RegisterFragment extends BaseFragment implements AuthView {
 		return R.layout.fragment_register;
 	}
 
+	@Override public void sendEvent(int tag) {
+
+	}
+
 	@Override public void onResume() {
 		super.onResume();
 		presenter.attachView(this);

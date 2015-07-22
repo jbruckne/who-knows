@@ -11,11 +11,11 @@ import com.squareup.otto.Subscribe;
 
 public class PostSummaryPresenterImpl implements PostSummaryPresenter {
 	PostSummaryView view;
-	DatabaseManager api;
+	DatabaseManager databaseManager;
 	Bus bus;
 
-	public PostSummaryPresenterImpl(DatabaseManager api, Bus bus) {
-		this.api = api;
+	public PostSummaryPresenterImpl(DatabaseManager databaseManager, Bus bus) {
+		this.databaseManager = databaseManager;
 		this.bus = bus;
 		bus.register(this);
 	}
@@ -28,15 +28,19 @@ public class PostSummaryPresenterImpl implements PostSummaryPresenter {
 		view = null;
 	}
 
-	@Override public void fetchPost(String id) {
-		api.get(id);
-		view.showContent();
+	@Override public void getPosts(String id) {
+		databaseManager.getPost(id);
+		view.showLoading();
+	}
+
+	@Override public void offerHelp(String id, String recipient) {
+		Log.d("Presenter", "offering help");
+		databaseManager.putOffer(id, recipient);
 	}
 
 	@Subscribe public void getPost(PostFetchedEvent e) {
 		if (view == null) return;
 		Log.d("PostFetchedEvent", "New event received. " + e.getId());
 		view.setData(e.getPost());
-		view.showContent();
 	}
 }

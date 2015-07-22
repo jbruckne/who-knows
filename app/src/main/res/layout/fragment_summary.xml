@@ -1,70 +1,75 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             xmlns:tools="http://schemas.android.com/tools"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent"
-             tools:context="com.joebruckner.whoknows.ui.Post.PostSummaryFragment">
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.joebruckner.whoknows.ui.Post.PostSummaryFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:ignore="RtlHardcoded,RtlSymmetry">
 
-    <RelativeLayout
+    <!-- Placeholder for user pic -->
+    <ImageView
+        android:id="@+id/pic"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/ic_user_pic"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:tint="?attr/colorAccent"
+        android:contentDescription="@string/dummy_user"/>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/pic"
+        android:layout_toEndOf="@id/pic"
+        android:padding="2dp"
+        android:textSize="18sp"
+        tools:text="Name"/>
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:layout_toRightOf="@id/pic"
+        android:layout_toEndOf="@id/pic"
+        android:paddingLeft="4dp"
+        android:textSize="16sp"
+        tools:text="Date" />
+
+    <TextView
+        android:id="@+id/contact_info"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/date"
+        android:layout_toRightOf="@id/pic"
+        android:layout_toEndOf="@id/pic"
+        android:paddingLeft="4dp"
+        android:textSize="16sp"
+        tools:text="Contact Info"/>
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pic"
         android:padding="24dp"
-        tools:ignore="RtlHardcoded,RtlSymmetry">
+        android:textSize="18sp"
+        tools:text="@string/example_paragraph"
+        />
 
-        <!-- Placeholder for user pic -->
-        <ImageView
-            android:id="@+id/pic"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:src="@drawable/ic_user_pic"
-            android:scaleType="fitCenter"
-            android:adjustViewBounds="true"
-            android:tint="?attr/colorAccent"
-            android:contentDescription="@string/dummy_user"/>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:clickable="true"
+        android:src="@drawable/ic_event_available_white_48dp"
+        app:fabSize="normal"
+        app:borderWidth="0dp"/>
 
-        <TextView
-            android:id="@+id/name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_toRightOf="@id/pic"
-            android:layout_toEndOf="@id/pic"
-            android:padding="2dp"
-            android:textSize="18sp"
-            tools:text="Name"/>
-
-        <TextView
-            android:id="@+id/date"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/name"
-            android:layout_toRightOf="@id/pic"
-            android:layout_toEndOf="@id/pic"
-            android:paddingLeft="4dp"
-            android:textSize="16sp"
-            tools:text="Date" />
-
-        <TextView
-            android:id="@+id/contact_info"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/date"
-            android:layout_toRightOf="@id/pic"
-            android:layout_toEndOf="@id/pic"
-            android:paddingLeft="4dp"
-            android:textSize="16sp"
-            tools:text="Contact Info"/>
-
-        <TextView
-            android:id="@+id/description"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/pic"
-            android:padding="24dp"
-            android:textSize="18sp"
-            tools:text="@string/example_paragraph"
-            />
-
-
-
-        </RelativeLayout>
-
-</FrameLayout>
+</RelativeLayout>

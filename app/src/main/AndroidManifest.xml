@@ -39,7 +39,7 @@
                 android:value=".ui.Home.HomeActivity" />
         </activity>
         <activity
-            android:name=".ui.Post.PostDetailActivity"
+            android:name=".ui.Post.PostActivity"
             android:label="@string/title_activity_beacon_detail"
             android:parentActivityName=".ui.Home.HomeActivity" >
             <meta-data

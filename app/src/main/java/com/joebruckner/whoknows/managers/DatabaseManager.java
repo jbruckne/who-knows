@@ -4,10 +4,12 @@ public interface DatabaseManager {
 	String EMAIL = "Email";
 	String PHONE = "Phone";
 
-	void getNearbyPosts();
-	void getJoinedPosts();
+	void getPosts();
+	void getOffers();
 	void getPostedPosts();
-	void put(String title, String description, String contactInfo);
-	void get(String id);
-	void getAttendees(String id);
+	void putPost(String title, String description, String contactInfo);
+	void getPost(String id);
+	void putOffer(String post, String recipient);
+	void getOffer(String id);
+
 }

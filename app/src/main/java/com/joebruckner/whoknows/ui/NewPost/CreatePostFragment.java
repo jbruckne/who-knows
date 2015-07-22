@@ -2,6 +2,7 @@ package com.joebruckner.whoknows.ui.NewPost;
 
 
 import android.app.Activity;
+import android.support.annotation.NonNull;
 import android.widget.CheckBox;
 import android.widget.EditText;
 
@@ -36,6 +37,10 @@ public class CreatePostFragment extends BaseFragment implements SimpleView<Profi
 		return R.layout.fragment_create_post;
 	}
 
+	@Override public void sendEvent(int tag) {
+
+	}
+
 	@Override public void onResume() {
 		super.onResume();
 		presenter.attachView(this);
@@ -60,7 +65,7 @@ public class CreatePostFragment extends BaseFragment implements SimpleView<Profi
 
 	}
 
-	@Override public void setData(Profile profile) {
+	@Override public void setData(@NonNull Profile profile) {
 
 	}
 }

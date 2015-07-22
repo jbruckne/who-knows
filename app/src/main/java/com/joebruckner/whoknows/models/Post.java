@@ -2,6 +2,7 @@ package com.joebruckner.whoknows.models;
 
 public class Post {
 	String id;
+	String userId;
 	String title;
 	String name;
 	long date;
@@ -15,6 +16,7 @@ public class Post {
 
 	public Post(Builder builder) {
 		this.id = builder.id;
+		this.userId = builder.userId;
 		this.title = builder.title;
 		this.name = builder.name;
 		this.date = builder.date;
@@ -24,20 +26,12 @@ public class Post {
 		this.lng = builder.lng;
 	}
 
-	public Post(String id, String title, String name, long date, String contactInfo, String
-			description, double lat, double lng) {
-		this.id = id;
-		this.title = title;
-		this.name = name;
-		this.date = date;
-		this.contactInfo = contactInfo;
-		this.description = description;
-		this.lat = lat;
-		this.lng = lng;
-	}
-
 	public String getId() {
 		return id;
+	}
+
+	public String getUserId() {
+		return userId;
 	}
 
 	public String getTitle() {
@@ -60,8 +54,20 @@ public class Post {
 		return description;
 	}
 
+	public double getLat() {
+		return lat;
+	}
+
+	public double getLng() {
+		return lng;
+	}
+
 	public void setId(String id) {
 		this.id = id;
+	}
+
+	public void setUserId(String userId) {
+		this.userId = userId;
 	}
 
 	public void setTitle(String title) {
@@ -84,16 +90,8 @@ public class Post {
 		this.description = description;
 	}
 
-	public double getLat() {
-		return lat;
-	}
-
 	public void setLat(double lat) {
 		this.lat = lat;
-	}
-
-	public double getLng() {
-		return lng;
 	}
 
 	public void setLng(double lng) {
@@ -102,6 +100,7 @@ public class Post {
 
 	public static class Builder {
 		private String id;
+		private String userId;
 		private String title;
 		private String name;
 		private long date;
@@ -112,6 +111,11 @@ public class Post {
 
 		public Builder id(String id) {
 			this.id = id;
+			return this;
+		}
+
+		public Builder userId(String userId) {
+			this.userId = userId;
 			return this;
 		}
 

@@ -4,7 +4,7 @@ import com.joebruckner.whoknows.models.Post;
 
 public interface PostSummaryView {
 	void showLoading();
-	void showContent();
+	void showSummary();
 	void showError();
 	void setData(Post post);
 }
