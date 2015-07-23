@@ -3,13 +3,15 @@ package com.joebruckner.whoknows.modules;
 import android.app.Activity;
 
 import com.joebruckner.whoknows.managers.AccountManager;
-import com.joebruckner.whoknows.presenters.Impl.LoginPresenterImpl;
-import com.joebruckner.whoknows.presenters.Impl.RegisterPresenterImpl;
+import com.joebruckner.whoknows.models.Profile;
 import com.joebruckner.whoknows.presenters.LoginPresenter;
 import com.joebruckner.whoknows.presenters.RegisterPresenter;
-import com.joebruckner.whoknows.ui.StartUp.AuthActivity;
-import com.joebruckner.whoknows.ui.StartUp.LoginFragment;
-import com.joebruckner.whoknows.ui.StartUp.RegisterFragment;
+import com.joebruckner.whoknows.common.SimplePresenter;
+import com.joebruckner.whoknows.ui.startUp.AuthActivity;
+import com.joebruckner.whoknows.ui.startUp.LoginFragment;
+import com.joebruckner.whoknows.ui.startUp.RegisterFragment;
+import com.joebruckner.whoknows.ui.views.LoginView;
+import com.joebruckner.whoknows.ui.views.RegisterView;
 import com.squareup.otto.Bus;
 
 import javax.inject.Singleton;
@@ -34,15 +36,18 @@ public class StartUpModule {
 		this.activity = activity;
 	}
 
-	@Provides @Singleton Activity providesActivity() {
+	@Provides @Singleton
+	Activity activity() {
 		return activity;
 	}
 
-	@Provides LoginPresenter providesLoginPresenter(Bus bus, AccountManager api) {
-		return new LoginPresenterImpl(bus, api);
+	@Provides
+	SimplePresenter<Profile, LoginView> loginPresenter(Bus bus, AccountManager account) {
+		return new LoginPresenter(bus, account);
 	}
 
-	@Provides RegisterPresenter providesRegisterPresenter(Bus bus, AccountManager api) {
-		return new RegisterPresenterImpl(bus, api);
+	@Provides
+	SimplePresenter<Profile, RegisterView> registerPresenter(Bus bus, AccountManager account) {
+		return new RegisterPresenter(bus, account);
 	}
 }

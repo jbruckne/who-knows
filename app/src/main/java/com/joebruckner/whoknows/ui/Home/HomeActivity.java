@@ -1,4 +1,4 @@
-package com.joebruckner.whoknows.ui.Home;
+package com.joebruckner.whoknows.ui.home;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -18,9 +18,9 @@ import com.joebruckner.whoknows.common.BaseActivity;
 import com.joebruckner.whoknows.managers.AccountManager;
 import com.joebruckner.whoknows.managers.DatabaseManager;
 import com.joebruckner.whoknows.modules.HomeModule;
-import com.joebruckner.whoknows.ui.NewPost.NewPostActivity;
-import com.joebruckner.whoknows.ui.StartUp.AuthActivity;
-import com.joebruckner.whoknows.ui.Widgets.SimpleOnTabSelectedListener;
+import com.joebruckner.whoknows.ui.newPost.NewPostActivity;
+import com.joebruckner.whoknows.ui.startUp.AuthActivity;
+import com.joebruckner.whoknows.ui.widgets.SimpleOnTabSelectedListener;
 
 import javax.inject.Inject;
 

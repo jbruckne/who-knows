@@ -1,17 +1,21 @@
-package com.joebruckner.whoknows.ui.Post;
+package com.joebruckner.whoknows.ui.post;
 
 import android.os.Bundle;
 import android.support.design.widget.CoordinatorLayout;
 import android.support.v7.app.ActionBar;
 import android.support.v7.widget.Toolbar;
+import android.view.View;
 import android.widget.FrameLayout;
 
 import com.joebruckner.whoknows.R;
 import com.joebruckner.whoknows.common.BaseActivity;
+import com.joebruckner.whoknows.common.BaseFragment;
+import com.joebruckner.whoknows.common.SimplePresenter;
 import com.joebruckner.whoknows.modules.PostModule;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 
 public class PostActivity extends BaseActivity {
 	@Bind(R.id.coordinator) CoordinatorLayout coordinator;
@@ -20,6 +24,8 @@ public class PostActivity extends BaseActivity {
 
 	public static String BEACON_ID = "ID";
 	public static String BEACON_TITLE = "TITLE";
+
+	BaseFragment fragment;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -43,9 +49,15 @@ public class PostActivity extends BaseActivity {
 	}
 
 	private void setupFrame() {
+		fragment = PostSummaryFragment.newInstance();
 		getSupportFragmentManager().beginTransaction()
-				.add(R.id.frame, PostSummaryFragment.newInstance())
+				.add(R.id.frame, fragment)
 				.commit();
+	}
+
+	@OnClick(R.id.fab) public void offerHelp(View v) {
+		if (fragment != null)
+			fragment.sendAction(SimplePresenter.ACTION_OFFER_HELP);
 	}
 
 	@Override protected Object[] getModules() {

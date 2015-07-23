@@ -1,4 +1,4 @@
-package com.joebruckner.whoknows.ui.Home;
+package com.joebruckner.whoknows.ui.home;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;

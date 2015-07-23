@@ -2,12 +2,14 @@ package com.joebruckner.whoknows.modules;
 
 import android.app.Activity;
 
+import com.joebruckner.whoknows.common.SimplePresenter;
 import com.joebruckner.whoknows.managers.AccountManager;
 import com.joebruckner.whoknows.managers.DatabaseManager;
-import com.joebruckner.whoknows.presenters.Impl.NewPostPresenterImpl;
+import com.joebruckner.whoknows.models.Post;
 import com.joebruckner.whoknows.presenters.NewPostPresenter;
-import com.joebruckner.whoknows.ui.NewPost.CreatePostFragment;
-import com.joebruckner.whoknows.ui.NewPost.NewPostActivity;
+import com.joebruckner.whoknows.ui.newPost.NewPostActivity;
+import com.joebruckner.whoknows.ui.newPost.NewPostFragment;
+import com.joebruckner.whoknows.ui.views.NewPostView;
 import com.squareup.otto.Bus;
 
 import javax.inject.Singleton;
@@ -18,7 +20,7 @@ import dagger.Provides;
 @Module(
 		injects = {
 				NewPostActivity.class,
-				CreatePostFragment.class
+				NewPostFragment.class
 		},
 		addsTo = AppModule.class,
 		complete = false,
@@ -31,12 +33,13 @@ public class NewPostModule {
 		this.activity = activity;
 	}
 
-	@Provides @Singleton Activity providesActivity() {
+	@Provides @Singleton
+	Activity providesActivity() {
 		return activity;
 	}
 
-	@Provides NewPostPresenter providesNewPostPresenter(DatabaseManager databasemanager,
-	                                                    AccountManager accountManager, Bus bus) {
-		return new NewPostPresenterImpl(databasemanager, accountManager, bus);
+	@Provides SimplePresenter<Post, NewPostView>
+	newPostPresenter(DatabaseManager database, AccountManager account, Bus bus) {
+		return new NewPostPresenter(database, account, bus);
 	}
 }

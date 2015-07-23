@@ -1,13 +1,17 @@
-package com.joebruckner.whoknows.ui.Home;
+package com.joebruckner.whoknows.ui.home;
 
 
+import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
 import android.support.design.widget.Snackbar;
 import android.widget.TextView;
 
 import com.joebruckner.whoknows.R;
 import com.joebruckner.whoknows.common.BaseFragment;
 import com.joebruckner.whoknows.models.Profile;
-import com.joebruckner.whoknows.presenters.ProfilePresenter;
+import com.joebruckner.whoknows.common.SimplePresenter;
+import com.joebruckner.whoknows.ui.views.ProfileView;
 
 import javax.inject.Inject;
 
@@ -18,30 +22,18 @@ public class ProfileFragment extends BaseFragment implements ProfileView {
 	@Bind(R.id.name) TextView name;
 	@Bind(R.id.email) TextView email;
 	@Bind(R.id.phone) TextView phone;
-	@Inject ProfilePresenter presenter;
+	@Inject SimplePresenter<Profile, ProfileView> presenter;
 
 	Profile profile;
 
-	public static ProfileFragment newInstance() {
-		return new ProfileFragment();
-	}
-
-	public ProfileFragment() {
-		// Required empty public constructor
+	@Override public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+		super.onActivityCreated(savedInstanceState);
+		presenter.attachView(this);
+		presenter.execute();
 	}
 
 	@Override public int getLayout() {
 		return R.layout.fragment_profile;
-	}
-
-	@Override public void sendEvent(int tag) {
-
-	}
-
-	@Override public void onResume() {
-		super.onResume();
-		presenter.attachView(this);
-		presenter.loadProfile();
 	}
 
 	@OnClick(R.id.post_history) public void postHistory() {
@@ -53,23 +45,26 @@ public class ProfileFragment extends BaseFragment implements ProfileView {
 	}
 
 	@Override public void showContent() {
-		if (profile == null) return;
-		name.setText(profile.getName());
-		email.setText(profile.getEmail());
-		phone.setText(profile.getPhone());
+		// TODO
 	}
 
 	@Override public void showError() {
 		Snackbar.make(getView(), "Error", Snackbar.LENGTH_SHORT).show();
 	}
 
-	@Override public void setData(Profile profile) {
+	@Override public void setData(@NonNull Profile profile) {
 		this.profile = profile;
-		showContent();
+		name.setText(profile.getName());
+		email.setText(profile.getEmail());
+		phone.setText(profile.getPhone());
 	}
 
 	@Override public void onDestroyView() {
 		presenter.detachView();
 		super.onDestroyView();
+	}
+
+	public static ProfileFragment newInstance() {
+		return new ProfileFragment();
 	}
 }

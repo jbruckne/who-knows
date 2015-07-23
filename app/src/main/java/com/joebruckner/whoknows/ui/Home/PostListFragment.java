@@ -1,4 +1,4 @@
-package com.joebruckner.whoknows.ui.Home;
+package com.joebruckner.whoknows.ui.home;
 
 
 import android.app.Activity;
@@ -15,10 +15,10 @@ import android.view.View;
 import com.joebruckner.whoknows.R;
 import com.joebruckner.whoknows.common.BaseFragment;
 import com.joebruckner.whoknows.models.Post;
-import com.joebruckner.whoknows.presenters.SimplePresenter;
-import com.joebruckner.whoknows.ui.Post.PostActivity;
-import com.joebruckner.whoknows.ui.Widgets.DividerItemDecoration;
-import com.joebruckner.whoknows.ui.Widgets.OnItemClickListener;
+import com.joebruckner.whoknows.common.SimplePresenter;
+import com.joebruckner.whoknows.ui.post.PostActivity;
+import com.joebruckner.whoknows.ui.widgets.DividerItemDecoration;
+import com.joebruckner.whoknows.ui.widgets.OnItemClickListener;
 import com.joebruckner.whoknows.ui.views.PostListView;
 
 import java.util.List;
@@ -40,16 +40,15 @@ public class PostListFragment extends BaseFragment implements PostListView {
 
 	private int filter = 0;
 
-	public static PostListFragment newInstance(int type) {
-		PostListFragment fragment = new PostListFragment();
-		Bundle bundle = new Bundle();
-		bundle.putInt(LIST_TYPE, type);
-		fragment.setArguments(bundle);
-		return fragment;
+	@Override public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+		super.onActivityCreated(savedInstanceState);
+		filter = getArguments().getInt(LIST_TYPE);
+		presenter.attachView(this);
+		presenter.execute();
 	}
 
-	public PostListFragment() {
-		// Required empty public constructor
+	@Override public int getLayout() {
+		return R.layout.fragment_post_list;
 	}
 
 	@Override public void setupLayout() {
@@ -68,18 +67,7 @@ public class PostListFragment extends BaseFragment implements PostListView {
 		});
 	}
 
-	@Override public void onActivityCreated(@Nullable Bundle savedInstanceState) {
-		super.onActivityCreated(savedInstanceState);
-		filter = getArguments().getInt(LIST_TYPE);
-		presenter.attachView(this);
-		presenter.execute();
-	}
-
-	@Override public int getLayout() {
-		return R.layout.fragment_post_list;
-	}
-
-	@Override public void sendEvent(int tag) {
+	@Override public void sendAction(int tag) {
 		presenter.execute(tag);
 	}
 
@@ -88,6 +76,15 @@ public class PostListFragment extends BaseFragment implements PostListView {
 	}
 
 	@Override public void showContent() {
+
+	}
+
+	@Override public void showError() {
+		// TODO
+	}
+
+	@Override public void setData(@NonNull List<Post> posts) {
+		adapter.setItems(posts);
 	}
 
 	@Override public void showEmpty() {
@@ -103,14 +100,6 @@ public class PostListFragment extends BaseFragment implements PostListView {
 		return this.filter;
 	}
 
-	@Override public void showError() {
-		// TODO
-	}
-
-	@Override public void setData(@NonNull List<Post> posts) {
-		adapter.setItems(posts);
-	}
-
 	@Override public void onDestroyView() {
 		presenter.detachView();
 		super.onDestroyView();
@@ -119,5 +108,13 @@ public class PostListFragment extends BaseFragment implements PostListView {
 	@Override public boolean onOptionsItemSelected(MenuItem item) {
 		if (item.getItemId() == R.id.action_refresh) refresh();
 		return super.onOptionsItemSelected(item);
+	}
+
+	public static PostListFragment newInstance(int type) {
+		PostListFragment fragment = new PostListFragment();
+		Bundle bundle = new Bundle();
+		bundle.putInt(LIST_TYPE, type);
+		fragment.setArguments(bundle);
+		return fragment;
 	}
 }

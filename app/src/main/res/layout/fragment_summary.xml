@@ -2,7 +2,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context="com.joebruckner.whoknows.ui.Post.PostSummaryFragment"
+    tools:context="com.joebruckner.whoknows.ui.post.PostSummaryFragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp"
@@ -60,16 +60,5 @@
         android:textSize="18sp"
         tools:text="@string/example_paragraph"
         />
-
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:clickable="true"
-        android:src="@drawable/ic_event_available_white_48dp"
-        app:fabSize="normal"
-        app:borderWidth="0dp"/>
 
 </RelativeLayout>

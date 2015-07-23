@@ -1,4 +1,4 @@
-package com.joebruckner.whoknows.ui.Widgets;
+package com.joebruckner.whoknows.ui.widgets;
 
 import android.support.design.widget.TabLayout;
 

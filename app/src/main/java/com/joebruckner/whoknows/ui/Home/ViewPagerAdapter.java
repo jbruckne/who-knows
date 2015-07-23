@@ -1,4 +1,4 @@
-package com.joebruckner.whoknows.ui.Home;
+package com.joebruckner.whoknows.ui.home;
 
 import android.app.Activity;
 import android.support.v4.app.Fragment;

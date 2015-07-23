@@ -1,4 +1,4 @@
-package com.joebruckner.whoknows.ui.Widgets;
+package com.joebruckner.whoknows.ui.widgets;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;

@@ -33,32 +33,38 @@ public class AppModule {
 		this.app = app;
 	}
 
-	@Provides @Singleton Application providesApplication() {
+	@Provides @Singleton
+	Application providesApplication() {
 		return app;
 	}
 
-	@Provides @Singleton Bus providesEventBus() {
+	@Provides @Singleton
+	Bus providesEventBus() {
 		return new Bus(ThreadEnforcer.MAIN);
 	}
 
-	@Provides @Singleton Firebase providesFirebase() {
+	@Provides @Singleton
+	Firebase providesFirebase() {
 		return new Firebase("https://sizzling-torch-124.firebaseio.com");
 	}
 
-	@Provides @Singleton AccountManager providesAccountManager(Firebase ref, Bus bus) {
+	@Provides @Singleton
+	AccountManager providesAccountManager(Firebase ref, Bus bus) {
 		return new FirebaseAccountManager(ref, bus);
 	}
 
-	@Provides @Singleton DatabaseManager providesDatabaseManager(Application app,
-	                                                             AccountManager api, Bus bus) {
+	@Provides @Singleton
+	DatabaseManager providesDatabaseManager(Application app, AccountManager api, Bus bus) {
 		return new FirebaseDatabaseManager(app, api, bus);
 	}
 
-	@Provides @Singleton LocationApi providesLocationApi(LocationManager manager, Bus bus) {
+	@Provides @Singleton
+	LocationApi providesLocationApi(LocationManager manager, Bus bus) {
 		return new TestLocationApi(manager, bus, app);
 	}
 
-	@Provides @Singleton LocationManager providesLocationManager() {
+	@Provides @Singleton
+	LocationManager providesLocationManager() {
 		return (LocationManager) app.getSystemService(Context.LOCATION_SERVICE);
 	}
 }

@@ -21,7 +21,7 @@
             android:value="@string/MAP_KEY" />
 
         <activity
-            android:name=".ui.Home.HomeActivity"
+            android:name=".ui.home.HomeActivity"
             android:label="@string/app_name"
             android:launchMode="singleTask">
             <intent-filter>
@@ -30,24 +30,24 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ui.NewPost.NewPostActivity"
+            android:name=".ui.newPost.NewPostActivity"
             android:label="@string/title_activity_new_beacon"
-            android:parentActivityName=".ui.Home.HomeActivity"
+            android:parentActivityName=".ui.home.HomeActivity"
             android:windowSoftInputMode="stateVisible|adjustResize" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".ui.Home.HomeActivity" />
+                android:value=".ui.home.HomeActivity" />
         </activity>
         <activity
-            android:name=".ui.Post.PostActivity"
+            android:name=".ui.post.PostActivity"
             android:label="@string/title_activity_beacon_detail"
-            android:parentActivityName=".ui.Home.HomeActivity" >
+            android:parentActivityName=".ui.home.HomeActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".ui.Home.HomeActivity" />
+                android:value=".ui.home.HomeActivity" />
         </activity>
         <activity
-            android:name=".ui.StartUp.AuthActivity"
+            android:name=".ui.startUp.AuthActivity"
             android:label="@string/title_activity_login">
         </activity>
     </application>

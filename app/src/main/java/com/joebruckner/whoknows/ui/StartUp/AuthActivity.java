@@ -1,4 +1,4 @@
-package com.joebruckner.whoknows.ui.StartUp;
+package com.joebruckner.whoknows.ui.startUp;
 
 import android.os.Bundle;
 

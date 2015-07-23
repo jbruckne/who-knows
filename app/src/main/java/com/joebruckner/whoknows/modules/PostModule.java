@@ -2,11 +2,13 @@ package com.joebruckner.whoknows.modules;
 
 import android.app.Activity;
 
+import com.joebruckner.whoknows.common.SimplePresenter;
 import com.joebruckner.whoknows.managers.DatabaseManager;
-import com.joebruckner.whoknows.presenters.Impl.PostSummaryPresenterImpl;
+import com.joebruckner.whoknows.models.Post;
 import com.joebruckner.whoknows.presenters.PostSummaryPresenter;
-import com.joebruckner.whoknows.ui.Post.PostActivity;
-import com.joebruckner.whoknows.ui.Post.PostSummaryFragment;
+import com.joebruckner.whoknows.ui.post.PostActivity;
+import com.joebruckner.whoknows.ui.post.PostSummaryFragment;
+import com.joebruckner.whoknows.ui.views.PostSummaryView;
 import com.squareup.otto.Bus;
 
 import javax.inject.Singleton;
@@ -30,11 +32,13 @@ public class PostModule {
 		this.activity = activity;
 	}
 
-	@Provides @Singleton Activity providesActivity() {
+	@Provides @Singleton
+	Activity activity() {
 		return activity;
 	}
 
-	@Provides PostSummaryPresenter providesPostSummaryPresenter(DatabaseManager api, Bus bus) {
-		return new PostSummaryPresenterImpl(api, bus);
+	@Provides
+	SimplePresenter<Post, PostSummaryView> postSummaryPresenter(Bus bus, DatabaseManager database) {
+		return new PostSummaryPresenter(bus, database);
 	}
 }

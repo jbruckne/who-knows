@@ -1,7 +1,7 @@
 package com.joebruckner.whoknows.ui.views;
 
 import com.joebruckner.whoknows.models.Post;
-import com.joebruckner.whoknows.ui.SimpleView;
+import com.joebruckner.whoknows.common.SimpleView;
 
 import java.util.List;
 

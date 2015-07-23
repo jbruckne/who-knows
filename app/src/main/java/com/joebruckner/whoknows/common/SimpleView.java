@@ -1,4 +1,4 @@
-package com.joebruckner.whoknows.ui;
+package com.joebruckner.whoknows.common;
 
 import android.support.annotation.NonNull;
 

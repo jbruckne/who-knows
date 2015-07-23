@@ -1,4 +1,4 @@
-package com.joebruckner.whoknows.ui.NewPost;
+package com.joebruckner.whoknows.ui.newPost;
 
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;
@@ -20,7 +20,8 @@ public class NewPostActivity extends BaseActivity {
 		setContentView(R.layout.activity_new_post);
 		ButterKnife.bind(this);
 		setToolbar();
-		setLayout();
+		if (savedInstanceState == null)
+			setLayout();
 	}
 
 	private void setToolbar() {
@@ -36,7 +37,7 @@ public class NewPostActivity extends BaseActivity {
 
 	private void setLayout() {
 		getSupportFragmentManager().beginTransaction()
-				.add(R.id.container, CreatePostFragment.newInstance())
+				.add(R.id.container, NewPostFragment.newInstance())
 				.commit();
 	}
 

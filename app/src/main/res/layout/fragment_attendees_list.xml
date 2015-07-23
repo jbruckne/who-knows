@@ -2,9 +2,9 @@
              xmlns:tools="http://schemas.android.com/tools"
              android:layout_width="match_parent"
              android:layout_height="match_parent"
-             tools:context="com.joebruckner.whoknows.ui.Post.PostAttendeesFragment">
+             tools:context="com.joebruckner.whoknows.ui.post.PostAttendeesFragment">
 
-    <com.joebruckner.whoknows.ui.Widgets.FixedRecyclerView
+    <com.joebruckner.whoknows.ui.widgets.FixedRecyclerView
         android:id="@+id/list"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
